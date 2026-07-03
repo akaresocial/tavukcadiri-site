@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
 Sitemap: https://tavukcadiri.com/sitemap.xml
+# yayin-testi: 2026-07-03T14:34:58Z
