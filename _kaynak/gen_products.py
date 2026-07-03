@@ -137,8 +137,8 @@ def cta_band(txt="Ölçünüz ve bütçenize en uygun tavuk çadırını birlikt
 def detail_page(slug,idx):
     en,boy,m2,tavuk,p3,p4=SIZES[idx]
     tavuk_f=format(tavuk,',d').replace(",",".")
-    num_disp="2.000+" if num=="2000" else format(int(num),",d").replace(",",".")
     num=slug.split("-")[0]
+    num_disp="2.000+" if num=="2000" else format(int(num),",d").replace(",",".")
     cap="%s tavuk"%(("2.000+" if num=="2000" else format(int(num),',d').replace(",","."))) if num.isdigit() else "%d tavuk"%tavuk
     title="%s Tavukluk Tavuk Çadırı (%dx%d = %d m²) Fiyatları | tavukcadiri.com"%(num if num!="2000" else "2000+",int(en),int(boy),m2)
     desc="%s tavukluk (%dx%d, %d m²) yalıtımlı tavuk çadırı. 3 kat %s / 4 kat %s. 40x40 galvaniz makas, 650g TSE branda, 2 yıl garanti; nakliye+kurulum dahil."%(num,int(en),int(boy),m2,tl(p3),tl(p4))
@@ -151,7 +151,7 @@ def detail_page(slug,idx):
       '<div><div class="ey">Anahtar Teslim Kümes Çadırı · %dx%d m · %d m²</div><h1>%s</h1>'
       '<p class="lead">Yaklaşık %s tavuk için %d m² yalıtımlı, anahtar teslim kümes çadırı. Galvaniz makas iskelet, TSE damgalı branda ve 3-4 kat bizafol yalıtımla üretilir; nakliye ve kurulum dahil, 10 günde kurulu teslim.</p>'
       '%s<div class="actions"><a href="https://wa.me/%s" target="_blank" rel="noopener" class="btn-wa">%s Bu ürünü sorun</a><a href="#fiyat" class="btn-ghost">Fiyat &amp; detay</a></div></div>'
-      '<div><img class="hero-img" src="../assets/photos/model-%s.webp?v=2" alt="%s"><div class="pgal"><img src="../assets/photos/tech-1.webp?v=2" loading="lazy" alt="%s tavukluk tavuk çadırı — iç mekan"><img src="../assets/photos/tech-2.webp?v=2" loading="lazy" alt="%s tavukluk tavuk çadırı — yakın çekim"><img src="../assets/photos/tech-3.webp?v=2" loading="lazy" alt="%s tavukluk tavuk çadırı — iç görünüm"></div></div></div></div></section>')%(crumb,int(en),int(boy),m2,e(h1),tavuk_f,m2,bd,WA,WA_SVG.format(w=20,f="#fff"),num,e(h1),num,num,num)
+      '<div><img class="hero-img" src="../assets/photos/model-%s.webp?v=2" alt="%s"><div class="pgal"><img src="../assets/photos/tech-1.webp?v=2" loading="lazy" alt="%s tavukluk tavuk çadırı — iç mekan"><img src="../assets/photos/tech-2.webp?v=2" loading="lazy" alt="%s tavukluk tavuk çadırı — yakın çekim"><img src="../assets/photos/tech-3.webp?v=2" loading="lazy" alt="%s tavukluk tavuk çadırı — iç görünüm"></div></div></div></div></section>')%(crumb,int(en),int(boy),m2,e(h1),num_disp,m2,bd,WA,WA_SVG.format(w=20,f="#fff"),num,e(h1),num,num,num)
     # kapasite açıklaması (per-size unique intro)
     who={"500":"Yeni başlayan ve yarı-ticari üreticiler için en uygun başlangıç ölçüsü.","750":"Küçük kümesini büyütmek isteyen üreticiler için dengeli orta ölçü.","1000":"Ticari yumurta/et üretimine geçenlerin en çok tercih ettiği ölçü.","2000":"Büyük ölçekli, ciddi ticari üretim için geniş kapasiteli model."}.get(num,"")
     body=(hero
