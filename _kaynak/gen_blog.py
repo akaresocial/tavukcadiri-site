@@ -73,7 +73,7 @@ def article_page(rec, by_slug):
     crumb='<a href="../../index.html">Ana Sayfa</a> › <a href="../">Blog</a> › <b>%s</b>'%e(a["title"][:46]+("…" if len(a["title"])>46 else ""))
     hero=('<div class="wrap"><div class="crumb">%s</div></div>'
       '<section class="phead"><div class="wrap"><div class="ey">Blog</div><h1>%s</h1><p>%s</p>'
-      '<div class="bmeta"><span>%s</span><span>%s dk okuma</span><span>Tavuk Çadırı Ekibi</span></div></div></section>')%(crumb,e(a["title"]),e(a["meta_desc"]),date_disp,mins)
+      '<div class="bmeta"><span>%s</span><span>Okuma süresi: %s dk</span></div></div></section>')%(crumb,e(a["title"]),e(a["meta_desc"]),date_disp,mins)
     body_secs='<section class="sec"><div class="wrap"><div class="prose">'+sanitize(a["intro_html"])
     for s in a["sections"]:
         body_secs+='<h2>%s</h2>'%e(s["h2"])+sanitize(s["html"])
@@ -111,7 +111,7 @@ def index_page(arts):
     for rec in arts:
         a=rec["article"]; w=words(a); mins=max(3,round(w/200))
         cards+=('<a class="bcard" href="%s/"><span class="bk">Rehber</span><h2>%s</h2><p>%s</p>'
-          '<span class="bm">%s · %s dk okuma</span><span class="go">Yazıyı oku %s</span></a>')%(rec["slug"],e(a["title"]),e(a["meta_desc"]),rec.get("date_disp","3 Temmuz 2026"),mins,ARROW)
+          '<span class="bm">%s · Okuma süresi: %s dk</span><span class="go">Yazıyı oku %s</span></a>')%(rec["slug"],e(a["title"]),e(a["meta_desc"]),rec.get("date_disp","3 Temmuz 2026"),mins,ARROW)
     body=hero+'<section class="sec"><div class="wrap"><div class="bgrid">%s</div></div></section>'%cards+cta_block()
     out=doc("Blog — Tavukçuluk ve Kümes Rehberi","Tavukçuluğa başlayacaklar için maliyet, ruhsat, devlet desteği, kış bakımı ve verim rehberleri. Sahadan, abartısız ve güncel bilgiler.","blog",body,pre="../")
     graph={"@context":"https://schema.org","@graph":[

@@ -68,7 +68,7 @@ if not CSS:
  CSS = """__CSS__"""
 
 def header(links_extra=""):
-    L=[("Modeller","../index.html#modeller"),("Fiyatlar","../fiyatlar/"),("Özellikler","../index.html#ozellikler"),("Neden Biz","../index.html#referanslar"),("S.S.S.","../index.html#sss"),("İletişim","../iletisim/")]
+    L=[("Modeller","../index.html#modeller"),("Fiyatlar","../fiyatlar/"),("Özellikler","../index.html#ozellikler"),("Neden Biz","../index.html#referanslar"),("S.S.S.","../index.html#sss"),("Blog","../blog/"),("İletişim","../iletisim/")]
     nav="".join('<a href="%s">%s</a>'%(u,e(t)) for t,u in L)
     mob="".join('<a href="%s">%s</a>'%(u,e(t)) for t,u in L)
     return ('<header><div class="nav"><a href="../index.html" aria-label="Tavuk Çadırı ana sayfa"><img src="../assets/logo.png" alt="Tavuk Çadırı" style="height:52px;width:auto"></a>'
@@ -80,21 +80,21 @@ def header(links_extra=""):
 def footer():
     prod="".join('<li><a href="../%s/">%s</a></li>'%(s,e(t)) for s,t in [("500-tavukluk-tavuk-cadiri","500 Tavuk / 70 m²"),("750-tavukluk-tavuk-cadiri","750 Tavuk / 98 m²"),("1000-tavukluk-tavuk-cadiri","1.000 Tavuk / 140 m²"),("2000-tavukluk-tavuk-cadiri","2.000+ / 300 m²"),("fiyatlar","Tüm ölçüler & fiyatlar")])
     return ('<footer><div class="wrap"><div class="foot-grid">'
-      '<div><img src="../assets/logo.png" alt="Tavuk Çadırı" style="width:150px"><p class="about">3/4 kat yalıtımlı, TSE damgalı brandalı anahtar teslim tavuk çadırı. Türkiye geneli 81 ile nakliye ve kurulum. Üretim: DEHA Çadır.</p>'
+      '<div><img src="../assets/logo.png" alt="Tavuk Çadırı" style="width:150px"><p class="about">3 ve 4 kat yalıtımlı, TSE damgalı brandalı anahtar teslim tavuk çadırı. Türkiye geneli 81 ile nakliye ve kurulum. Üretim: DEHA Çadır.</p>'
       '<a href="https://wa.me/%s" target="_blank" rel="noopener" class="wa-btn" style="font-size:14.5px;padding:11px 17px">%s<span>Bize ulaşın</span></a></div>'
       '<div><h5>Ürünler</h5><ul>%s</ul></div>'
-      '<div><h5>Kurumsal</h5><ul><li><a href="../hakkimizda/">Hakkımızda</a></li><li><a href="../iletisim/">İletişim</a></li><li><a href="../index.html#sss">S.S.S.</a></li></ul></div>'
+      '<div><h5>Kurumsal</h5><ul><li><a href="../hakkimizda/">Hakkımızda</a></li><li><a href="../iletisim/">İletişim</a></li><li><a href="../index.html#sss">S.S.S.</a></li><li><a href="../blog/">Blog</a></li></ul></div>'
       '<div><h5>Yasal</h5><ul><li><a href="../kvkk/">KVKK Aydınlatma Metni</a></li><li><a href="../gizlilik/">Gizlilik &amp; Çerez Politikası</a></li></ul></div>'
       '</div><div class="foot-bottom"><span>© 2026 Tavuk Çadırı. Tüm hakları saklıdır.</span><span>Üretim &amp; kurulum: DEHA Çadır · 81 il</span></div></div></footer>')%(WA,WA_SVG.format(w=17,f="#fff"),prod)
 
-COOKIE='<div id="cookie"><p>Bu sitede, deneyiminizi iyileştirmek ve temel işlevler için çerezler kullanıyoruz. Detaylar: <a href="../gizlilik/">Gizlilik &amp; Çerez Politikası</a>.</p><button onclick="cookieOk()">Tamam</button></div>'
+COOKIE=''
 JS=("""(function(){var b=document.getElementById('nav-burger'),m=document.getElementById('mobile-menu'),o=false;
 function tg(){o=!o;if(!m)return;if(b)b.setAttribute('aria-expanded',o?'true':'false');if(o){m.style.display='flex';requestAnimationFrame(function(){m.style.opacity='1';m.style.transform='translateY(0)';var f=m.querySelector('a');if(f)f.focus();});}else{m.style.opacity='0';m.style.transform='translateY(-8px)';setTimeout(function(){if(!o)m.style.display='none';},230);}}
 if(b)b.addEventListener('click',tg);if(m)m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){if(o)tg();});});
 document.addEventListener('keydown',function(ev){if(ev.key==='Escape'&&o){tg();if(b)b.focus();}});
 var h=document.querySelector('header');window.addEventListener('scroll',function(){if(h)h.style.boxShadow=window.scrollY>14?'0 10px 30px -22px rgba(34,26,18,.5)':'none';},{passive:true});
-try{if(!localStorage.getItem('ck')){var c=document.getElementById('cookie');if(c)c.style.display='flex';}}catch(e){}})();
-function cookieOk(){try{localStorage.setItem('ck','1');}catch(e){}var c=document.getElementById('cookie');if(c)c.style.display='none';}""")
+})();
+""")
 
 def doc(title,desc,canon_slug,body,jsonld="",img_num="1000"):
     return ('<!DOCTYPE html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">'
@@ -131,30 +131,31 @@ def cta_band(txt="Ölçünüz ve bütçenize en uygun tavuk çadırını birlikt
     return ('<section class="sec"><div class="wrap"><div class="cta-band"><div class="glow"></div><h2>%s</h2>'
       '<p>3 kat mı 4 kat mı, hangi ölçü? Kapasitenizi ve bölgenizi yazın; nakliye ve kurulum dahil net teklifinizi verelim.</p>'
       '<div class="cta-actions"><a href="https://wa.me/%s" target="_blank" rel="noopener" class="wa">%s Ölçüye özel teklif alın</a>'
-      '<a href="tel:+%s" class="tel"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>Telefon</a></div></div></div></section>')%(e(txt),WA,WA_SVG.format(w=20,f="#1FA855"),WA)
+      '<a href="tel:0%s" class="tel"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>Telefon</a></div></div></div></section>')%(e(txt),WA,WA_SVG.format(w=20,f="#1FA855"),WA[2:])
 
 # ---- DETAIL PAGE ----
 def detail_page(slug,idx):
     en,boy,m2,tavuk,p3,p4=SIZES[idx]
     tavuk_f=format(tavuk,',d').replace(",",".")
+    num_disp="2.000+" if num=="2000" else format(int(num),",d").replace(",",".")
     num=slug.split("-")[0]
     cap="%s tavuk"%(("2.000+" if num=="2000" else format(int(num),',d').replace(",","."))) if num.isdigit() else "%d tavuk"%tavuk
     title="%s Tavukluk Tavuk Çadırı (%dx%d = %d m²) Fiyatları | tavukcadiri.com"%(num if num!="2000" else "2000+",int(en),int(boy),m2)
     desc="%s tavukluk (%dx%d, %d m²) yalıtımlı tavuk çadırı. 3 kat %s / 4 kat %s. 40x40 galvaniz makas, 650g TSE branda, 2 yıl garanti; nakliye+kurulum dahil."%(num,int(en),int(boy),m2,tl(p3),tl(p4))
-    h1="%s Tavukluk Tavuk Çadırı — %dx%d m (%d m²)"%(num if num!="2000" else "2.000+", int(en),int(boy),m2)
+    h1="%s Tavukluk Tavuk Çadırı"%num_disp
     badges=[("Ölçü","%dx%d m"%(int(en),int(boy))),("Alan","%d m²"%m2),("Kapasite","~%s tavuk"%format(tavuk,',d').replace(",",".")),
             ("3 Kat","%s"%tl(p3)),("4 Kat","%s"%tl(p4)),("Garanti","2 yıl"),("Teslim","10 gün / kurulu"),("Nakliye","81 il — dahil")]
     bd='<div class="badges">%s</div>'%("".join('<div class="badge"><div class="l">%s</div><div class="v">%s</div></div>'%(e(l),e(v)) for l,v in badges))
-    crumb='<a href="../index.html">Ana Sayfa</a> › <a href="../index.html#modeller">Tavuk Çadırı Modelleri</a> › <b>%s Tavukluk / %d m²</b>'%(num if num!="2000" else "2.000+",m2)
+    crumb='<a href="../index.html">Ana Sayfa</a> › <a href="../index.html#modeller">Tavuk Çadırı Modelleri</a> › <b>%s Tavukluk / %d m²</b>'%(num_disp,m2)
     hero=('<div class="wrap"><div class="crumb">%s</div></div><section class="hero"><div class="wrap"><div class="hero-grid">'
-      '<div><div class="ey">Tavuk Çadırı · %dx%d m</div><h1>%s</h1>'
-      '<p class="lead">%s tavuk kapasiteli, %d m² (%dx%d m) yalıtımlı kümes çadırı. 40x40/2 mm galvaniz makaslı iskelet, 650 g TSE damgalı branda, 180 g antibakteriyel astar ve alüminyum bizafol yalıtım. 3 veya 4 kat yalıtım seçeneğiyle; nakliye ve kurulum dahil, 10 günde kurulu teslim.</p>'
+      '<div><div class="ey">Anahtar Teslim Kümes Çadırı · %dx%d m · %d m²</div><h1>%s</h1>'
+      '<p class="lead">Yaklaşık %s tavuk için %d m² yalıtımlı, anahtar teslim kümes çadırı. Galvaniz makas iskelet, TSE damgalı branda ve 3-4 kat bizafol yalıtımla üretilir; nakliye ve kurulum dahil, 10 günde kurulu teslim.</p>'
       '%s<div class="actions"><a href="https://wa.me/%s" target="_blank" rel="noopener" class="btn-wa">%s Bu ürünü sorun</a><a href="#fiyat" class="btn-ghost">Fiyat &amp; detay</a></div></div>'
-      '<div><img class="hero-img" src="../assets/photos/model-%s.webp?v=2" alt="%s"><div class="pgal"><img src="../assets/photos/tech-1.webp?v=2" loading="lazy" alt="%s tavukluk tavuk çadırı — iç mekan"><img src="../assets/photos/tech-2.webp?v=2" loading="lazy" alt="%s tavukluk tavuk çadırı — yakın çekim"><img src="../assets/photos/tech-3.webp?v=2" loading="lazy" alt="%s tavukluk tavuk çadırı — iç görünüm"></div></div></div></div></section>')%(crumb,int(en),int(boy),e(h1),cap.split()[0],m2,int(en),int(boy),bd,WA,WA_SVG.format(w=20,f="#fff"),num,e(h1),num,num,num)
+      '<div><img class="hero-img" src="../assets/photos/model-%s.webp?v=2" alt="%s"><div class="pgal"><img src="../assets/photos/tech-1.webp?v=2" loading="lazy" alt="%s tavukluk tavuk çadırı — iç mekan"><img src="../assets/photos/tech-2.webp?v=2" loading="lazy" alt="%s tavukluk tavuk çadırı — yakın çekim"><img src="../assets/photos/tech-3.webp?v=2" loading="lazy" alt="%s tavukluk tavuk çadırı — iç görünüm"></div></div></div></div></section>')%(crumb,int(en),int(boy),m2,e(h1),tavuk_f,m2,bd,WA,WA_SVG.format(w=20,f="#fff"),num,e(h1),num,num,num)
     # kapasite açıklaması (per-size unique intro)
     who={"500":"Yeni başlayan ve yarı-ticari üreticiler için en uygun başlangıç ölçüsü.","750":"Küçük kümesini büyütmek isteyen üreticiler için dengeli orta ölçü.","1000":"Ticari yumurta/et üretimine geçenlerin en çok tercih ettiği ölçü.","2000":"Büyük ölçekli, ciddi ticari üretim için geniş kapasiteli model."}.get(num,"")
     body=(hero
-      +'<section class="sec" id="fiyat"><div class="wrap"><div class="sec-head"><div class="ey">Fiyat</div><h2>%s Tavukluk (%d m²) Fiyatları</h2></div>%s</div></section>'%(num if num!="2000" else "2.000+",m2,price_box(m2,p3,p4))
+      +'<section class="sec" id="fiyat"><div class="wrap"><div class="sec-head"><div class="ey">Fiyat</div><h2>%s Tavukluk (%d m²) Fiyatları</h2></div>%s</div></section>'%(num_disp,m2,price_box(m2,p3,p4))
       +'<section class="sec alt"><div class="wrap"><div class="prose">'
       +'<div class="block"><h2>Bu ölçü kime uygun?</h2><p>%s %d m²’lik kapalı alan, barınak içi standart yoğunlukla (m²’ye ~7 tavuk) yaklaşık %s tavuğu doğru şekilde barındırır. Serbest/gezen sistemde bu çadır, tavukların gecelediği ve yumurtladığı korunaklı barınak olarak kullanılır.</p></div>'%(who,m2,format(tavuk,',d').replace(",","."))
       +'<div class="block"><h2>3 kat mı, 4 kat yalıtım mı?</h2><p>Her iki seçenekte de alüminyum bizafol yalıtım kullanılır; fark katman sayısındadır. <strong>3 kat</strong> çoğu bölge için yeterli, dengeli bir çözümdür (%s). <strong>4 kat</strong>, sert kış/aşırı sıcak bölgelerde ekstra ısı yalıtımı sağlar (%s). Bölgenizin iklimine göre birlikte seçelim.</p></div>'%(tl(p3),tl(p4))
@@ -165,7 +166,7 @@ def detail_page(slug,idx):
       +'<section class="sec"><div class="wrap"><div class="sec-head"><div class="ey">Teknik Künye</div><h2>Teknik Özellikler</h2></div>%s</div></section>'%specs_table()
       +'<section class="sec alt"><div class="wrap"><div class="sec-head"><div class="ey">Öne çıkanlar</div><h2>Öne Çıkan Özellikler</h2></div>%s</div></section>'%features_grid()
       +'<section class="sec"><div class="wrap"><div class="sec-head"><div class="ey">Sıkça sorulanlar</div><h2>Merak Edilenler</h2></div>%s</div></section>'%faq_block([
-         ("%s tavukluk çadır kaç m²?"%num,"%d m² (%dx%d m). Barınak içi standart yoğunlukla ~%s tavuk kapasitelidir."%(m2,int(en),int(boy),format(tavuk,',d').replace(",","."))),
+         ("%s tavukluk çadır kaç m²?"%num_disp,"%d m² (%dx%d m). Barınak içi standart yoğunlukla ~%s tavuk kapasitelidir."%(m2,int(en),int(boy),format(tavuk,',d').replace(",","."))),
          ("Fiyata neler dahil?","3 kat yalıtımlı %s, 4 kat yalıtımlı %s. Her iki fiyata da nakliye ve kurulum dahildir; zemin, su ve elektrik altyapısı hariçtir."%(tl(p3),tl(p4))),
          ("3 kat ve 4 kat farkı nedir?","4 kat yalıtım, ekstra bir katmanla soğuk/sıcak yalıtımını güçlendirir; sert iklim bölgeleri için önerilir. 3 kat çoğu bölge için yeterlidir."),
          ("Çadır ne kadar dayanıklı, garanti var mı?","40x40/2 mm galvaniz makas iskelet ve 650 g TSE brandayla standart çadırlardan 3 kat dayanıklıdır; kar/rüzgâr/yağmurda çökme yapmaz. 2 yıl üretim garantilidir."),
@@ -177,14 +178,14 @@ def detail_page(slug,idx):
          + '<a href="../fiyatlar/">Tüm ölçüler &amp; fiyat tablosu <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C25E10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>')
       +cta_band())
     # JSON-LD with Offer price (3 kat as low price)
-    faqld=[{"@type":"Question","name":"%s tavukluk çadır kaç m²?"%num,"acceptedAnswer":{"@type":"Answer","text":"%d m² (%dx%d m), ~%s tavuk kapasiteli."%(m2,int(en),int(boy),tavuk_f)}},
-           {"@type":"Question","name":"%s tavukluk tavuk çadırı fiyatı ne kadar?"%num,"acceptedAnswer":{"@type":"Answer","text":"3 kat yalıtımlı %s, 4 kat yalıtımlı %s; nakliye ve kurulum dahil."%(tl(p3),tl(p4))}}]
+    faqld=[{"@type":"Question","name":"%s tavukluk çadır kaç m²?"%num_disp,"acceptedAnswer":{"@type":"Answer","text":"%d m² (%dx%d m), ~%s tavuk kapasiteli."%(m2,int(en),int(boy),tavuk_f)}},
+           {"@type":"Question","name":"%s tavukluk tavuk çadırı fiyatı ne kadar?"%num_disp,"acceptedAnswer":{"@type":"Answer","text":"3 kat yalıtımlı %s, 4 kat yalıtımlı %s; nakliye ve kurulum dahil."%(tl(p3),tl(p4))}}]
     graph={"@context":"https://schema.org","@graph":[
      {"@type":"Product","name":h1,"description":desc,"image":"%s/assets/photos/model-%s.jpg"%(SITE,num),"category":"Tavuk Çadırı / Kümes Çadırı","brand":{"@type":"Brand","name":"Tavuk Çadırı"},
       "offers":{"@type":"AggregateOffer","priceCurrency":"TRY","lowPrice":p3,"highPrice":p4,"offerCount":2,"availability":"https://schema.org/InStock","url":"%s/%s/"%(SITE,slug)},
       "additionalProperty":[{"@type":"PropertyValue","name":"Ölçü","value":"%dx%d m"%(int(en),int(boy))},{"@type":"PropertyValue","name":"Alan","value":"%d m²"%m2},{"@type":"PropertyValue","name":"Kapasite","value":"~%s tavuk"%tavuk_f},{"@type":"PropertyValue","name":"İskelet","value":"40x40/2mm galvaniz makas"},{"@type":"PropertyValue","name":"Branda","value":"650 g TSE"},{"@type":"PropertyValue","name":"Garanti","value":"2 yıl"}]},
      {"@type":"FAQPage","mainEntity":faqld},
-     {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Ana Sayfa","item":SITE+"/"},{"@type":"ListItem","position":2,"name":"Tavuk Çadırı Modelleri","item":SITE+"/#modeller"},{"@type":"ListItem","position":3,"name":"%s Tavukluk / %d m²"%(num,m2),"item":"%s/%s/"%(SITE,slug)}]}
+     {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Ana Sayfa","item":SITE+"/"},{"@type":"ListItem","position":2,"name":"Tavuk Çadırı Modelleri","item":SITE+"/#modeller"},{"@type":"ListItem","position":3,"name":"%s Tavukluk / %d m²"%(num_disp,m2),"item":"%s/%s/"%(SITE,slug)}]}
     ]}
     return doc(title,desc,slug,body,json.dumps(graph,ensure_ascii=False,separators=(",",":")),img_num=num)
 
