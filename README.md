@@ -9,7 +9,7 @@ Anahtar teslim tavuk çadırı tanıtım sitesi (statik HTML). Üretim & kurulum
 Mekanizma (Alastyr, GitHub IP'lerinden FTP'yi engellediği için sunucu-çeker düzen):
 - Sunucuda repo klonu: `~/site`
 - Cron (hosting hesabı, */5): repo yoksa klonlar, sonra `deploy.sh` çalıştırır
-- `deploy.sh`: `git fetch` → yeni commit varsa `ff-merge` + dosyaları `public_html`'e kopyalar
+- `deploy.sh`: `git fetch` → yeni commit varsa `ff-merge` + repo kökünü `public_html`'e kopyalar (hariç-tut listesi: _kaynak, README, deploy.sh, orijinal logo — yeni klasörler otomatik dahil)
 - Yayın kaydı: sunucuda `~/deploy.log`, son commit: `~/.last_deploy_commit`
 
 Yani güncelleme akışı: değişiklik yap → commit → push → en geç 5 dk içinde canlıda.
