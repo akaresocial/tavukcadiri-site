@@ -1,0 +1,12 @@
+# macOS / junk
+.DS_Store
+._*
+*.log
+
+# Claude çalışma dosyaları
+.claude/
+
+# Orijinal fotoğraf klasörleri (kaynak; siteye dahil değil)
+Hero Fotoğraflar/
+Ürün Fotoğrafları/
+Birlikte bölüm foto/
