@@ -31,9 +31,6 @@
   ::selection{background:#F6DFC2;color:#221A12}
 a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #C25E10;outline-offset:3px;border-radius:6px}
 .skip{position:absolute;left:-9999px;top:0;background:#243A1E;color:#fff;padding:11px 18px;border-radius:0 0 12px 0;z-index:200;font-weight:600}.skip:focus{left:0}
-#cookie{position:fixed;left:14px;right:14px;bottom:14px;z-index:120;background:#243A1E;color:#EAF0E8;border-radius:16px;padding:16px 18px;display:none;gap:14px;align-items:center;flex-wrap:wrap;box-shadow:0 20px 50px -20px rgba(0,0,0,.5)}
-#cookie p{margin:0;font-size:14px;line-height:1.5;flex:1 1 280px}#cookie a{color:#F3B775;text-decoration:underline}
-#cookie button{background:#1FA855;color:#fff;border:0;border-radius:10px;padding:11px 20px;font-weight:600;font-size:14.5px;cursor:pointer}
 .ctahero{position:relative;overflow:hidden;background:#FFFDF9;padding:clamp(44px,7vw,92px) 0;margin-top:clamp(10px,2vw,22px)}
 .ctahero-grid{position:absolute;inset:0;background-image:linear-gradient(#EEE3D0 1px,transparent 1px),linear-gradient(90deg,#EEE3D0 1px,transparent 1px);background-size:48px 48px;pointer-events:none}
 .ctahero-fade{position:absolute;inset:0;background:linear-gradient(to bottom,#FFFDF9,rgba(255,253,249,.5) 42%,#FFFDF9);pointer-events:none}
@@ -608,7 +605,5 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #C2
 })();
 </script>
 
-<div id="cookie"><p>Bu sitede, deneyiminizi iyileştirmek ve temel işlevler için çerezler kullanıyoruz. Detaylar: <a href="gizlilik/">Gizlilik &amp; Çerez Politikası</a>.</p><button onclick="cookieOk()">Tamam</button></div>
-<script>(function(){try{if(!localStorage.getItem("ck")){var c=document.getElementById("cookie");if(c)c.style.display="flex";}}catch(e){}})();function cookieOk(){try{localStorage.setItem("ck","1");}catch(e){}var c=document.getElementById("cookie");if(c)c.style.display="none";}</script>
 </body>
 </html>
