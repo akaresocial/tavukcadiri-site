@@ -21,11 +21,13 @@ Mekanizma:
 
 ### Webhook kurulumu (bir kez)
 
-1. Hosting dosya yöneticisinde, `public_html`'in bir üstündeki klasöre (home dizini)
-   `.deploy_hook_secret` adında dosya oluştur; içine uzun rastgele bir metin yaz.
+1. Secret repoda tutulmaz: hook'a gelen İLK istekte sunucu rastgele bir secret üretir,
+   `~/.deploy_hook_secret`'a yazar ve değeri yalnızca o yanıtta bir kez gösterir.
+   Rotasyon: sunucudaki dosya silinir → sonraki ilk istek yeni değeri üretip bir kez
+   gösterir → GitHub'daki Secret aynı değerle güncellenir.
 2. GitHub → repo → Settings → Webhooks → Add webhook:
    Payload URL `https://tavukcadiri.com/deploy-hook.php` · Content type `application/json`
-   · Secret: 1. adımdaki metin · Events: *Just the push event*.
+   · Secret: ilk yanıtta gösterilen değer · Events: *Just the push event*.
 3. Kayıttan sonra GitHub "ping" atar → Webhooks → Recent Deliveries'te **200 (pong)** görünmeli.
    Sorun olursa sunucudaki `~/deploy-hook.log`'a bak (`shell_exec` kapalıysa hook 501 döner;
    o durumda hosting panelinden PHP fonksiyon kısıtı açılmalı, cron yedek olarak çalışır).
