@@ -8,8 +8,10 @@ Anahtar teslim tavuk çadırı tanıtım sitesi (statik HTML). Üretim & kurulum
 FTP'yi engellediği için her iki düzen de sunucu-çeker mantığında çalışır):
 
 1. **Webhook (anlık, birincil):** `main`'e push → GitHub, `https://tavukcadiri.com/deploy-hook.php`
-   adresini çağırır (HMAC-SHA256 imzalı) → hook `~/site/deploy.sh`'ı hemen çalıştırır.
-   Push'tan ~1 dk sonra canlıda.
+   adresini çağırır (HMAC-SHA256 imzalı) → hook deploy'u **saf PHP ile kendisi yapar**:
+   push'taki commit'in zip'ini GitHub'dan indirir, açar, `public_html`'e kopyalar
+   (repo public olduğu için token gerekmez; Alastyr'da `shell_exec` kapalı olduğundan
+   deploy.sh çağrılmaz). Push'tan saniyeler sonra canlıda.
 2. **Cron (yedek):** Hosting cron'u periyodik `deploy.sh` çalıştırır (panelde 15 dk
    görünüyor; 5 dk'ya çekilebilir). Webhook bir sebeple çalışmazsa değişiklik en geç
    bir sonraki cron döngüsünde yayınlanır.
@@ -29,8 +31,9 @@ Mekanizma:
    Payload URL `https://tavukcadiri.com/deploy-hook.php` · Content type `application/json`
    · Secret: ilk yanıtta gösterilen değer · Events: *Just the push event*.
 3. Kayıttan sonra GitHub "ping" atar → Webhooks → Recent Deliveries'te **200 (pong)** görünmeli.
-   Sorun olursa sunucudaki `~/deploy-hook.log`'a bak (`shell_exec` kapalıysa hook 501 döner;
-   o durumda hosting panelinden PHP fonksiyon kısıtı açılmalı, cron yedek olarak çalışır).
+   Push teslimatlarının yanıtında `yayinlandi: commit … · N dosya · X sn` özeti görünür.
+   Sorun olursa sunucudaki `~/deploy-hook.log`'a bak; hook hata verirse bile cron yedeği
+   değişikliği en geç bir sonraki döngüde yayınlar.
 
 Yani güncelleme akışı: değişiklik yap → commit → push → ~1 dk içinde canlıda
 (webhook kurulana kadar: en geç bir cron döngüsü).
