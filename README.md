@@ -4,16 +4,15 @@ Anahtar teslim tavuk çadırı tanıtım sitesi (statik HTML). Üretim & kurulum
 
 ## Otomatik yayın (auto-deploy)
 
-`main` dalına yapılan her push, GitHub Actions ile Alastyr hosting'e (FTP) otomatik senkronize edilir.
-Workflow: `.github/workflows/deploy.yml`
+`main` dalına push → Alastyr sunucusundaki cron (her 5 dk) değişikliği çekip yayınlar.
 
-Gerekli GitHub Secrets (repo → Settings → Secrets and variables → Actions):
-- `FTP_SERVER` — ör. `ftp.tavukcadiri.com` veya sunucu adresi
-- `FTP_USERNAME` — cPanel/FTP kullanıcı adı
-- `FTP_PASSWORD` — FTP şifresi
+Mekanizma (Alastyr, GitHub IP'lerinden FTP'yi engellediği için sunucu-çeker düzen):
+- Sunucuda repo klonu: `/home/tavukcadi/site`
+- Cron (tavukcadi hesabı, */5): repo yoksa klonlar, sonra `deploy.sh` çalıştırır
+- `deploy.sh`: `git fetch` → yeni commit varsa `ff-merge` + dosyaları `public_html`'e kopyalar
+- Yayın kaydı: sunucuda `~/deploy.log`, son commit: `~/.last_deploy_commit`
 
-İlk çalıştırmada tüm dosyalar yüklenir; sonraki push'larda yalnızca değişenler gider
-(sunucuda `.ftp-deploy-sync-state.json` durum dosyası tutulur).
+Yani güncelleme akışı: değişiklik yap → commit → push → en geç 5 dk içinde canlıda.
 
 ## Yapı
 
