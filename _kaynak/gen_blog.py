@@ -29,7 +29,9 @@ details>summary{list-style:none;cursor:pointer}details>summary::-webkit-details-
 .bmeta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
 .bmeta span{background:#fff;border:1px solid #ECE3D6;border-radius:999px;padding:6px 13px;font-size:13px;font-weight:600;color:#6E6256}
 .bgrid{display:grid;grid-template-columns:1fr;gap:18px}
-.bcard{background:#fff;border:1px solid #EFE7DA;border-radius:20px;padding:26px;display:flex;flex-direction:column;transition:.16s}
+.bcard{background:#fff;border:1px solid #EFE7DA;border-radius:20px;padding:0;overflow:hidden;display:flex;flex-direction:column;transition:.16s}
+.bcard .bimg{width:100%;height:180px;object-fit:cover;display:block;border-bottom:1px solid #F1E9DC}
+.bcard .bbody{padding:22px 24px 24px;display:flex;flex-direction:column;flex:1}
 .bcard:hover{border-color:#E5751B;box-shadow:0 20px 40px -30px rgba(34,26,18,.4)}
 .bcard .bk{font-weight:600;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#C25E10;margin-bottom:10px}
 .bcard h2{font-family:'Poppins';font-weight:700;font-size:20px;line-height:1.25;color:#221A12;margin:0 0 10px}
@@ -41,6 +43,20 @@ details>summary{list-style:none;cursor:pointer}details>summary::-webkit-details-
 """
 
 ARROW='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E5751B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>'
+
+# Higgsfield ile üretilen yazı görselleri: assets/photos/blog/<slug>.webp (sayfa içi) + .jpg (og/schema)
+IMG_ALT={
+ "kumes-maliyeti-betonarme-mi-cadir-mi":"Betonarme kümes ile çadır kümesin yan yana karşılaştırması",
+ "500-tavukla-yumurta-isine-baslamak":"Kümeste taze yumurta kasası taşıyan üretici ve yumurtacı tavuklar",
+ "kumes-icin-ruhsat-gerekir-mi":"Tarla kenarında ruhsat evraklarını inceleyen üretici, arkada çadır kümes",
+ "tavukculukta-devlet-destegi-ve-hibeler":"Hibe başvuru evraklarını inceleyen tavuk üreticisi",
+ "kisin-kumes-nasil-sicak-tutulur":"Karla kaplı çadır kümes ve içeriden gelen sıcak ışık",
+ "gezen-tavuk-sistemi-kurmak":"Yeşil merada gezen tavuklar ve mobil çadır kümes",
+ "kumes-zemini-ne-olmali":"Talaş ve saman altlıklı kümes zemininde eşelenen tavuklar",
+ "tavuk-basina-kac-m2-gerekir":"Ferah çadır kümes içinde rahatça dağılmış yumurtacı tavuklar",
+ "yumurta-verimini-dusuren-hatalar":"Folluklarda taze yumurtalar ve yuvada oturan tavuk",
+ "cadir-kumes-ne-kadar-dayanikli":"Fırtınalı havada sağlam duran çadır kümes",
+}
 CHEV='<svg class="faq-chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C25E10" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M6 9l6 6 6-6"></path></svg>'
 
 ALLOWED=re.compile(r'</?(p|ul|ol|li|strong|em|a|h3|table|thead|tbody|tr|th|td)(\s[^>]*)?>', re.I)
@@ -74,6 +90,10 @@ def article_page(rec, by_slug):
     hero=('<div class="wrap"><div class="crumb">%s</div></div>'
       '<section class="phead"><div class="wrap"><div class="ey">Blog</div><h1>%s</h1><p>%s</p>'
       '<div class="bmeta"><span>%s</span><span>%s dk okuma</span><span>Tavuk Çadırı Ekibi</span></div></div></section>')%(crumb,e(a["title"]),e(a["meta_desc"]),date_disp,mins)
+    hero+=('<section style="padding:clamp(18px,3vw,30px) 0 0"><div class="wrap">'
+      '<img src="../../assets/photos/blog/%s.webp" alt="%s" width="1200" height="675" fetchpriority="high" '
+      'style="width:100%%;aspect-ratio:16/9;max-height:440px;border-radius:20px;'
+      'box-shadow:0 22px 42px -26px rgba(34,26,18,.5);object-fit:cover;display:block"></div></section>')%(slug,e(IMG_ALT.get(slug,a["title"])))
     body_secs='<section class="sec"><div class="wrap"><div class="prose">'+sanitize(a["intro_html"])
     for s in a["sections"]:
         body_secs+='<h2>%s</h2>'%e(s["h2"])+sanitize(s["html"])
@@ -87,10 +107,11 @@ def article_page(rec, by_slug):
     body=hero+body_secs+faq+related+cta_block()
     out=doc(a["meta_title"]+" | Tavuk Çadırı Blog", a["meta_desc"], "blog/"+slug, body, pre="../../")
     out=out.replace('og:type" content="website"','og:type" content="article"',1)
+    out=out.replace(SITE+"/assets/photos/model-1000.jpg", "%s/assets/photos/blog/%s.jpg"%(SITE,slug))  # og:image + twitter:image
     graph={"@context":"https://schema.org","@graph":[
       {"@type":"BlogPosting","headline":a["title"],"description":a["meta_desc"],"inLanguage":"tr-TR",
        "datePublished":date_iso,"dateModified":date_iso,
-       "image":SITE+"/assets/photos/model-1000.jpg",
+       "image":"%s/assets/photos/blog/%s.jpg"%(SITE,slug),
        "author":{"@type":"Organization","name":"Tavuk Çadırı","url":SITE+"/"},
        "publisher":{"@type":"Organization","name":"Tavuk Çadırı","logo":{"@type":"ImageObject","url":SITE+"/assets/logo.png"}},
        "mainEntityOfPage":"%s/blog/%s/"%(SITE,slug)},
@@ -110,8 +131,9 @@ def index_page(arts):
     cards=""
     for rec in arts:
         a=rec["article"]; w=words(a); mins=max(3,round(w/200))
-        cards+=('<a class="bcard" href="%s/"><span class="bk">Rehber</span><h2>%s</h2><p>%s</p>'
-          '<span class="bm">%s · %s dk okuma</span><span class="go">Yazıyı oku %s</span></a>')%(rec["slug"],e(a["title"]),e(a["meta_desc"]),rec.get("date_disp","3 Temmuz 2026"),mins,ARROW)
+        cards+=('<a class="bcard" href="%s/"><img class="bimg" src="../assets/photos/blog/%s.webp" alt="%s" width="1200" height="675" loading="lazy">'
+          '<div class="bbody"><span class="bk">Rehber</span><h2>%s</h2><p>%s</p>'
+          '<span class="bm">%s · %s dk okuma</span><span class="go">Yazıyı oku %s</span></div></a>')%(rec["slug"],rec["slug"],e(IMG_ALT.get(rec["slug"],a["title"])),e(a["title"]),e(a["meta_desc"]),rec.get("date_disp","3 Temmuz 2026"),mins,ARROW)
     body=hero+'<section class="sec"><div class="wrap"><div class="bgrid">%s</div></div></section>'%cards+cta_block()
     out=doc("Blog — Tavukçuluk ve Kümes Rehberi","Tavukçuluğa başlayacaklar için maliyet, ruhsat, devlet desteği, kış bakımı ve verim rehberleri. Sahadan, abartısız ve güncel bilgiler.","blog",body,pre="../")
     graph={"@context":"https://schema.org","@graph":[
