@@ -1,8 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/tavukcadi/public_html/
-    - /bin/cp -f index.html 404.html robots.txt sitemap.xml .htaccess $DEPLOYPATH
-    - /bin/cp -Rf assets $DEPLOYPATH
-    - /bin/cp -Rf 500-tavukluk-tavuk-cadiri 750-tavukluk-tavuk-cadiri 1000-tavukluk-tavuk-cadiri 2000-tavukluk-tavuk-cadiri $DEPLOYPATH
-    - /bin/cp -Rf fiyatlar hakkimizda iletisim kvkk gizlilik $DEPLOYPATH
