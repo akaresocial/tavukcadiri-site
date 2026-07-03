@@ -4,15 +4,34 @@ Anahtar teslim tavuk çadırı tanıtım sitesi (statik HTML). Üretim & kurulum
 
 ## Otomatik yayın (auto-deploy)
 
-`main` dalına push → Alastyr sunucusundaki cron (her 5 dk) değişikliği çekip yayınlar.
+İki katman var; ikisi de aynı `deploy.sh`'ı kullanır (Alastyr, GitHub IP'lerinden
+FTP'yi engellediği için her iki düzen de sunucu-çeker mantığında çalışır):
 
-Mekanizma (Alastyr, GitHub IP'lerinden FTP'yi engellediği için sunucu-çeker düzen):
+1. **Webhook (anlık, birincil):** `main`'e push → GitHub, `https://tavukcadiri.com/deploy-hook.php`
+   adresini çağırır (HMAC-SHA256 imzalı) → hook `~/site/deploy.sh`'ı hemen çalıştırır.
+   Push'tan ~1 dk sonra canlıda.
+2. **Cron (yedek):** Hosting cron'u periyodik `deploy.sh` çalıştırır (panelde 15 dk
+   görünüyor; 5 dk'ya çekilebilir). Webhook bir sebeple çalışmazsa değişiklik en geç
+   bir sonraki cron döngüsünde yayınlanır.
+
+Mekanizma:
 - Sunucuda repo klonu: `~/site`
-- Cron (hosting hesabı, */5): repo yoksa klonlar, sonra `deploy.sh` çalıştırır
 - `deploy.sh`: `git fetch` → yeni commit varsa `ff-merge` + repo kökünü `public_html`'e kopyalar (hariç-tut listesi: _kaynak, README, deploy.sh, orijinal logo — yeni klasörler otomatik dahil)
-- Yayın kaydı: sunucuda `~/deploy.log`, son commit: `~/.last_deploy_commit`
+- Yayın kaydı: sunucuda `~/deploy.log`; webhook kaydı: `~/deploy-hook.log`; son commit: `~/.last_deploy_commit`
 
-Yani güncelleme akışı: değişiklik yap → commit → push → en geç 5 dk içinde canlıda.
+### Webhook kurulumu (bir kez)
+
+1. Hosting dosya yöneticisinde, `public_html`'in bir üstündeki klasöre (home dizini)
+   `.deploy_hook_secret` adında dosya oluştur; içine uzun rastgele bir metin yaz.
+2. GitHub → repo → Settings → Webhooks → Add webhook:
+   Payload URL `https://tavukcadiri.com/deploy-hook.php` · Content type `application/json`
+   · Secret: 1. adımdaki metin · Events: *Just the push event*.
+3. Kayıttan sonra GitHub "ping" atar → Webhooks → Recent Deliveries'te **200 (pong)** görünmeli.
+   Sorun olursa sunucudaki `~/deploy-hook.log`'a bak (`shell_exec` kapalıysa hook 501 döner;
+   o durumda hosting panelinden PHP fonksiyon kısıtı açılmalı, cron yedek olarak çalışır).
+
+Yani güncelleme akışı: değişiklik yap → commit → push → ~1 dk içinde canlıda
+(webhook kurulana kadar: en geç bir cron döngüsü).
 
 ## Yapı
 
