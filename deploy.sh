@@ -20,6 +20,7 @@ cp -f index.html 404.html robots.txt sitemap.xml .htaccess "$PUB/" || exit 1
 cp -Rf assets "$PUB/"
 cp -Rf 500-tavukluk-tavuk-cadiri 750-tavukluk-tavuk-cadiri 1000-tavukluk-tavuk-cadiri 2000-tavukluk-tavuk-cadiri "$PUB/"
 cp -Rf fiyatlar hakkimizda iletisim kvkk gizlilik "$PUB/"
+cp -Rf blog "$PUB/"
 
 echo "$REMOTE" > "$MARKER"
 echo "$(date '+%Y-%m-%d %H:%M:%S') yayinlandi: $REMOTE" >> "$HOME/deploy.log"
