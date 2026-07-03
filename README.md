@@ -7,8 +7,8 @@ Anahtar teslim tavuk çadırı tanıtım sitesi (statik HTML). Üretim & kurulum
 `main` dalına push → Alastyr sunucusundaki cron (her 5 dk) değişikliği çekip yayınlar.
 
 Mekanizma (Alastyr, GitHub IP'lerinden FTP'yi engellediği için sunucu-çeker düzen):
-- Sunucuda repo klonu: `/home/tavukcadi/site`
-- Cron (tavukcadi hesabı, */5): repo yoksa klonlar, sonra `deploy.sh` çalıştırır
+- Sunucuda repo klonu: `~/site`
+- Cron (hosting hesabı, */5): repo yoksa klonlar, sonra `deploy.sh` çalıştırır
 - `deploy.sh`: `git fetch` → yeni commit varsa `ff-merge` + dosyaları `public_html`'e kopyalar
 - Yayın kaydı: sunucuda `~/deploy.log`, son commit: `~/.last_deploy_commit`
 
