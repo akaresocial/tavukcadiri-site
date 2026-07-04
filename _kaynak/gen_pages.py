@@ -90,7 +90,7 @@ def footer(pre):
       '<div><h5>Ürünler</h5><ul>%s</ul></div>'
       '<div><h5>Kurumsal</h5><ul><li><a href="%shakkimizda/">Hakkımızda</a></li><li><a href="%siletisim/">İletişim</a></li><li><a href="%sindex.html#sss">S.S.S.</a></li><li><a href="%sblog/">Blog</a></li></ul></div>'
       '<div><h5>Yasal</h5><ul><li><a href="%skvkk/">KVKK Aydınlatma Metni</a></li><li><a href="%sgizlilik/">Gizlilik &amp; Çerez Politikası</a></li></ul></div>'
-      '</div><div class="foot-bottom"><span>© 2026 Tavuk Çadırı. Tüm hakları saklıdır.</span><span>Üretim &amp; kurulum: DEHA Çadır · 81 il</span></div></div></footer>')%(pre,WA,WA_SVG.format(w=17,f="#fff"),m,pre,pre,pre,pre,pre,pre)
+      '</div><div class="foot-bottom"><span>© 2026 Tavuk Çadırı. Tüm hakları saklıdır.</span><span>Üretim &amp; kurulum: DEHA Çadır · 81 il</span><span>Web tasarım: <a href="https://akaremedya.com" target="_blank" rel="noopener" style="font-weight:600">Akare Medya</a></span></div></div></footer>')%(pre,WA,WA_SVG.format(w=17,f="#fff"),m,pre,pre,pre,pre,pre,pre)
 
 COOKIE=''
 
