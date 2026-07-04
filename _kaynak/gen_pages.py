@@ -113,7 +113,7 @@ GA_TAG = ('<!-- Google tag (gtag.js) -->'
 def doc(title,desc,slug,body_main,pre="../",noindex=False,extra_js=""):
     robots='<meta name="robots" content="noindex,follow">' if noindex else '<meta name="robots" content="index,follow">'
     canon='' if noindex else '<link rel="canonical" href="%s/%s/">'%(SITE,slug)
-    og='' if noindex else '<meta property="og:url" content="%s/%s/"><meta property="og:image" content="%s/assets/photos/model-1000.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="%s/assets/photos/model-1000.jpg">'%(SITE,slug,SITE,SITE)
+    og='' if noindex else '<meta property="og:url" content="%s/%s/"><meta property="og:image" content="%s/assets/photos/og/og-home.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="%s/assets/photos/og/og-home.jpg">'%(SITE,slug,SITE,SITE)
     return ('<!DOCTYPE html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">'
       '<title>%s</title><meta name="description" content="%s">%s%s'
       '<meta property="og:type" content="website"><meta property="og:site_name" content="Tavuk Çadırı"><meta property="og:title" content="%s"><meta property="og:description" content="%s"><meta property="og:locale" content="tr_TR">%s'
