@@ -1,0 +1,1571 @@
+{
+ "_tkdk_ozet": "Kanatlı eti ve yumurta tavukçuluğu yatırımları IPARD III'te Tedbir 101 \"Tarımsal İşletmelerin Fiziki Varlıklarına Yönelik Yatırımlar\" kapsamında geri ödemesiz hibeyle destekleniyor (kanatlı eti 20.000-375.000 Avro, yumurta 20.000-500.000 Avro uygun harcama). Klasik TKDK listesi 42 il olmakla birlikte, IPARD III ile kanatlı eti sektöründe kapsam genişletildi: 39 yeni ilde (Adana, Antalya, İstanbul, İzmir, Bolu vb.) yeni işletmeler, 81 ilin tamamında ise mevcut aktif tesislerin modernizasyonu ve kapasite artırımı destek kapsamına alındı; yumurta sektöründe kapasite artırımı modifikasyonu ise henüz AB Komisyonu onay sürecinde.",
+ "_tkdk_kaynak": "https://www.tkdk.gov.tr/SSS/ipard-programinin-uygulanacagi-iller-hangileridir-7 (42 il listesi) ve https://www.tkdk.gov.tr/Content/File/BasvuruFiles/BrosurBilgiKartlari/SektorBilgiKitapcigi101.pdf (IPARD III 12. Çağrı, 101 tedbiri bilgi kitapçığı)",
+ "Adana": {
+  "plaka": 1,
+  "bolge": "Akdeniz",
+  "km_istanbul": 940,
+  "sure_saat": 12.5,
+  "iklim": "Sıcak Akdeniz iklimi: kış çok ılık, Çukurova'da kar görülmez. Yaz aşırı sıcak ve nemli — açık renk branda, gölgelik ve güçlü havalandırma şart.",
+  "kar_yuku": "düşük",
+  "yalitim": "3 kat",
+  "tavukculuk": "Çukurova Türkiye'nin en verimli tarım havzalarından; Adana dane mısır ve soyada ülkenin en büyük üreticileri arasındadır — yani tavuk yeminin ana hammaddesi kapı önündedir. Bu yem avantajı köy tavukçuluğunu ve küçük ölçekli yumurta üretimini besler; Ceyhan ve Kozan çevresinde tarımsal işletme yoğunluğu yüksektir.",
+  "ilceler": [
+   "Ceyhan",
+   "Kozan",
+   "İmamoğlu",
+   "Karataş",
+   "Karaisalı",
+   "Tufanbeyli"
+  ],
+  "ozel_not": "Mısır-soya üretim üssü olması yem maliyeti avantajı demek; 2023 depreminden etkilenen kırsal kesimde hızlı, temelsiz kurulum talebi var.",
+  "tkdk": false
+ },
+ "Adıyaman": {
+  "plaka": 2,
+  "bolge": "Güneydoğu Anadolu",
+  "km_istanbul": 1190,
+  "sure_saat": 16.5,
+  "iklim": "Merkez ve ovada kışlar ılıman geçer, kar azdır; Çelikhan ve Gerger gibi dağlık ilçelerde kış sert ve karlıdır. Yazlar sıcak ve kurak olduğundan havalandırma önemlidir.",
+  "kar_yuku": "düşük",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Adıyaman tütün (Çelikhan tütünü) ve Antep fıstığı üreticisi bir tarım ilidir; Kahta ve Besni hattında tahıl ve bağ-bahçe tarımı yaygındır. Kanatlıda büyük entegrasyon yoktur; köy tavukçuluğu ve doğal yumurta üretimi aile ölçeğindedir. 2023 depremlerinde ağır hasar alan kırsalda hayvancılık altyapısı yeniden kurulmaktadır.",
+  "ilceler": [
+   "Kahta",
+   "Besni",
+   "Gölbaşı",
+   "Çelikhan",
+   "Gerger",
+   "Samsat"
+  ],
+  "ozel_not": "2023 depremlerinin en ağır vurduğu illerden biri; temel gerektirmeyen, aynı gün kurulan çadır kümes, kümesi/ahırı hasar gören üreticiler için hızlı yeniden başlama çözümü olarak anlatılabilir.",
+  "tkdk": false
+ },
+ "Afyonkarahisar": {
+  "plaka": 3,
+  "bolge": "Ege",
+  "km_istanbul": 440,
+  "sure_saat": 5.5,
+  "kar_yuku": "orta",
+  "iklim": "Yaklaşık 1.000 metre rakımlı karasal iklimde kış sert geçer; -10°C altı geceler ve kar örtüsü olağandır. Yumurta veriminin kışın düşmemesi için tam yalıtım önemli.",
+  "yalitim": "4 kat",
+  "tavukculuk": "Türkiye yumurtacılığının başkenti: Başmakçı ilçesi, ülkenin yumurta fiyatlarının belirlendiği yumurta borsasına ev sahipliği yapıyor ve ilçede günde milyonlarca yumurta üretiliyor. 1976'dan beri faaliyet gösteren Başmakçı tavukçuluk kooperatifi binin üzerinde üyesiyle sektörün merkezinde. İl genelinde milyonlarca kanatlı kapasiteli profesyonel yumurta işletmelerinin yanında Dinar ve Sandıklı'da güçlü tarım-hayvancılık dokusu var.",
+  "ilceler": [
+   "Başmakçı",
+   "Dinar",
+   "Sandıklı",
+   "Bolvadin",
+   "Emirdağ",
+   "Şuhut"
+  ],
+  "ozel_not": "Başmakçı'daki Türkiye yumurta borsası ve kooperatif yapısı: profesyonel yumurtacıya 'hızlı kurulan ek kapasite kümesi' olarak konumlandırma yapılabilecek en güçlü il.",
+  "tkdk": true
+ },
+ "Ağrı": {
+  "plaka": 4,
+  "bolge": "Doğu Anadolu",
+  "km_istanbul": 1410,
+  "sure_saat": 20,
+  "iklim": "Türkiye'nin en sert kışlarından; -30°C altı sıcaklıklar görülür, kar örtüsü uzun sürer. Don ve kar yükü maksimum yalıtım ister.",
+  "kar_yuku": "yüksek",
+  "yalitim": "4 kat",
+  "tavukculuk": "Ağrı ekonomisi büyük ölçüde küçükbaş ve büyükbaş hayvancılığa dayanır; geniş meralar ve yayla kültürü ilin temelidir. Kanatlı üretimi köy tavukçuluğu ölçeğindedir; ticari entegrasyon yoktur.",
+  "ilceler": [
+   "Doğubayazıt",
+   "Patnos",
+   "Eleşkirt",
+   "Diyadin",
+   "Tutak"
+  ],
+  "ozel_not": "Türkiye'nin İran'a açılan en büyük kara sınır kapısı Gürbulak, Doğubayazıt'tadır — sınır ticareti ilçeye hareketlilik katar.",
+  "tkdk": true
+ },
+ "Amasya": {
+  "plaka": 5,
+  "bolge": "Karadeniz",
+  "km_istanbul": 680,
+  "sure_saat": 9,
+  "iklim": "Vadi tabanında ılıman bir geçiş iklimi, çevre plato ve ovalarda karasal karakter hakimdir; kışlar soğuk ve kar yağışlı geçer ama Doğu Anadolu sertliğinde değildir.",
+  "kar_yuku": "orta",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Amasya tarım ve hayvancılıkta köklü bir ildir; Suluova, Türkiye'nin ilk besi ihtisas organize sanayi bölgelerinden birine ev sahipliği yapan yerleşik bir hayvancılık merkezidir. Suluova ve Merzifon ovalarında tahıl, şeker pancarı ve yem bitkileri üretimi güçlüdür — kümes yemi erişimi kolaydır. Amasya elmasıyla ünlü ilin kırsalında köy tavukçuluğu aile işletmelerinde yaygındır.",
+  "ilceler": [
+   "Suluova",
+   "Merzifon",
+   "Taşova",
+   "Gümüşhacıköy",
+   "Göynücek"
+  ],
+  "ozel_not": "Suluova Besi OSB — hayvancılığa yatırım yapma kültürü ilde yerleşik; barınak yatırımına aşina müşteri profili.",
+  "tkdk": true
+ },
+ "Ankara": {
+  "plaka": 6,
+  "bolge": "İç Anadolu",
+  "km_istanbul": 450,
+  "sure_saat": 6,
+  "iklim": "Karasal iklim: kışlar soğuk ve ayazlı (geceleri -10°C görülebilir), yazlar sıcak ve kurak. Kar düzenli yağar ama aşırı birikme nadirdir; asıl mesele gece-gündüz ısı farkına karşı yalıtımdır.",
+  "yalitim": "3 veya 4 kat",
+  "kar_yuku": "orta",
+  "tavukculuk": "Türkiye'nin Tavukçuluk Araştırma Enstitüsü Ankara'dadır; Kahramankazan ve çevresinde yumurta tavukçuluğu ve yarka üretimi yapan işletmeler bulunur. Polatlı ve Haymana ovalarındaki güçlü tahıl üretimi yem hammaddesine yakınlık sağlar. Başkentin 5 milyonu aşan nüfusu, köy yumurtası ve gezen tavuk ürünleri için güçlü bir yakın pazar oluşturur.",
+  "ilceler": [
+   "Beypazarı",
+   "Polatlı",
+   "Haymana",
+   "Kahramankazan",
+   "Ayaş",
+   "Bala"
+  ],
+  "ozel_not": "Kahramankazan hattında yerleşik yumurta işletmeleri ve Tavukçuluk Araştırma Enstitüsü sayesinde kümes bilinci yüksek, hazır bir alıcı kitlesi var; başkent pazarına köy yumurtası satışı güçlü bir ek gelir anlatısı.",
+  "tkdk": true
+ },
+ "Antalya": {
+  "plaka": 7,
+  "bolge": "Akdeniz",
+  "km_istanbul": 715,
+  "sure_saat": 9,
+  "kar_yuku": "düşük",
+  "iklim": "Kıyıda kışlar Türkiye'nin en ılıkları, kar görülmez; asıl zorluk yaz sıcağı ve nem. Korkuteli ve Elmalı gibi 1.000 metre üzeri yayla ilçelerinde ise kış soğuk ve karlı geçer — buralarda 4 kat yalıtım önerilir.",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Türkiye örtüaltı (sera) üretiminin başkenti; Serik, Kumluca ve Gazipaşa sera yoğun ilçeler. Korkuteli ve Elmalı gibi yayla ilçelerinde ise tahıl, elma ve hayvancılık ağırlıklı serin iklim tarımı yapılıyor. Devasa turizm ekonomisi, otel-restoran kanalında doğal yumurta ve köy tavuğuna sürekli talep yaratıyor.",
+  "ilceler": [
+   "Korkuteli",
+   "Elmalı",
+   "Serik",
+   "Manavgat",
+   "Kumluca",
+   "Gazipaşa"
+  ],
+  "ozel_not": "Otel-restoran kanalı ve köy kahvaltısı turizmi doğal yumurtaya yüksek fiyat ödüyor; sera üreticisine düşük yatırımla üretim çeşitlendirme açısı işlenebilir.",
+  "tkdk": false
+ },
+ "Artvin": {
+  "plaka": 8,
+  "bolge": "Karadeniz",
+  "km_istanbul": 1280,
+  "sure_saat": 16,
+  "iklim": "Sahil şeridi (Hopa, Arhavi) ılıman ve çok yağışlı; iç kesim (Şavşat, Ardanuç, Yusufeli) karasaldır ve özellikle Şavşat çevresinde kar yükü yüksektir. İlçeye göre iklim tamamen değişir.",
+  "kar_yuku": "yüksek",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Artvin'in dağlık coğrafyasında küçük ölçekli hayvancılık ve arıcılık öne çıkar; Camili (Macahel) havzası Kafkas arı ırkıyla ünlüdür. Büyük kanatlı tesisi yoktur; köy tavukçuluğu hane ölçeğinde yaygındır. Hopa limanı ve Sarp sınır kapısı ticareti il ekonomisinde yer tutar.",
+  "ilceler": [
+   "Hopa",
+   "Arhavi",
+   "Borçka",
+   "Şavşat",
+   "Ardanuç",
+   "Yusufeli"
+  ],
+  "ozel_not": "Eğimli ve parçalı arazide betonarme kümes yapmak zor — temelsiz, hızlı kurulan çadır kümes bu coğrafyanın doğal çözümü.",
+  "tkdk": false
+ },
+ "Aydın": {
+  "plaka": 9,
+  "bolge": "Ege",
+  "km_istanbul": 560,
+  "sure_saat": 7,
+  "kar_yuku": "düşük",
+  "iklim": "Türkiye'nin en sıcak yaz ortalamalarına sahip illerinden; kış ılık ve yağışlı, kar yükü pratikte yok. Yazın Büyük Menderes ovasındaki bunaltıcı sıcak, gölgeleme ve havalandırmayı öncelikli kılıyor.",
+  "yalitim": "3 kat",
+  "tavukculuk": "Büyük Menderes havzasının verimli ovalarında incir, zeytin, kestane ve pamuk üretimiyle Türkiye'nin en köklü tarım illerinden. Söke, Çine ve Bozdoğan gibi ilçelerde hayvancılık ve aile tipi köy tavukçuluğu yaygın. Kuşadası-Didim hattındaki turizm pazarı köy yumurtası ve doğal ürünlere sürekli talep oluşturuyor.",
+  "ilceler": [
+   "Söke",
+   "Çine",
+   "Koçarlı",
+   "Bozdoğan",
+   "Nazilli",
+   "Germencik"
+  ],
+  "tkdk": true
+ },
+ "Balıkesir": {
+  "plaka": 10,
+  "bolge": "Marmara",
+  "km_istanbul": 285,
+  "sure_saat": 3.5,
+  "iklim": "Kuzeyde (Bandırma-Gönen hattı) Marmara'nın ılıman iklimi, güneyde Ege etkisi görülür; iç ve yüksek ilçelerde (Dursunbey, Bigadiç) kışlar daha soğuk ve karlı geçer. Bandırma çevresi rüzgarlı bir bölgedir.",
+  "kar_yuku": "orta",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Balıkesir, Türkiye kanatlı sektörünün kalbi sayılan illerden biridir: Bandırma ve çevresi (Gönen, Manyas, Susurluk) piliç eti ve yumurta üretiminde ülkenin en yoğun bölgelerindendir; büyük entegrasyonlardan Banvit'in merkezi Bandırma'dadır. Yem sanayii ve kanatlı tedarik zinciri ilde son derece gelişmiştir. Kanatlı yetiştiriciliği il ekonomisinin bilinen, köklü bir kolu olduğundan üretici bilinci çok yüksektir.",
+  "ilceler": [
+   "Bandırma",
+   "Gönen",
+   "Manyas",
+   "Susurluk",
+   "Bigadiç",
+   "İvrindi"
+  ],
+  "ozel_not": "Bandırma kanatlı-yem sanayi kümesi: Türkiye'nin en bilinçli kanatlı üretici kitlelerinden biri, ek kapasite ve dönem kümesi ihtiyacı için doğal pazar.",
+  "tkdk": true
+ },
+ "Bilecik": {
+  "plaka": 11,
+  "bolge": "Marmara",
+  "km_istanbul": 225,
+  "sure_saat": 3,
+  "iklim": "Marmara'dan İç Anadolu'ya geçiş ikliminde yer alır: kışlar soğuk ve kar yağışlıdır, don sık görülür; yüksek platolarda kar yükü hesaba katılmalıdır.",
+  "kar_yuku": "orta",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Bilecik küçük ama tarımsal karakteri güçlü bir geçiş ilidir: Pazaryeri ilçesi Türkiye şerbetçiotu üretiminin merkezi olarak bilinir, Osmaneli ve Gölpazarı ovalarında sebze-meyve ve tahıl üretimi yapılır. Kanatlıda ile özgü büyük bir entegrasyon iddiası yoktur; köy tavukçuluğu ve küçük aile işletmeleri kırsal ilçelerde yaygındır.",
+  "ilceler": [
+   "Osmaneli",
+   "Gölpazarı",
+   "Söğüt",
+   "Pazaryeri",
+   "Bozüyük"
+  ],
+  "ozel_not": "",
+  "tkdk": false
+ },
+ "Bingöl": {
+  "plaka": 12,
+  "bolge": "Doğu Anadolu",
+  "km_istanbul": 1340,
+  "sure_saat": 19,
+  "iklim": "Karlı ve sert bir karasal kış; dağlık kesimlerde kar kalınlığı yüksektir. Yaz ılık-sıcak geçer.",
+  "kar_yuku": "yüksek",
+  "yalitim": "4 kat",
+  "tavukculuk": "Bingöl, Türkiye'nin en önemli arıcılık merkezlerinden biridir; Bingöl balı coğrafi işaret tescillidir. Yayla kültürü ve hayvancılık il ekonomisinin temelidir; kanatlı üretimi aile kümesi ölçeğinde kalır.",
+  "ilceler": [
+   "Genç",
+   "Solhan",
+   "Karlıova",
+   "Adaklı",
+   "Kiğı"
+  ],
+  "ozel_not": "Arıcılıkta olduğu gibi küçük ölçekli doğal üretim kültürü güçlü; 2020 Karlıova depremi sonrası hafif ve hızlı kurulan yapılara aşinalık.",
+  "tkdk": false
+ },
+ "Bitlis": {
+  "plaka": 13,
+  "bolge": "Doğu Anadolu",
+  "km_istanbul": 1530,
+  "sure_saat": 22,
+  "iklim": "Türkiye'nin kar rekortmeni illerinden; kent merkezinde metrelerce kar birikebilir. Kar yükü dayanımı ve dik çatı formu burada hayati önemdedir.",
+  "kar_yuku": "yüksek",
+  "yalitim": "4 kat",
+  "tavukculuk": "Bitlis'te arıcılık, cevizcilik (Adilcevaz cevizi) ve küçükbaş hayvancılık öne çıkar; Van Gölü kıyısındaki Ahlat-Adilcevaz-Tatvan hattı ilin tarımsal olarak en hareketli kesimidir. Kanatlı üretimi aile işletmeleri düzeyindedir.",
+  "ilceler": [
+   "Ahlat",
+   "Adilcevaz",
+   "Tatvan",
+   "Güroymak",
+   "Hizan"
+  ],
+  "ozel_not": "Türkiye'nin en çok kar alan şehirlerinden biri — kar yüküne dayanıklılık mesajının en güçlü satış açısı olduğu il.",
+  "tkdk": false
+ },
+ "Bolu": {
+  "plaka": 14,
+  "bolge": "Karadeniz",
+  "km_istanbul": 265,
+  "sure_saat": 3.5,
+  "iklim": "Dağlık geçiş iklimi: kışlar karlı ve soğuk geçer (Bolu Dağı yoğun kar tutar), yazlar serindir. Kar yükü hesabı bu ilde kritiktir.",
+  "yalitim": "3 veya 4 kat",
+  "kar_yuku": "yüksek",
+  "tavukculuk": "Türkiye etlik piliç sektörünün tarihi merkezi ve bugün de lokomotif illerinden biridir; Erpiliç ve Beypiliç gibi büyük entegrasyonlar Bolu merkezlidir. Türkiye'nin ilk entegre tavukçuluk kuruluşu Mudurnu Tavukçuluk bu ilde doğmuştur; il genelinde entegrasyonlara sözleşmeli üretim yapan çok sayıda broiler kümesi vardır. Tavukçuluk, ilin istihdamında ve ekonomisinde başat sektördür.",
+  "ilceler": [
+   "Mudurnu",
+   "Gerede",
+   "Göynük",
+   "Mengen",
+   "Seben",
+   "Dörtdivan"
+  ],
+  "ozel_not": "Türkiye'nin piliç üssü — profesyonel yetiştirici yoğunluğu ve kümes bilinci çok yüksek; Mudurnu'nun tarihi tavukçuluk kimliği sayfada güvenle kullanılabilir.",
+  "tkdk": false
+ },
+ "Burdur": {
+  "plaka": 15,
+  "bolge": "Akdeniz",
+  "km_istanbul": 595,
+  "sure_saat": 7.5,
+  "kar_yuku": "orta",
+  "iklim": "Yaklaşık 950 metre rakımda Akdeniz-karasal geçiş iklimi: kışlar soğuk ve zaman zaman karlı, yazlar sıcak ve kurak. Orta düzey kar yükü ve gece don riski hesaba katılmalı.",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Türkiye'nin en güçlü süt sığırcılığı illerinden; hayvancılık il ekonomisinin bel kemiği, kırsalda ahır altyapısı ve yem üretimi gelişmiş. Bucak, Yeşilova ve Tefenni ovalarında tahıl ve yem bitkileri üretimi yaygın. Hayvancılıkla uğraşan işletmeler için tavukçuluk düşük maliyetli bir çeşitlendirme alanı.",
+  "ilceler": [
+   "Bucak",
+   "Gölhisar",
+   "Yeşilova",
+   "Tefenni",
+   "Ağlasun",
+   "Çavdır"
+  ],
+  "ozel_not": "Süt sığırcılığı işletmeleri yoğun: mevcut ahır düzeni ve yem altyapısına sahip çiftçiye 'yan ünite olarak tavuk çadırı' satışı doğal bir açı.",
+  "tkdk": true
+ },
+ "Bursa": {
+  "plaka": 16,
+  "bolge": "Marmara",
+  "km_istanbul": 155,
+  "sure_saat": 2,
+  "iklim": "Ova kesiminde ılıman Marmara iklimi hakimdir; kışlar serin, kar yağışı görülür ama ovada uzun süre kalmaz. Uludağ etekleri ve Keles gibi yüksek ilçelerde kış belirgin şekilde sert ve karlıdır.",
+  "kar_yuku": "orta",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Bursa, Karacabey ve Mustafakemalpaşa ovalarıyla Türkiye'nin en verimli tarım havzalarından birine sahiptir; Karacabey'de köklü tarım işletmeciliği geleneği vardır. Yenişehir ve İnegöl kırsalında kanatlı kümesleri yaygındır, il genelinde süt hayvancılığı ve sebze-meyve üretimi güçlüdür. Tarımsal alım gücü ve modern üretime açıklık yüksektir.",
+  "ilceler": [
+   "Karacabey",
+   "Mustafakemalpaşa",
+   "Yenişehir",
+   "İnegöl",
+   "İznik",
+   "Orhangazi"
+  ],
+  "ozel_not": "Karacabey-M.Kemalpaşa tarım havzası: profesyonel çiftçilik kültürü yerleşik, yatırıma açık üretici profili.",
+  "tkdk": true
+ },
+ "Çanakkale": {
+  "plaka": 17,
+  "bolge": "Marmara",
+  "km_istanbul": 320,
+  "sure_saat": 4.5,
+  "iklim": "Kışları ılıman geçen bir kıyı iklimi vardır, kar nadirdir; ancak Çanakkale Türkiye'nin en rüzgarlı illerinden biridir. Boğaz hattında sert ve sürekli esen poyraz nedeniyle çadırın rüzgar dayanımı ve ankraj kalitesi belirleyicidir.",
+  "kar_yuku": "düşük",
+  "yalitim": "3 kat",
+  "tavukculuk": "Çanakkale, yumurta tavukçuluğunda Türkiye'nin önde gelen illeri arasındadır; özellikle merkez ve Biga çevresinde yumurta işletmeleri yoğunlaşır. Biga yarımadası ayrıca süt sığırcılığı ve tarımsal üretimde güçlüdür; Bayramiç ve Ezine ovaları meyvecilik ve süt ürünleriyle tanınır. Kanatlı üretimi ilde bilinen ve kurumsallaşmış bir sektördür.",
+  "ilceler": [
+   "Biga",
+   "Bayramiç",
+   "Yenice",
+   "Ezine",
+   "Ayvacık",
+   "Lapseki"
+  ],
+  "ozel_not": "1915 Çanakkale Köprüsü ile İstanbul'dan kesintisiz karayolu ulaşımı; rüzgara dayanıklı ankraj sistemi bu ilde en güçlü satış argümanı.",
+  "tkdk": true
+ },
+ "Çankırı": {
+  "plaka": 18,
+  "bolge": "İç Anadolu",
+  "km_istanbul": 470,
+  "sure_saat": 6.5,
+  "iklim": "Sert karasal iklim: kışlar soğuk ve karlı geçer, özellikle Ilgaz Dağı etekleri yoğun kar alır. Yazlar sıcak ve kuraktır.",
+  "yalitim": "3 veya 4 kat",
+  "kar_yuku": "orta",
+  "tavukculuk": "Tahıl tarımı ve küçükbaş hayvancılığın öne çıktığı, kırsal karakteri güçlü bir İç Anadolu ilidir; Kızılırmak ilçesinde çeltik (pirinç) üretimi yapılır. Köy hanelerinde tavuk beslemek köklü bir gelenektir ve kırsal nüfus oranı yüksektir.",
+  "ilceler": [
+   "Ilgaz",
+   "Kurşunlu",
+   "Çerkeş",
+   "Orta",
+   "Şabanözü",
+   "Kızılırmak"
+  ],
+  "ozel_not": "Ilgaz eteklerindeki ilçelerde kar yükü ciddidir — güçlendirilmiş iskelet ve 4 kat yalıtım burada öne çıkarılacak satış argümanı.",
+  "tkdk": true
+ },
+ "Çorum": {
+  "plaka": 19,
+  "bolge": "Karadeniz",
+  "km_istanbul": 620,
+  "sure_saat": 8.5,
+  "iklim": "İç Anadolu karakterli karasal iklim: kışlar soğuk ve ayazlı, gece donları serttir; yazlar sıcak ve kurak geçer. Kalın yalıtım hem kış soğuğu hem yaz sıcağı için gerekir.",
+  "kar_yuku": "orta",
+  "yalitim": "4 kat",
+  "tavukculuk": "Çorum, Türkiye yumurta üretiminin yaklaşık yüzde 6'sını tek başına karşılayan gerçek bir yumurta üssüdür; Çorum Yumurta Üreticileri Birliği çatısı altında örgütlü güçlü bir üretici tabanı vardır. Profesyonel yumurtacılık bilgisi, yem ve ekipman tedarik zinciri ilde hazırdır. Leblebisiyle ünlü il aynı zamanda güçlü bir tahıl üreticisidir.",
+  "ilceler": [
+   "Sungurlu",
+   "Alaca",
+   "Osmancık",
+   "İskilip",
+   "Mecitözü",
+   "Kargı"
+  ],
+  "ozel_not": "Türkiye yumurta üretiminin ~%6'sı Çorum'dan — yumurtacılık kültürü ve tedarik zinciri hazır, bilinçli alıcı profili.",
+  "tkdk": true
+ },
+ "Denizli": {
+  "plaka": 20,
+  "bolge": "Ege",
+  "km_istanbul": 580,
+  "sure_saat": 7,
+  "kar_yuku": "orta",
+  "iklim": "Merkez ve ovalarda ılıman geçiş iklimi, kar nadir; ancak Acıpayam, Tavas ve Çameli gibi yüksek ilçelerde kış belirgin şekilde soğuk ve karlı geçer — ilçeye göre yalıtım katmanı seçilmeli.",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Adı tavukla özdeşleşmiş il: uzun ötüşüyle ünlü yerli ırk Denizli horozu ilin simgesi ve yerli ırk yetiştiriciliği kültürü canlı. Türkiye'nin büyük yem ve kanatlı gruplarından Abalıoğlu da Denizli'de kuruldu. Çivril ve Acıpayam ovalarında tahıl, meyve ve hayvancılık ağırlıklı güçlü bir kırsal tarım dokusu var.",
+  "ilceler": [
+   "Çivril",
+   "Acıpayam",
+   "Tavas",
+   "Çal",
+   "Buldan",
+   "Honaz"
+  ],
+  "ozel_not": "Denizli horozu ilin resmi simgesi — yerli ırk ve horoz besleme kültürü, kümes satışında güçlü duygusal bağ kurulabilecek il-özgü bir tema.",
+  "tkdk": true
+ },
+ "Diyarbakır": {
+  "plaka": 21,
+  "bolge": "Güneydoğu Anadolu",
+  "km_istanbul": 1360,
+  "sure_saat": 18.5,
+  "iklim": "Sert karasal iklim: yazlar çok sıcak (40°C'ye yaklaşır), kışlar soğuk ve ayazlı; kar yağar ama ovada uzun süre kalmaz. Gece-gündüz farkı yüksek olduğundan yalıtım hem kışın hem yazın iş görür.",
+  "kar_yuku": "orta",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Diyarbakır geniş tahıl ovalarıyla (buğday, arpa, mercimek, Karacadağ pirinci) bölgenin tarım merkezlerindendir; Bismil ve Çınar hattında sulu tarım ve mısır ekimi büyümektedir. Büyükbaş-küçükbaş hayvancılık güçlüdür; kanatlıda ise büyük ticari entegrasyondan çok köy tavukçuluğu ve küçük aile işletmeleri hakimdir. Arpa ve mısır gibi yem hammaddeleri yerelde boldur.",
+  "ilceler": [
+   "Bismil",
+   "Çınar",
+   "Ergani",
+   "Silvan",
+   "Çermik",
+   "Lice"
+  ],
+  "ozel_not": "2023 depremlerinde afet bölgesi ilan edilen iller arasındaydı; Bismil-Çınar hattındaki büyüyen sulu tarım, yerinde yem (arpa/mısır) avantajı sağlar.",
+  "tkdk": true
+ },
+ "Edirne": {
+  "plaka": 22,
+  "bolge": "Marmara",
+  "km_istanbul": 240,
+  "sure_saat": 3,
+  "iklim": "Trakya'nın iç kesiminde yarı karasal bir iklim hakimdir: kışlar İstanbul'a göre belirgin şekilde soğuk geçer, kar yağışı ve don sık görülür, Balkanlar'dan inen soğuk dalgalar etkilidir.",
+  "kar_yuku": "orta",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Edirne Türkiye çeltik (pirinç) üretiminin merkezidir; İpsala ve Meriç ovaları ülke çeltiğinin büyük bölümünü karşılar. Ayçiçeği ve buğday üretimi ile büyükbaş hayvancılık da güçlüdür. Kanatlıda büyük entegrasyon yoğunluğu yoktur; köy tavukçuluğu ve aile işletmeleri kırsalda yaygındır — tarımsal gelir ve arazi varlığı yüksek, kümes yatırımına uygun bir profildir.",
+  "ilceler": [
+   "Uzunköprü",
+   "Keşan",
+   "İpsala",
+   "Havsa",
+   "Meriç"
+  ],
+  "ozel_not": "Türkiye'nin çeltik başkenti (İpsala-Meriç): hasat dönemli güçlü tarımsal alım gücü.",
+  "tkdk": false
+ },
+ "Elazığ": {
+  "plaka": 23,
+  "bolge": "Doğu Anadolu",
+  "km_istanbul": 1225,
+  "sure_saat": 17,
+  "iklim": "Doğu Anadolu'nun güneybatısında görece ılıman karasal iklim; kış soğuk ve karlı ama Erzurum-Kars hattı kadar sert değildir. Yaz sıcak ve kuru geçer.",
+  "kar_yuku": "orta",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Elazığ tarımında bağcılık (öküzgözü üzümü) ve Keban Baraj Gölü'ndeki su ürünleri yetiştiriciliği öne çıkar; il Türkiye'nin önde gelen alabalık üreticilerindendir. Hayvancılık güçlüdür; kanatlı üretimi ise ağırlıkla köy tavukçuluğu ve küçük işletmeler düzeyindedir.",
+  "ilceler": [
+   "Kovancılar",
+   "Karakoçan",
+   "Baskil",
+   "Palu",
+   "Sivrice"
+  ],
+  "ozel_not": "2020 Elazığ (Sivrice) depremini yaşamış il — hızlı kurulan, hafif yapılara aşinalık ve ilgi mevcut.",
+  "tkdk": true
+ },
+ "Erzincan": {
+  "plaka": 24,
+  "bolge": "Doğu Anadolu",
+  "km_istanbul": 1035,
+  "sure_saat": 14.5,
+  "iklim": "Ova tabanında Doğu Anadolu'ya göre daha ılıman bir karasal iklim; kış yine karlı ve donlu geçer ama Erzurum-Kars hattı kadar sert değildir.",
+  "kar_yuku": "orta",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Erzincan Ovası, Doğu Anadolu'nun görece ılıman tarım havzalarından biridir; meyvecilik (Üzümlü'nün Cimin üzümü gibi) ve hayvancılık iç içedir. İl tulum peyniriyle tanınır; kanatlıda büyük entegrasyon yoktur, köy tavukçuluğu ve küçük aile kümesleri yaygındır.",
+  "ilceler": [
+   "Tercan",
+   "Çayırlı",
+   "Refahiye",
+   "Üzümlü",
+   "Kemah"
+  ],
+  "ozel_not": "Bu listedeki illere göre İstanbul'a en yakın Doğu Anadolu ili — bölgeye açılan kapı; ova tarımı ve hayvancılık kültürü güçlü.",
+  "tkdk": true
+ },
+ "Erzurum": {
+  "plaka": 25,
+  "bolge": "Doğu Anadolu",
+  "km_istanbul": 1230,
+  "sure_saat": 17,
+  "iklim": "Türkiye'nin en soğuk büyük kentlerinden; kışın -20/-30°C görülür, kar örtüsü aylarca kalkmaz. Yüksek kar yükü ve sert don, yalıtımı ve iskelet dayanımını kritik yapar.",
+  "kar_yuku": "yüksek",
+  "yalitim": "4 kat",
+  "tavukculuk": "Erzurum, Türkiye'nin en geniş çayır-mera varlığına sahip illerinden biridir; ekonomi büyükbaş ve küçükbaş hayvancılığa dayanır. Ticari kanatlı entegrasyonu yok denecek kadar azdır; tavukçuluk ağırlıklı olarak köy tavuğu ve aile işletmesi ölçeğindedir. Bu tablo, doğal/gezen tavuk yumurtası üretimi için küçük üreticiye alan bırakır.",
+  "ilceler": [
+   "Pasinler",
+   "Horasan",
+   "Hınıs",
+   "Aşkale",
+   "Oltu",
+   "Tortum"
+  ],
+  "ozel_not": "Doğu Anadolu'nun hayvancılık ve lojistik merkezi; çevre illere dağıtımın doğal durağı, hayvancılık destek projelerinin yoğun olduğu il.",
+  "tkdk": true
+ },
+ "Eskişehir": {
+  "plaka": 26,
+  "bolge": "İç Anadolu",
+  "km_istanbul": 330,
+  "sure_saat": 4.5,
+  "iklim": "Türkiye'nin en soğuk gecelerinin yaşandığı illerden; karasal iklimde don ve ayaz uzun sürer, açık ovalarda rüzgâr hissedilir. Kar orta düzeydedir.",
+  "yalitim": "3 veya 4 kat",
+  "kar_yuku": "orta",
+  "tavukculuk": "İç Anadolu'nun tahıl ambarlarından biridir; buğday, arpa ve şekerpancarı üretimi güçlüdür, bu da yem maliyeti açısından avantaj sağlar. Çifteler ve Mahmudiye gibi ilçelerde tarım ve hayvancılık iç içedir; kırsal köylerde aile ölçekli kümes hayvancılığı ve yumurta üretimi yaygın bir ek gelir kaynağıdır.",
+  "ilceler": [
+   "Çifteler",
+   "Mahmudiye",
+   "Sivrihisar",
+   "Alpu",
+   "Beylikova",
+   "Mihalıççık"
+  ],
+  "ozel_not": "İstanbul-Ankara otoyol koridorunun tam üzerinde; İstanbul'dan en hızlı ve sorunsuz teslimat yapılan illerden.",
+  "tkdk": false
+ },
+ "Gaziantep": {
+  "plaka": 27,
+  "bolge": "Güneydoğu Anadolu",
+  "km_istanbul": 1130,
+  "sure_saat": 15.5,
+  "iklim": "Yaklaşık 850 m platoda karasal-Akdeniz geçiş iklimi: yazlar sıcak ve kurak, kışlar soğuk; ara ara kuvvetli kar yağışı görülür. Çadır kümeste rüzgâr ankrajı ve orta düzey kar yükü hesaba katılmalı.",
+  "kar_yuku": "orta",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Gaziantep bir kanatlı üssü değil; ilin tarımsal kimliği Antep fıstığı, zeytin ve kırmızı biber üzerine kuruludur, gıda ve yem sanayii ise Türkiye'nin en güçlülerindendir. İlde Gaziantep merkezli yumurta firmaları ve OSB'lerde yem fabrikaları faaliyet gösterir. Araban, Yavuzeli, İslahiye gibi kırsal ilçelerde aile tipi köy tavukçuluğu ve doğal yumurta talebi canlıdır.",
+  "ilceler": [
+   "Nizip",
+   "İslahiye",
+   "Nurdağı",
+   "Araban",
+   "Yavuzeli",
+   "Oğuzeli"
+  ],
+  "ozel_not": "2023 depremlerinde Nurdağı ve İslahiye ağır yıkım yaşadı; temelsiz, hızlı kurulan çadır kümes deprem sonrası yeniden yapılanmada güçlü bir satış açısı. İlin büyük yem/gıda sanayii yem erişimini de kolaylaştırır.",
+  "tkdk": false
+ },
+ "Giresun": {
+  "plaka": 28,
+  "bolge": "Karadeniz",
+  "km_istanbul": 925,
+  "sure_saat": 12,
+  "iklim": "Kıyı kuşağı ılıman ve çok yağışlı; Şebinkarahisar-Alucra iç kesimi ise tam karasal, kışları sert ve karlıdır. Aynı il içinde iki farklı iklim kuşağına göre çözüm gerekir.",
+  "kar_yuku": "orta",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Giresun ekonomisi kalite fındığıyla özdeştir; sahil kuşağı fındık, iç kesim (Şebinkarahisar, Alucra) tahıl ve hayvancılık karakterlidir. Kanatlıda büyük sanayi yoktur; köy tavukçuluğu ve doğal yumurta üretimi aile ekonomisinin parçasıdır ve eğimli arazide küçük ölçekli barınaklar tercih edilir.",
+  "ilceler": [
+   "Bulancak",
+   "Espiye",
+   "Tirebolu",
+   "Dereli",
+   "Şebinkarahisar",
+   "Alucra"
+  ],
+  "tkdk": true
+ },
+ "Gümüşhane": {
+  "plaka": 29,
+  "bolge": "Karadeniz",
+  "km_istanbul": 1145,
+  "sure_saat": 15,
+  "iklim": "İl merkezi 1.100 metrenin üzerindedir; sert karasal iklimde kışlar uzun, karlı ve dondurucu geçer. Kar yüküne dayanıklı iskelet ve en kalın yalıtım paketi gerekir.",
+  "kar_yuku": "yüksek",
+  "yalitim": "4 kat",
+  "tavukculuk": "Gümüşhane'de tarım Kelkit ve Şiran ovalarında yoğunlaşır; Kelkit vadisi organik tarım ve hayvancılık potansiyeliyle bilinir. Pestil ve kömesiyle ünlü ilde kanatlı sanayi yoktur; köy tavukçuluğu hane ekonomisinin parçasıdır ve uzun kışlar kapalı barınak ihtiyacını artırır.",
+  "ilceler": [
+   "Kelkit",
+   "Şiran",
+   "Köse",
+   "Torul",
+   "Kürtün"
+  ],
+  "ozel_not": "Kelkit vadisi organik tarım havzası — doğal/organik yumurta konsepti bölge kimliğiyle örtüşür.",
+  "tkdk": false
+ },
+ "Hakkari": {
+  "plaka": 30,
+  "bolge": "Doğu Anadolu",
+  "km_istanbul": 1825,
+  "sure_saat": 26,
+  "iklim": "Yüksek dağlık iklim; kış uzun ve kar kalın, kimi ilçelerde ulaşım kışın ciddi zorlaşır. Yalıtım ve kar yükü dayanımı en üst düzeyde olmalıdır.",
+  "kar_yuku": "yüksek",
+  "yalitim": "4 kat",
+  "tavukculuk": "Hakkari'nin dağlık coğrafyasında küçükbaş hayvancılık ve arıcılık temel geçim kaynağıdır; özellikle Şemdinli ve Yüksekova balları bölge dışında da tanınır. Yüksekova Ovası ilin başlıca tarım alanıdır; ticari kanatlı tesisi yoktur, tavukçuluk tamamen köy ölçeğindedir.",
+  "ilceler": [
+   "Yüksekova",
+   "Şemdinli",
+   "Çukurca",
+   "Derecik"
+  ],
+  "ozel_not": "İstanbul'a karayoluyla en uzak illerden biri (~1.800+ km) — '81 ile ücretsiz nakliye ve kurulum' iddiasının en güçlü kanıt sayfası.",
+  "tkdk": false
+ },
+ "Hatay": {
+  "plaka": 31,
+  "bolge": "Akdeniz",
+  "km_istanbul": 1120,
+  "sure_saat": 15,
+  "iklim": "Akdeniz iklimi: kış ılık ve bol yağışlı, kar nadir. Yaz sıcak ve nemli — havalandırma ve gölgeleme kritik; kar yükü derdi yok denecek kadar az.",
+  "kar_yuku": "düşük",
+  "yalitim": "3 kat",
+  "tavukculuk": "Amik Ovası pamuk, buğday, mısır ve sebze üretimiyle Türkiye'nin verimli tarım havzalarından; kıyı şeridinde zeytin ve narenciye güçlüdür. Kırıkhan-Reyhanlı hattında tarımsal işletmeler yoğun, köy tavukçuluğu ve aile işletmeciliği köklü bir gelenektir.",
+  "ilceler": [
+   "Kırıkhan",
+   "Reyhanlı",
+   "Altınözü",
+   "Hassa",
+   "Erzin",
+   "Yayladağı"
+  ],
+  "ozel_not": "2023 depreminin en ağır hasar gördüğü il; üretime yeniden başlayanlar için temelsiz, hızlı kurulan ve İstanbul'dan ücretsiz nakliye+kurulumla gelen çadır kümes en güçlü satış açısı.",
+  "tkdk": true
+ },
+ "Isparta": {
+  "plaka": 32,
+  "bolge": "Akdeniz",
+  "km_istanbul": 580,
+  "sure_saat": 7.5,
+  "kar_yuku": "orta",
+  "iklim": "Göller Yöresi'nin yaklaşık 1.000 metre rakımında kışlar soğuk ve ara ara karlı geçer; Akdeniz etkisi sayesinde Doğu Anadolu kadar sert değildir. Yazlar sıcak, geceler serindir.",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Gül ve elmanın başkenti: Türkiye elma üretiminin lider illerinden ve dünyaca ünlü gül yağı üretiminin merkezi. Yalvaç, Şarkikaraağaç ve Gelendost ovalarında meyvecilikle iç içe güçlü bir kırsal tarım dokusu var. Köy tavukçuluğu, meyve bahçesi sahibi aile işletmeleri için doğal bir yan gelir.",
+  "ilceler": [
+   "Yalvaç",
+   "Şarkikaraağaç",
+   "Gelendost",
+   "Eğirdir",
+   "Senirkent",
+   "Keçiborlu"
+  ],
+  "tkdk": true
+ },
+ "Mersin": {
+  "plaka": 33,
+  "bolge": "Akdeniz",
+  "km_istanbul": 930,
+  "sure_saat": 12,
+  "iklim": "Tipik Akdeniz iklimi: kışlar ılık ve yağmurlu, kar ancak Toros yaylalarındaki yüksek köylerde görülür. Asıl mesele yaz sıcağı ve kıyı nemi — çadır kümeste gölgeleme ve iyi havalandırma öne çıkar.",
+  "kar_yuku": "düşük",
+  "yalitim": "3 kat",
+  "tavukculuk": "Mersin tarımının omurgası narenciye, sera sebzeciliği ve muzdur (Anamur-Bozyazı hattı); Tarsus Ovası tahıl ve mısır üretir. Kanatlıda büyük entegrasyon üssü olmasa da kırsal ilçelerde köy tavukçuluğu canlıdır ve büyükşehir pazarı doğal/gezen tavuk yumurtasına iyi fiyat verir.",
+  "ilceler": [
+   "Tarsus",
+   "Silifke",
+   "Erdemli",
+   "Mut",
+   "Gülnar",
+   "Anamur"
+  ],
+  "ozel_not": "Toros yaylalarında (Çamlıyayla, Mut, Gülnar) yayla ve köy tavukçuluğu geleneği; şehir pazarına doğal yumurta satışı güçlü bir gelir kapısı.",
+  "tkdk": true
+ },
+ "İstanbul": {
+  "plaka": 34,
+  "bolge": "Marmara",
+  "km_istanbul": 0,
+  "sure_saat": 0.5,
+  "iklim": "Ilıman deniz iklimi; kış yumuşak geçer, kar nadiren ve kısa süreli yağar. Asıl dikkat edilmesi gereken poyraz ve lodos rüzgarlarıdır — çadırın ankraj ve gergi sistemi öne çıkar.",
+  "kar_yuku": "düşük",
+  "yalitim": "3 kat",
+  "tavukculuk": "Türkiye'nin en büyük tüketim merkezi olan İstanbul'da büyük ölçekli ticari kanatlı üretimi sınırlıdır; buna karşılık Silivri, Çatalca, Şile ve Arnavutköy'ün kırsal kuşağında tarım arazileri ve hobi bahçeleri yoğundur. Gezen tavuk yumurtasına ve aile tipi kümese talep Türkiye'nin en yüksek pazarıdır; küçük ve orta ölçekli serbest gezen tavuk işletmeleri bu ilçelerde hızla çoğalmaktadır.",
+  "ilceler": [
+   "Silivri",
+   "Çatalca",
+   "Şile",
+   "Arnavutköy",
+   "Beykoz"
+  ],
+  "ozel_not": "Merkez ilimiz: aynı gün keşif, en hızlı kurulum. Hobi bahçesi ve gezen tavuk girişimcisi yoğunluğu en yüksek pazar.",
+  "tkdk": false
+ },
+ "İzmir": {
+  "plaka": 35,
+  "bolge": "Ege",
+  "km_istanbul": 480,
+  "sure_saat": 6,
+  "kar_yuku": "düşük",
+  "iklim": "Tipik Akdeniz iklimi: kış ılık ve yağışlı, kar neredeyse görülmez; asıl konu 35-40°C'yi bulan yaz sıcağında havalandırma ve gölgeleme. Kıyı kesimde imbat ve poyraz rüzgârlarına karşı sağlam ankraj önemli.",
+  "yalitim": "3 kat",
+  "tavukculuk": "Ege Bölgesi Türkiye kanatlı üretiminin en yoğun bölgelerinden ve İzmir bunun merkezinde; il genelinde yumurta firmaları ve entegre kanatlı tesisleri faaliyet gösteriyor. Küçük Menderes havzasındaki Ödemiş, Tire ve Bayındır tarım ile hayvancılığın kalbi; bölgede büyük kapasiteli tavuk çiftlikleri var. Milyonluk şehir pazarı, doğal ve gezen tavuk yumurtasına güçlü talep yaratıyor.",
+  "ilceler": [
+   "Ödemiş",
+   "Tire",
+   "Bayındır",
+   "Bergama",
+   "Kınık",
+   "Kiraz"
+  ],
+  "ozel_not": "4,5 milyonluk büyükşehir pazarı gezen tavuk yumurtasına hazır talep demek; Urla-Seferihisar-Çeşme hattındaki hobi bahçesi ve küçük çiftlik sahipleri anahtar teslim kümes için güçlü bir müşteri segmenti.",
+  "tkdk": false
+ },
+ "Kars": {
+  "plaka": 36,
+  "bolge": "Doğu Anadolu",
+  "km_istanbul": 1430,
+  "sure_saat": 20,
+  "iklim": "Uzun ve çok sert kışlar; -30°C'ye inen geceler ve haftalarca kalkmayan kar örtüsü. Plato rüzgarı ve don, kümes yalıtımının en zorlandığı koşullardır.",
+  "kar_yuku": "yüksek",
+  "yalitim": "4 kat",
+  "tavukculuk": "Kars ekonomisi mera hayvancılığına dayanır: boz ırk sığır, kaşar ve gravyer üretimi ilin kimliğidir. Aynı zamanda Türkiye'nin en güçlü kaz besiciliği kültürüne sahip bölgesidir; kaz ve köy tavuğu aile işletmelerinde bir arada yetiştirilir. Ticari kanatlı tesisi azdır.",
+  "ilceler": [
+   "Sarıkamış",
+   "Selim",
+   "Arpaçay",
+   "Kağızman",
+   "Susuz"
+  ],
+  "ozel_not": "Meşhur kaz besiciliği kültürü — çadır kümes burada tavuk kadar kaz barınağı olarak da konumlandırılabilir.",
+  "tkdk": true
+ },
+ "Kastamonu": {
+  "plaka": 37,
+  "bolge": "Karadeniz",
+  "km_istanbul": 510,
+  "sure_saat": 7.5,
+  "iklim": "Sahil ilçeleri (Cide, İnebolu) ılıman; merkez, Tosya ve Taşköprü gibi iç kesimlerde kışlar uzun, soğuk ve karlıdır. Ilgaz-Küre hattında kar yükü ciddidir; iskelet dayanımı ve kalın yalıtım kritik.",
+  "kar_yuku": "yüksek",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Kastamonu, gezen tavuk (serbest dolaşan) yumurtacılığıyla Türkiye'de adını duyurmuş illerden; 'Kastamonu köy yumurtası' algısı güçlü bir hazır pazar oluşturur. Taşköprü sarımsağı ve siyez buğdayıyla bilinen ilde tarım küçük aile işletmelerine dayanır. Orman köylerinde ek gelir arayışı, küçük ve orta ölçekli kümes yatırımlarını besler.",
+  "ilceler": [
+   "Taşköprü",
+   "Tosya",
+   "Daday",
+   "Devrekani",
+   "Araç",
+   "Cide"
+  ],
+  "ozel_not": "Gezen tavuk yumurtacılığının markalaştığı il — doğal/köy yumurtası imajı hazır satış kanalı demek.",
+  "tkdk": true
+ },
+ "Kayseri": {
+  "plaka": 38,
+  "bolge": "İç Anadolu",
+  "km_istanbul": 770,
+  "sure_saat": 10.5,
+  "iklim": "Yüksek (1.050 m) karasal iklim: kışlar Türkiye'nin büyük illeri arasında en soğuklarındandır, kar ve don uzun sürer; Erciyes çevresi ciddi kar alır. 4 kat yalıtım net tavsiyedir.",
+  "kar_yuku": "orta",
+  "yalitim": "4 kat",
+  "tavukculuk": "Türkiye yumurta sektörünün yerleşik merkezlerinden: ilde aktif bir yumurta üreticileri birliği ve Kaytaş gibi 2 milyonun üzerinde tavuk kapasiteli büyük üreticiler bulunur. Besi hayvancılığı ve pastırma-sucuk sanayisiyle hayvansal üretim kültürü derindir; Develi ve Bünyan ovaları tahıl üretir.",
+  "ilceler": [
+   "Develi",
+   "Yahyalı",
+   "Bünyan",
+   "Pınarbaşı",
+   "Tomarza",
+   "Sarıoğlan"
+  ],
+  "ozel_not": "Köklü yumurta üretim merkezi (aktif il yumurta üreticileri birliği, büyük kapasiteli üreticiler); tavukçuluğu bilen hazır müşteri kitlesi.",
+  "tkdk": false
+ },
+ "Kırklareli": {
+  "plaka": 39,
+  "bolge": "Marmara",
+  "km_istanbul": 210,
+  "sure_saat": 2.5,
+  "iklim": "İç Trakya'da kışlar soğuk ve rüzgarlı geçer; Istranca (Yıldız) Dağları kuşağında kar yağışı belirgindir, Balkan soğukları ilde sert hissedilir.",
+  "kar_yuku": "orta",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Kırklareli, Trakya'nın süt hayvancılığı ve mandıracılık merkezlerinden biridir; Kırklareli peyniri bu geleneğin ürünüdür. Lüleburgaz-Babaeski hattı tahıl ve ayçiçeği üretiminde güçlüdür. Kanatlıda ile özgü büyük bir entegrasyon iddiası yoktur; köy tavukçuluğu ve karma aile işletmeleri kırsalda yaygındır, hayvancılık kültürü köklüdür.",
+  "ilceler": [
+   "Lüleburgaz",
+   "Babaeski",
+   "Vize",
+   "Pınarhisar",
+   "Pehlivanköy"
+  ],
+  "ozel_not": "Yerleşik hayvancılık ve mandıra kültürü: mevcut çiftliğine kümes eklemek isteyen üretici profili.",
+  "tkdk": false
+ },
+ "Kırşehir": {
+  "plaka": 40,
+  "bolge": "İç Anadolu",
+  "km_istanbul": 635,
+  "sure_saat": 8.5,
+  "iklim": "Tipik İç Anadolu karasal iklimi: don olaylı soğuk kışlar, sıcak ve kurak yazlar. Açık bozkırda rüzgâr, yalıtım kadar sağlam iskelet de gerektirir.",
+  "yalitim": "3 veya 4 kat",
+  "kar_yuku": "orta",
+  "tavukculuk": "Tahıl ve baklagil tarımının güçlü olduğu bir bozkır ilidir; Kaman cevizi ile Türkiye çapında tanınır. Kırsalda koyunculukla birlikte aile ölçekli kümes hayvancılığı yaygındır; köy yumurtası üretimi hanelere ek gelir sağlar.",
+  "ilceler": [
+   "Kaman",
+   "Mucur",
+   "Çiçekdağı",
+   "Akpınar",
+   "Boztepe"
+  ],
+  "tkdk": false
+ },
+ "Kocaeli": {
+  "plaka": 41,
+  "bolge": "Marmara",
+  "km_istanbul": 110,
+  "sure_saat": 1.5,
+  "iklim": "Körfez ve ova kesiminde ılıman, nemli bir iklim hakimdir; kar kalıcı değildir. Kartepe ve yüksek kesimlerde kış daha sert geçer ve kar yükü artar.",
+  "kar_yuku": "orta",
+  "yalitim": "3 kat",
+  "tavukculuk": "Kocaeli sanayi kimliğiyle bilinse de Kandıra, Karamürsel ve Kartepe kırsalında güçlü bir tarım ve hayvancılık dokusu vardır. Özellikle Kandıra, Karadeniz'e uzanan geniş köy kuşağıyla köy tavukçuluğu ve aile işletmeciliğinin yaygın olduğu bir ilçedir. Sanayi gelirinin yüksekliği, hobi çiftliği ve gezen tavuk girişimlerine yatırım yapabilen bir kitle yaratmaktadır.",
+  "ilceler": [
+   "Kandıra",
+   "Karamürsel",
+   "Kartepe",
+   "Başiskele",
+   "Gölcük"
+  ],
+  "ozel_not": "İstanbul'a en yakın illerden — nakliye ve kurulum aynı gün tamamlanır. Sanayi geliri yüksek, hobi çiftliğine yatırım yapan güçlü bir müşteri profili var.",
+  "tkdk": false
+ },
+ "Konya": {
+  "plaka": 42,
+  "bolge": "İç Anadolu",
+  "km_istanbul": 660,
+  "sure_saat": 9,
+  "iklim": "Karasal iklim: kış soğuk (geceler -10°C'ye inebilir), yağış az olduğundan kar yükü aşırı değil ama geniş ovada rüzgar ve tipi etkilidir. Yaz sıcak ve kuru.",
+  "kar_yuku": "orta",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Türkiye'nin tahıl ambarı: buğday ve arpada lider, dane mısırda üst sıralarda — yem hammaddesi bol ve yakın. Yumurta tavuğu varlığında Afyonkarahisar ve Manisa ile birlikte Türkiye'nin ilk sıralarındadır (yaklaşık %9 pay); yem sanayii ve yumurta üretimi ilin yerleşik sektörleridir.",
+  "ilceler": [
+   "Çumra",
+   "Karapınar",
+   "Ereğli",
+   "Cihanbeyli",
+   "Kulu",
+   "Akşehir"
+  ],
+  "ozel_not": "Türkiye'nin en büyük tarım ili ve yumurta tavukçuluğunda ilk 3'te; ucuz yem + geniş arazi, çadır kümes için hazır pazar.",
+  "tkdk": true
+ },
+ "Kütahya": {
+  "plaka": 43,
+  "bolge": "Ege",
+  "km_istanbul": 355,
+  "sure_saat": 4.5,
+  "kar_yuku": "orta",
+  "iklim": "Yaklaşık 970 metre rakımda sert karasal iklim: kışlar uzun, soğuk ve kar yağışlı; Domaniç ve Simav'ın dağlık kesimlerinde kar kalınlığı artar. Kar yüküne dayanıklı iskelet ve tam yalıtım gerekli.",
+  "yalitim": "4 kat",
+  "tavukculuk": "İç Batı Anadolu'da tahıl ağırlıklı tarım ve büyükbaş-küçükbaş hayvancılıkla geçinen, kırsal nüfusu güçlü bir il. Tavşanlı, Simav ve Altıntaş ovaları ilin tarımsal üretim merkezleri; Simav'da jeotermal seracılık da gelişiyor. Köy tavukçuluğu ve aile işletmeciliği ilçelerde geleneksel olarak yaygın.",
+  "ilceler": [
+   "Tavşanlı",
+   "Simav",
+   "Gediz",
+   "Altıntaş",
+   "Emet",
+   "Domaniç"
+  ],
+  "ozel_not": "İstanbul'a en yakın Ege ili (~355 km): 81 il içinde en hızlı teslimat yapılabilecek güzergâhlardan — 'aynı gün kurulum' vurgusu için uygun.",
+  "tkdk": true
+ },
+ "Malatya": {
+  "plaka": 44,
+  "bolge": "Doğu Anadolu",
+  "km_istanbul": 1130,
+  "sure_saat": 16,
+  "iklim": "Karasal ama Doğu Anadolu ortalamasından yumuşak; kış soğuk ve zaman zaman karlı, yaz sıcak ve kurudur.",
+  "kar_yuku": "orta",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Malatya, dünya kuru kayısı üretiminin merkezi olarak bilinir; tarım ekonomisi kayısıya dayansa da kırsalda hayvancılık ve aile tipi kümes hayvancılığı yaygındır. Kayısı bahçeleriyle iç içe köy dokusu, gezen tavuk beslemeye uygun alan sunar.",
+  "ilceler": [
+   "Doğanşehir",
+   "Akçadağ",
+   "Darende",
+   "Hekimhan",
+   "Yazıhan",
+   "Arapgir"
+  ],
+  "ozel_not": "Şubat 2023 depremlerinden ağır etkilenen il — kırsalda yeniden yapılanma sürüyor; hızlı kurulumlu, temelsiz barınak çözümlerine gerçek talep var.",
+  "tkdk": true
+ },
+ "Manisa": {
+  "plaka": 45,
+  "bolge": "Ege",
+  "km_istanbul": 430,
+  "sure_saat": 5.5,
+  "kar_yuku": "düşük",
+  "iklim": "Kışlar ılıman ve yağışlı, kar nadir ve kalıcı değil; yazlar ise Türkiye'nin en sıcaklarından — 40°C'yi aşan günlerde havalandırma kritik.",
+  "yalitim": "3 kat",
+  "tavukculuk": "Akhisar, Türkiye kanatlı sektörünün en bilinen merkezlerinden: Keskinoğlu'nun ana tesisleri burada ve Türkiye'nin en büyük yumurta üretim tesisi Akhisar'da kuruldu. Yem, yarka, ekipman ve veteriner hizmeti tedarik zinciri il içinde hazır. Gediz ovasında üzüm, zeytin ve tütünle uğraşan geniş çiftçi nüfusu için tavukçuluk yaygın bir ek gelir kapısı.",
+  "ilceler": [
+   "Akhisar",
+   "Saruhanlı",
+   "Salihli",
+   "Alaşehir",
+   "Gördes",
+   "Kula"
+  ],
+  "ozel_not": "Akhisar kanatlı ekosistemi sayesinde yem-yarka-ekipman tedariki il içinde hazır; profesyonel üreticiye 'hızlı kurulan ek kapasite' açısıyla satış yapılabilecek en olgun pazarlardan biri.",
+  "tkdk": true
+ },
+ "Kahramanmaraş": {
+  "plaka": 46,
+  "bolge": "Akdeniz",
+  "km_istanbul": 1030,
+  "sure_saat": 13.5,
+  "iklim": "İl içi iklim farkı büyük: merkez ve güney Akdeniz etkili, ılıman; Elbistan-Afşin-Göksun platosu 1.100 m üzerinde sert karasal kış ve kar yaşar. Yalıtım katı ilçeye göre seçilmeli.",
+  "kar_yuku": "orta",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Tarım il ekonomisinin temel taşı: Maraş biberi, Elbistan Ovası'nda şeker pancarı ve tahıl, geniş mera hayvancılığı. Kanatlıda büyük entegrasyon iddiası yerine kırsal ilçelerde köy tavukçuluğu ve kendi yumurtasını üreten aile işletmeleri yaygındır.",
+  "ilceler": [
+   "Elbistan",
+   "Afşin",
+   "Göksun",
+   "Pazarcık",
+   "Türkoğlu",
+   "Andırın"
+  ],
+  "ozel_not": "2023 depremlerinin merkez üssü; yeniden yapılanan köylerde temelsiz-hızlı kurulum ve ücretsiz nakliye+kurulum mesajı çok güçlü.",
+  "tkdk": true
+ },
+ "Mardin": {
+  "plaka": 47,
+  "bolge": "Güneydoğu Anadolu",
+  "km_istanbul": 1460,
+  "sure_saat": 19.5,
+  "iklim": "Kışlar görece ılıman, yazlar çok sıcak ve kuraktır; tepedeki Mardin merkez rüzgâra açıktır, Kızıltepe Ovası'nda kar nadirdir. Rüzgâr ankrajı ve yaz havalandırması öncelikli konulardır.",
+  "kar_yuku": "düşük",
+  "yalitim": "3 kat",
+  "tavukculuk": "Mardin'in Kızıltepe Ovası Mezopotamya'nın tahıl ambarıdır; Kızıltepe hububat piyasası Türkiye'nin en büyük tahıl ticaret merkezlerinden biridir ve il, ikinci ürün mısır üretiminde Şanlıurfa ile birlikte ön sıralardadır. Bu, tavuk yemi maliyetini düşüren gerçek bir avantajdır. Kanatlıda büyük entegrasyon yoktur; kırsalda köy tavuğu ve doğal yumurta geleneği güçlüdür.",
+  "ilceler": [
+   "Kızıltepe",
+   "Derik",
+   "Nusaybin",
+   "Midyat",
+   "Mazıdağı",
+   "Savur"
+  ],
+  "ozel_not": "Kızıltepe hububat piyasası — Türkiye'nin en büyük tahıl ticaret merkezlerinden biri — yem maliyeti avantajı olarak işlenebilir.",
+  "tkdk": true
+ },
+ "Muğla": {
+  "plaka": 48,
+  "bolge": "Ege",
+  "km_istanbul": 675,
+  "sure_saat": 8.5,
+  "kar_yuku": "düşük",
+  "iklim": "Kışın kar değil yağmur konuşulur: Muğla Türkiye'nin en çok yağış alan illerinden, su geçirmez branda ve iyi drenaj şart. Menteşe gibi 600 metre üzeri iç kesimlerde kışlar kıyıya göre serin geçer.",
+  "yalitim": "3 kat",
+  "tavukculuk": "Türkiye çam balı üretiminin merkezi olan Muğla'da kırsal ekonomi arıcılık, zeytincilik ve küçük aile işletmeciliğine dayanıyor. Milas ve Yatağan ovaları ilin tarım ve hayvancılık ağırlıklı iç kesimini oluşturuyor. Köylerde gezen tavuk ve doğal yumurta geleneği güçlü; turizm kıyısındaki pazar bu ürünlere yüksek fiyat ödüyor.",
+  "ilceler": [
+   "Milas",
+   "Yatağan",
+   "Seydikemer",
+   "Kavaklıdere",
+   "Köyceğiz",
+   "Ula"
+  ],
+  "ozel_not": "Şehirden köye yerleşip hobi çiftliği kuran yeni kırsal nüfus (Bodrum, Datça, Köyceğiz çevresi) anahtar teslim çadır kümes için ideal segment.",
+  "tkdk": false
+ },
+ "Muş": {
+  "plaka": 49,
+  "bolge": "Doğu Anadolu",
+  "km_istanbul": 1450,
+  "sure_saat": 21,
+  "iklim": "Türkiye'nin en karlı illerinden; kış uzun, kar kalın ve kalıcıdır. Kar yükü, taşıyıcı sistem ve çatı formu için belirleyicidir.",
+  "kar_yuku": "yüksek",
+  "yalitim": "4 kat",
+  "tavukculuk": "Muş Ovası, Türkiye'nin en büyük ovalarından biridir; buğday, şeker pancarı ve yem bitkileri üretimi güçlüdür. Hayvancılık il ekonomisinin belkemiğidir; kanatlı üretimi köy tavuğu ve aile kümesi ölçeğinde kalır. Yem bitkisi bolluğu ve geniş düz arazi, küçük ölçekli üreticiye avantaj sağlar.",
+  "ilceler": [
+   "Bulanık",
+   "Malazgirt",
+   "Varto",
+   "Korkut",
+   "Hasköy"
+  ],
+  "ozel_not": "Türkiye'nin en büyük ovalarından Muş Ovası — düz kurulum alanı bol, yem bitkisi üretimi güçlü.",
+  "tkdk": true
+ },
+ "Nevşehir": {
+  "plaka": 50,
+  "bolge": "İç Anadolu",
+  "km_istanbul": 730,
+  "sure_saat": 10,
+  "iklim": "Karasal iklim, rakım yaklaşık 1.150 m: kış soğuk ve karlı, plato rüzgarı etkili. Yaz sıcak, geceler serin.",
+  "kar_yuku": "orta",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Patates (Derinkuyu-Acıgöl havzası) ve bağcılıkta Türkiye'nin önde gelen illerinden. Kapadokya turizmi köy ürünlerine — gezen tavuk yumurtası dahil — hazır ve yüksek fiyatlı bir pazar oluşturur; kırsal ilçelerde aile tavukçuluğu yaygındır.",
+  "ilceler": [
+   "Derinkuyu",
+   "Acıgöl",
+   "Gülşehir",
+   "Avanos",
+   "Kozaklı",
+   "Hacıbektaş"
+  ],
+  "ozel_not": "Kapadokya turizm bölgesi: butik otel ve köy kahvaltısı pazarında gezen tavuk yumurtası prim yapar.",
+  "tkdk": true
+ },
+ "Niğde": {
+  "plaka": 51,
+  "bolge": "İç Anadolu",
+  "km_istanbul": 775,
+  "sure_saat": 10.5,
+  "iklim": "Yüksek rakımlı (1.200 m+) karasal iklim: kış Konya-Aksaray'dan bir tık daha sert ve karlı, geceler dondurucu geçer. Yaz gündüzleri sıcak, geceleri serindir; 4 kat yalıtım güvenli tercihtir.",
+  "kar_yuku": "orta",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Patates üretiminde Türkiye'nin lider illerinden (Niğde-Nevşehir havzası); elmasıyla da ünlüdür. Tarımsal nüfus yoğun, köy tavukçuluğu geleneği canlı; Bor ve Çiftlik ovalarında sulu tarım işletmeleri yaygındır.",
+  "ilceler": [
+   "Bor",
+   "Çiftlik",
+   "Altunhisar",
+   "Ulukışla",
+   "Çamardı"
+  ],
+  "tkdk": false
+ },
+ "Ordu": {
+  "plaka": 52,
+  "bolge": "Karadeniz",
+  "km_istanbul": 880,
+  "sure_saat": 11.5,
+  "iklim": "Sahilde ılıman ve yağışlı, kar nadiren tutar; Mesudiye, Gölköy, Korgan gibi iç-yüksek ilçelerde kışlar karlı ve serttir. Sahilde nem ve rüzgâr, içeride kar yükü belirleyicidir.",
+  "kar_yuku": "orta",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Ordu, Türkiye fındık üretiminin lider ilidir ve tarımsal gelir büyük ölçüde fındığa bağlıdır; bu tek ürün bağımlılığı üreticiyi yıl boyu ek gelir arayışına iter. Arıcılıkta da Türkiye'nin en önde gelen illerindendir. Eğimli ve parçalı arazide betonarme kümes inşaatı zor ve pahalıdır; köy yumurtasına talep canlıdır.",
+  "ilceler": [
+   "Fatsa",
+   "Ünye",
+   "Perşembe",
+   "Korgan",
+   "Gölköy",
+   "Mesudiye"
+  ],
+  "ozel_not": "Fındık geliri sezonluk — yumurta satışı yıl boyu nakit akışı sağlar; küçük parsele temelsiz kurulum eğimli arazide avantaj.",
+  "tkdk": true
+ },
+ "Rize": {
+  "plaka": 53,
+  "bolge": "Karadeniz",
+  "km_istanbul": 1135,
+  "sure_saat": 14.5,
+  "iklim": "Türkiye'nin en yağışlı ili; sahilde kışlar ılık ama yağmur neredeyse süreklidir, iç vadiler ve yüksek kesimlerde kar ağırlaşır. Su geçirmez branda ve güçlü havalandırma şarttır.",
+  "kar_yuku": "orta",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Rize ekonomisi çayla özdeştir; tarım arazileri dik ve parçalı olduğundan büyük kümes yatırımına uygun düzlük azdır. Kanatlı sanayi yoktur; köy tavukçuluğu hane ölçeğinde yaygındır ve yoğun yağış nedeniyle tavuklar için kapalı, korunaklı barınak ihtiyacı belirgindir.",
+  "ilceler": [
+   "Ardeşen",
+   "Pazar",
+   "Çayeli",
+   "Fındıklı",
+   "İkizdere",
+   "Kalkandere"
+  ],
+  "ozel_not": "Çay geliri sezonluk (mayıs-ekim) — yıl boyu ek gelir arayışı; sürekli yağış kapalı barınak ihtiyacını kendiliğinden anlatır.",
+  "tkdk": false
+ },
+ "Sakarya": {
+  "plaka": 54,
+  "bolge": "Marmara",
+  "km_istanbul": 150,
+  "sure_saat": 2,
+  "iklim": "Karadeniz geçişli, ılıman ve bol yağışlı bir iklim; Adapazarı ovasında kış yumuşak geçer, Akyazı-Hendek dağ eteklerinde ve Taraklı yüksek kesimlerinde kar görülür. Yüksek nem, kümes içi havalandırmayı önemli kılar.",
+  "kar_yuku": "orta",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Sakarya, Türkiye'nin en önemli etlik piliç (broiler) üretim merkezlerinden biridir; ülkenin en büyük piliç eti entegrasyonlarından Şenpiliç'in merkezi Sakarya'dadır. Akyazı, Hendek, Söğütlü ve Kaynarca kırsalında sözleşmeli üretim yapan yüzlerce kümes bulunur. Kanatlı yetiştiriciliği il genelinde bilinen, kanıksanmış bir geçim kaynağıdır — çadır kümes fikrine en hazır müşteri profillerinden biri buradadır.",
+  "ilceler": [
+   "Akyazı",
+   "Hendek",
+   "Söğütlü",
+   "Kaynarca",
+   "Geyve",
+   "Karasu"
+  ],
+  "ozel_not": "Türkiye'nin broiler üssü: kanatlı kültürü yerleşik, entegrasyon deneyimi olan üretici kitlesi çadır kümesi hızlı kavrar.",
+  "tkdk": false
+ },
+ "Samsun": {
+  "plaka": 55,
+  "bolge": "Karadeniz",
+  "km_istanbul": 725,
+  "sure_saat": 9.5,
+  "iklim": "Sahil şeridinde kışlar ılıman ama nemli ve yağışlı; Vezirköprü, Havza, Ladik gibi iç ilçelerde iklim karasallaşır, kar yağışı belirginleşir. Nemli sahilde havalandırma, iç ilçelerde yalıtım öne çıkar.",
+  "kar_yuku": "orta",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Samsun, Bafra ve Çarşamba ovalarıyla Karadeniz'in tarım merkezidir; sebzecilikten hayvancılığa geniş bir üretim yelpazesi vardır. Tahıl ve yem bitkisi üretimi güçlü olduğundan kümes yemi erişimi kolaydır. İç ilçelerde köy tavukçuluğu canlıdır ve doğal yumurtaya şehir pazarında talep yüksektir.",
+  "ilceler": [
+   "Bafra",
+   "Çarşamba",
+   "Vezirköprü",
+   "Havza",
+   "Terme",
+   "Kavak"
+  ],
+  "ozel_not": "Bafra ve Çarşamba ovaları Karadeniz'in en büyük tarım havzası; bölgenin lojistik merkezi olması çevre illere de erişim demek.",
+  "tkdk": true
+ },
+ "Siirt": {
+  "plaka": 56,
+  "bolge": "Güneydoğu Anadolu",
+  "km_istanbul": 1560,
+  "sure_saat": 21,
+  "iklim": "Merkez ve ovada kışlar orta sertlikte geçer; Pervari, Şirvan gibi yüksek ilçelerde kar ağır ve uzun sürelidir. Yazlar sıcak ve kuraktır; kar yükü kurulum yapılan ilçeye göre ciddi değişir.",
+  "kar_yuku": "orta",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Siirt, fıstığı (Siirt fıstığı) ve Pervari balıyla ünlü bir tarım ilidir; hayvancılıkta kıl keçisi ve koyunculuk öne çıkar. Kanatlı üretimi küçük ölçekli köy tavukçuluğu düzeyindedir, ticari entegrasyon yoktur. Engebeli coğrafyada köy hanelerinin kendi yumurtasını üretmesi yaygın gelenektir.",
+  "ilceler": [
+   "Kurtalan",
+   "Pervari",
+   "Baykan",
+   "Şirvan",
+   "Eruh"
+  ],
+  "ozel_not": "",
+  "tkdk": false
+ },
+ "Sinop": {
+  "plaka": 57,
+  "bolge": "Karadeniz",
+  "km_istanbul": 690,
+  "sure_saat": 9.5,
+  "iklim": "Kıyıda tipik ılıman ve nemli Karadeniz iklimi; Boyabat-Durağan iç kesiminde kışlar belirgin şekilde daha soğuk ve karlıdır. Kıyıda nem ve rüzgâra, içeride kar ve soğuğa göre planlama gerekir.",
+  "kar_yuku": "orta",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Sinop'ta tarım küçük ölçekli aile işletmelerine dayanır; Boyabat ve Durağan çevresindeki iç kesim çeltik (pirinç) üretimiyle tanınır. Kanatlıda büyük entegrasyon yoktur; köy tavukçuluğu ve doğal yumurta üretimi kırsalda yaygın bir ek gelir kaynağıdır.",
+  "ilceler": [
+   "Boyabat",
+   "Durağan",
+   "Gerze",
+   "Ayancık",
+   "Erfelek",
+   "Türkeli"
+  ],
+  "tkdk": false
+ },
+ "Sivas": {
+  "plaka": 58,
+  "bolge": "İç Anadolu",
+  "km_istanbul": 890,
+  "sure_saat": 11.5,
+  "iklim": "Türkiye'nin en soğuk il merkezlerinden; kışın sıcaklık -20°C'yi görebilir ve kar örtüsü uzun süre kalıcıdır. Yazlar kısa ve serindir.",
+  "yalitim": "4 kat",
+  "kar_yuku": "yüksek",
+  "tavukculuk": "Türkiye'nin en geniş yüzölçümlü illerinden biri olarak geniş meralarıyla büyükbaş ve küçükbaş hayvancılığın merkezlerindendir; tahıl tarımı yaygındır. Kırsal hanelerde tavuk beslemek yaygın bir gelenektir; sert ve uzun kışlar, kümeslerde yalıtımı hayati kılar.",
+  "ilceler": [
+   "Şarkışla",
+   "Yıldızeli",
+   "Gemerek",
+   "Zara",
+   "Suşehri",
+   "Gürün"
+  ],
+  "ozel_not": "Türkiye'nin en sert kışlı illerinden — 4 kat yalıtım ve kar yüküne dayanıklı güçlendirilmiş iskelet burada ana satış argümanı.",
+  "tkdk": true
+ },
+ "Tekirdağ": {
+  "plaka": 59,
+  "bolge": "Marmara",
+  "km_istanbul": 135,
+  "sure_saat": 2,
+  "iklim": "Kıyı şeridi ılıman geçse de Trakya'nın iç kesimlerinde (Hayrabolu, Saray, Malkara) kışlar soğuk ve rüzgarlıdır; poyraz sert eser, kar yağışı ve don görülür.",
+  "kar_yuku": "orta",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Tekirdağ, Trakya'nın tahıl ve ayçiçeği ambarıdır; Hayrabolu ve Malkara çevresinde süt hayvancılığı güçlü bir gelenektir. Köy tavukçuluğu kırsal ilçelerde yaygındır ve tarımsal işletme kültürü köklüdür. Çerkezköy-Çorlu sanayi hattının yarattığı gelir, kırsalda hobi bahçesi ve küçük çiftlik yatırımlarını beslemektedir.",
+  "ilceler": [
+   "Hayrabolu",
+   "Malkara",
+   "Saray",
+   "Muratlı",
+   "Şarköy"
+  ],
+  "ozel_not": "İstanbul'dan taşan nüfusla hızla büyüyen il: hobi bahçesi ve küçük çiftlik kurulumları için canlı pazar, nakliye aynı gün.",
+  "tkdk": false
+ },
+ "Tokat": {
+  "plaka": 60,
+  "bolge": "Karadeniz",
+  "km_istanbul": 785,
+  "sure_saat": 10.5,
+  "iklim": "Karadeniz'den İç Anadolu'ya geçiş iklimi: kışlar soğuk ve kar yağışlı, yazlar ovalarda sıcaktır. Yüksek ilçelerde kış belirgin şekilde sertleşir; ilçeye göre yalıtım ihtiyacı değişir.",
+  "kar_yuku": "orta",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Tokat, Kazova başta olmak üzere Erbaa, Niksar ve Turhal ovalarıyla güçlü bir tarım ilidir; sebze, meyve ve tahıl üretimi çeşitlidir. Yem bitkisi ve tahıl üretiminin bolluğu kümes besleme maliyetini düşürür. Kanatlıda dev entegrasyonlar yerine küçük-orta ölçekli işletmeler ve köy tavukçuluğu hakimdir.",
+  "ilceler": [
+   "Erbaa",
+   "Niksar",
+   "Zile",
+   "Turhal",
+   "Pazar",
+   "Almus"
+  ],
+  "tkdk": true
+ },
+ "Trabzon": {
+  "plaka": 61,
+  "bolge": "Karadeniz",
+  "km_istanbul": 1065,
+  "sure_saat": 13.5,
+  "iklim": "Sahilde kışlar ılık geçer ve kar az tutar, ancak nem yıl boyu yüksektir; yayla ve yüksek kesimlerde kar ağırdır. Nemli iklimde havalandırma ve yoğuşma kontrolü önceliklidir.",
+  "kar_yuku": "orta",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Trabzon'da tarım, eğimli ve parçalı arazide küçük ölçeklidir: fındık, çay ve yayla hayvancılığı öne çıkar. Yayla kültürü güçlüdür ve köy yumurtası ile doğal ürünlere şehir içi talep yüksektir. Büyük düzlük gerektirmeyen, temelsiz kurulan çadır kümes bu parçalı arazi yapısına uygundur.",
+  "ilceler": [
+   "Akçaabat",
+   "Vakfıkebir",
+   "Of",
+   "Sürmene",
+   "Tonya",
+   "Düzköy"
+  ],
+  "ozel_not": "Köy yumurtasına güçlü kent talebi ve yayla kültürü; eğimli arazide temelsiz-hızlı kurulum belirgin satış açısı.",
+  "tkdk": true
+ },
+ "Tunceli": {
+  "plaka": 62,
+  "bolge": "Doğu Anadolu",
+  "km_istanbul": 1165,
+  "sure_saat": 17,
+  "iklim": "Merkez, vadi tabanında görece ılımanken Ovacık ve Pülümür gibi yüksek ilçelerde kış çok karlı ve serttir; yalıtım ihtiyacı ilçeye göre değişir.",
+  "kar_yuku": "yüksek",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Tunceli, Munzur Vadisi çevresinde küçük ölçekli hayvancılık ve arıcılıkla tanınır; Türkiye'nin en az nüfuslu, doğası en el değmemiş illerindendir. Organik tarım potansiyeli sıkça vurgulanır; kanatlı üretimi köy tavuğu ölçeğindedir.",
+  "ilceler": [
+   "Pertek",
+   "Çemişgezek",
+   "Mazgirt",
+   "Ovacık",
+   "Hozat"
+  ],
+  "ozel_not": "Temiz doğa ve organik üretim imajı güçlü — doğal/gezen tavuk yumurtası markalaşması için uygun anlatı.",
+  "tkdk": false
+ },
+ "Şanlıurfa": {
+  "plaka": 63,
+  "bolge": "Güneydoğu Anadolu",
+  "km_istanbul": 1270,
+  "sure_saat": 17,
+  "iklim": "Türkiye'nin en sıcak illerinden; yazlar 40°C üzeri, kışlar ılıman, kar nadirdir. Çadır kümeste kar yükünden çok yaz sıcağına karşı havalandırma ve gölgeleme kritik.",
+  "kar_yuku": "düşük",
+  "yalitim": "3 kat",
+  "tavukculuk": "Şanlıurfa GAP sulamasıyla Türkiye'nin en büyük tarım illerinden biri; mısır üretiminde Konya ve Adana ile birlikte ilk sıralarda yer alır ve Türkiye'de mısırın yaklaşık dörtte üçü yem sanayiine gider — yani tavuk yeminin hammaddesi bu ilde yetişir. Harran Ovası'nda tahıl ve pamuk tarımı, kırsalda koyunculuğun yanında köy tavukçuluğu yaygındır. İlde büyük kanatlı entegrasyonu yoktur; üretim aile ölçeğindedir.",
+  "ilceler": [
+   "Siverek",
+   "Viranşehir",
+   "Harran",
+   "Akçakale",
+   "Suruç",
+   "Bozova"
+  ],
+  "ozel_not": "GAP sulamasıyla patlayan mısır üretimi (2004'te 72 bin ton, 2019'da ~1,5 milyon ton) yem hammaddesini yerinde ve ucuz kılar — 'yemi ayağında' anlatısı gerçeğe dayanır. İl ayrıca 2023 depremlerinde afet bölgesi ilan edilen iller arasındaydı.",
+  "tkdk": true
+ },
+ "Uşak": {
+  "plaka": 64,
+  "bolge": "Ege",
+  "km_istanbul": 490,
+  "sure_saat": 6.5,
+  "kar_yuku": "orta",
+  "iklim": "İç Ege'nin yaklaşık 900 metre rakımlı geçiş ikliminde kışlar soğuk geçer ve kar yağışı görülür; yazlar sıcak ve kurak. Orta düzey kar yükü hesaba katılmalı.",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "İç Ege'de tahıl, şekerpancarı ve bağcılığa dayalı geleneksel bir tarım ili; kırsalda büyükbaş ve küçükbaş hayvancılık yaygın. Eşme ve Sivaslı gibi ilçelerde aile tipi köy tavukçuluğu geleneği sürüyor. Ege kıyısı ile İç Anadolu arasındaki geçiş kuşağında yer alması tarımsal üretimi çeşitlendiriyor.",
+  "ilceler": [
+   "Banaz",
+   "Eşme",
+   "Sivaslı",
+   "Ulubey",
+   "Karahallı"
+  ],
+  "tkdk": true
+ },
+ "Van": {
+  "plaka": 65,
+  "bolge": "Doğu Anadolu",
+  "km_istanbul": 1625,
+  "sure_saat": 23,
+  "iklim": "1.700 m rakımda sert karasal kış; Van Gölü çevresi iklimi kısmen yumuşatsa da don ve kar aylarca sürer, yüksek ilçelerde kış çok ağırdır.",
+  "kar_yuku": "yüksek",
+  "yalitim": "4 kat",
+  "tavukculuk": "Van Gölü havzasında ekonomi küçükbaş hayvancılığa ve tarıma dayanır; otlu peynir ilin simgesidir. Kanatlıda büyük entegrasyon yoktur; köy tavukçuluğu ve doğal yumurta üretimi aile işletmeleri ölçeğindedir. Bölgenin en kalabalık kenti olarak taze yumurtaya yerel talep yüksektir.",
+  "ilceler": [
+   "Erciş",
+   "Gürpınar",
+   "Muradiye",
+   "Çaldıran",
+   "Gevaş",
+   "Özalp"
+  ],
+  "ozel_not": "Doğu Anadolu'nun güneyindeki en büyük kent ve ticaret merkezi; Kapıköy (İran) sınır kapısı ile sınır ticareti hattı.",
+  "tkdk": true
+ },
+ "Yozgat": {
+  "plaka": 66,
+  "bolge": "İç Anadolu",
+  "km_istanbul": 665,
+  "sure_saat": 9,
+  "iklim": "Rakımı 1.300 metreye yaklaşan Bozok Platosu'nda kışlar uzun, sert ve karlıdır; kar örtüsü haftalarca kalkmayabilir. Kar yüküne dayanıklı çatı ve tam yalıtım şarttır.",
+  "yalitim": "4 kat",
+  "kar_yuku": "yüksek",
+  "tavukculuk": "Bozok Platosu'nda buğday-arpa tarımı ve şekerpancarı ilin tarımsal omurgasıdır; büyükbaş ve küçükbaş hayvancılık yaygındır. Kırsal nüfusu yüksek olan ilde köy tavukçuluğu ve doğal yumurta üretimi köklü bir gelenektir; hemen her köy hanesinde kümes bulunur.",
+  "ilceler": [
+   "Sorgun",
+   "Boğazlıyan",
+   "Yerköy",
+   "Akdağmadeni",
+   "Sarıkaya",
+   "Şefaatli"
+  ],
+  "tkdk": true
+ },
+ "Zonguldak": {
+  "plaka": 67,
+  "bolge": "Karadeniz",
+  "km_istanbul": 340,
+  "sure_saat": 5,
+  "iklim": "Ilıman ve her mevsim yağışlı Karadeniz iklimi; kar zaman zaman etkili olsa da kıyıda uzun süre kalmaz. Yüksek nem, kümeste havalandırmayı öne çıkarır.",
+  "yalitim": "3 kat",
+  "kar_yuku": "orta",
+  "tavukculuk": "Madencilik kimliğiyle bilinen ilde tarım, Filyos Vadisi ile Çaycuma ve Devrek ovalarında yoğunlaşır. Engebeli arazi büyük ölçekli tarımı sınırladığından kırsalda aile ölçekli üretim ve ev tavukçuluğu yaygındır; Çaycuma manda yoğurdu gibi yöresel ürünler bu küçük üretici kültürünün göstergesidir.",
+  "ilceler": [
+   "Çaycuma",
+   "Devrek",
+   "Gökçebey",
+   "Alaplı",
+   "Ereğli"
+  ],
+  "ozel_not": "Engebeli arazide beton temel gerektirmeyen hafif ve hızlı kurulum belirgin bir avantaj olarak işlenebilir.",
+  "tkdk": false
+ },
+ "Aksaray": {
+  "plaka": 68,
+  "bolge": "İç Anadolu",
+  "km_istanbul": 680,
+  "sure_saat": 9.5,
+  "iklim": "Karasal step iklimi: kış soğuk, ova rüzgara açık; kar yağar ama birikme İç Anadolu ortalamasındadır. Yaz sıcak ve kuru.",
+  "kar_yuku": "orta",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Türkiye'nin önemli süt üretim merkezlerinden; özellikle Eskil ilçesi büyük ölçekli süt sığırcılığıyla tanınır. Tahıl ve yem bitkisi üretimi güçlü, hayvancılık altyapısı ve yem tedarik zinciri gelişmiş — mevcut çiftliklere kümes eklemek kolaydır.",
+  "ilceler": [
+   "Eskil",
+   "Ortaköy",
+   "Gülağaç",
+   "Güzelyurt",
+   "Sultanhanı",
+   "Ağaçören"
+  ],
+  "ozel_not": "Büyük işletme kültürü olan süt hayvancılığı bölgesi; çiftliklere yan gelir olarak tavukçuluk ekleme eğilimi satış açısı.",
+  "tkdk": true
+ },
+ "Bayburt": {
+  "plaka": 69,
+  "bolge": "Karadeniz",
+  "km_istanbul": 1140,
+  "sure_saat": 15,
+  "iklim": "1.550 metre rakımıyla Türkiye'nin en soğuk il merkezlerinden; kışlar çok uzun, sert ve karlıdır, don günü sayısı yüksektir. En üst düzey yalıtım ve kar dayanımı zorunludur.",
+  "kar_yuku": "yüksek",
+  "yalitim": "4 kat",
+  "tavukculuk": "Bayburt, Türkiye'nin en az nüfuslu illerinden biridir ve ekonomisi büyükbaş hayvancılık, arıcılık ve tahıl tarımına dayanır. Kanatlıda sanayi ölçeği yoktur; köy tavukçuluğu ve aile kümesleri yaygındır. Uzun ve sert kış, tavuklar için yalıtımlı kapalı barınağı bu ilde bir lüks değil zorunluluk haline getirir.",
+  "ilceler": [
+   "Demirözü",
+   "Aydıntepe",
+   "Merkez"
+  ],
+  "tkdk": false
+ },
+ "Karaman": {
+  "plaka": 70,
+  "bolge": "İç Anadolu",
+  "km_istanbul": 775,
+  "sure_saat": 10.5,
+  "iklim": "Karasal iklim: kış soğuk ve rüzgarlı, kar görülür ama yağış azdır; Taşeli platosundaki Ermenek-Sarıveliler tarafı daha serttir. Yaz sıcak ve kuru.",
+  "kar_yuku": "orta",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Elma üretiminde Türkiye'nin lider illerinden; tahıl ve baklagil ekimi geniş yer tutar, bisküvi-gıda sanayii güçlüdür. Kanatlıda büyük entegrasyon iddiası yoktur; kırsal ilçelerde aile tipi tavukçuluk ve köy yumurtası üretimi yaygındır.",
+  "ilceler": [
+   "Ermenek",
+   "Ayrancı",
+   "Kazımkarabekir",
+   "Sarıveliler",
+   "Başyayla"
+  ],
+  "tkdk": true
+ },
+ "Kırıkkale": {
+  "plaka": 71,
+  "bolge": "İç Anadolu",
+  "km_istanbul": 525,
+  "sure_saat": 7,
+  "iklim": "Karasal iklim; kışlar soğuk, yazlar sıcak ve kuraktır. Kar yükü Ankara çevresiyle benzer, orta düzeydedir.",
+  "yalitim": "3 veya 4 kat",
+  "kar_yuku": "orta",
+  "tavukculuk": "Savunma sanayii ve rafinerisiyle bilinen ilin kırsalında Kızılırmak vadisi boyunca tarım arazileri uzanır; Delice ve Keskin çevresinde tahıl tarımı ile küçükbaş hayvancılık yaygındır. Ankara'ya yalnızca 75 km mesafe, köy yumurtası ve gezen tavuk ürünleri için hazır bir büyükşehir pazarı demektir.",
+  "ilceler": [
+   "Keskin",
+   "Delice",
+   "Sulakyurt",
+   "Balışeyh",
+   "Çelebi"
+  ],
+  "ozel_not": "Samsun, Kayseri ve Ankara karayollarının kavşağında yer alır — İç Anadolu'ya açılan lojistik geçiş noktası.",
+  "tkdk": false
+ },
+ "Batman": {
+  "plaka": 72,
+  "bolge": "Güneydoğu Anadolu",
+  "km_istanbul": 1475,
+  "sure_saat": 20,
+  "iklim": "Karasal iklim: yazlar kavurucu, kışlar soğuktur; kar yağışı görülür ama Doğu Anadolu kadar ağır değildir. Gece ayazına karşı yalıtım, yazın ise havalandırma önemlidir.",
+  "kar_yuku": "orta",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Batman petrol kentiyle anılsa da Beşiri ve Kozluk ovalarında tahıl ve baklagil tarımı, kırsalda küçükbaş hayvancılık yaygındır. Kanatlıda ticari entegrasyon bulunmaz; köy tavukçuluğu aile ölçeğindedir. Şehir merkezinin doğal köy yumurtası talebi çevre köylerden karşılanır.",
+  "ilceler": [
+   "Kozluk",
+   "Sason",
+   "Beşiri",
+   "Gercüş",
+   "Hasankeyf"
+  ],
+  "ozel_not": "",
+  "tkdk": false
+ },
+ "Şırnak": {
+  "plaka": 73,
+  "bolge": "Güneydoğu Anadolu",
+  "km_istanbul": 1610,
+  "sure_saat": 22,
+  "iklim": "İl içi kontrast büyüktür: ~1.400 m'deki Şırnak merkez ile Uludere-Beytüşşebap hattında kışlar karlı ve serttir, Cizre-Silopi Ovası ise Türkiye'nin en sıcak yerlerindendir. Kurulum noktasına göre kar yükü ve yaz sıcağı ayrı ayrı değerlendirilmelidir.",
+  "kar_yuku": "orta",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Şırnak ekonomisi Habur kapısı üzerinden sınır ticaretine ve küçükbaş hayvancılığa dayanır; Cizre-Silopi Ovası ilin tahıl ambarıdır. Kanatlıda ticari üretim yok denecek kadar azdır, köy tavukçuluğu aile ihtiyacına dönüktür. Ova köylerindeki arpa-buğday bolluğu yem maliyetini düşürür.",
+  "ilceler": [
+   "Cizre",
+   "Silopi",
+   "İdil",
+   "Uludere",
+   "Güçlükonak"
+  ],
+  "ozel_not": "Habur Sınır Kapısı ticareti Cizre-Silopi hattında ekonomik hareketlilik yaratır; ovadaki tahıl bolluğu yem maliyeti avantajı sunar.",
+  "tkdk": false
+ },
+ "Bartın": {
+  "plaka": 74,
+  "bolge": "Karadeniz",
+  "km_istanbul": 435,
+  "sure_saat": 6,
+  "iklim": "Kıyıda ılıman ve bol yağışlı; iç kesimlerde (Ulus tarafı) kışlar daha karlıdır. Yüksek nem nedeniyle yalıtım kadar havalandırma yönetimi de önemlidir.",
+  "yalitim": "3 kat",
+  "kar_yuku": "orta",
+  "tavukculuk": "Küçük ölçekli aile tarımının güçlü olduğu bir Batı Karadeniz ilidir; çilek üretimiyle tanınır. Bartın'ın asırlık Kadınlar Pazarı'nda (Galla Bazarı) köylü kadınlar köy yumurtası, tavuk ve kendi ürettikleri ürünleri doğrudan satar — köy tavukçuluğu burada yaşayan bir kültürdür.",
+  "ilceler": [
+   "Ulus",
+   "Amasra",
+   "Kurucaşile"
+  ],
+  "ozel_not": "Galla Bazarı (Kadınlar Pazarı), köy yumurtası için hazır bir doğrudan satış kanalı — üretici kadınlara yönelik ek gelir anlatısı bu ilde somut bir karşılık bulur.",
+  "tkdk": false
+ },
+ "Ardahan": {
+  "plaka": 75,
+  "bolge": "Doğu Anadolu",
+  "km_istanbul": 1400,
+  "sure_saat": 20,
+  "iklim": "Türkiye'nin en soğuk illerinden; yılın yarısına yakını kar ve sert don altında geçer. Yüksek plato rüzgarı yalıtımı ayrıca zorlar.",
+  "kar_yuku": "yüksek",
+  "yalitim": "4 kat",
+  "tavukculuk": "Ardahan yüksek platoda mera hayvancılığı ve arıcılıkla geçinir; Çıldır Gölü çevresi ve Göle ovası ilin tarımsal merkezleridir. Kars'la birlikte kaz besiciliğinin en yoğun olduğu illerdendir; kümes hayvancılığı aile ölçeğindedir.",
+  "ilceler": [
+   "Göle",
+   "Çıldır",
+   "Hanak",
+   "Posof",
+   "Damal"
+  ],
+  "ozel_not": "Kaz besiciliği çok yaygın — kaz barınağı satış açısı; ayrıca Türkiye'nin en soğuk illerinden biri olarak yalıtım mesajının en inandırıcı olduğu pazar.",
+  "tkdk": true
+ },
+ "Iğdır": {
+  "plaka": 76,
+  "bolge": "Doğu Anadolu",
+  "km_istanbul": 1550,
+  "sure_saat": 22,
+  "iklim": "Doğu Anadolu'nun en ılıman ili; düşük rakımlı ova mikrokliması sayesinde kış çevre illere göre yumuşak, kar azdır. Yaz ise bölge için sıra dışı sıcak geçer — havalandırma öne çıkar.",
+  "kar_yuku": "düşük",
+  "yalitim": "3 veya 4 kat",
+  "tavukculuk": "Iğdır Ovası, çevresindeki yüksek platoların aksine düşük rakımlı bir mikroklimadır; kayısı, pamuk ve sebze yetişen sulu tarım havzasıdır. Hayvancılık ve aile tipi kümes hayvancılığı yaygındır; ticari kanatlı entegrasyonu yoktur.",
+  "ilceler": [
+   "Tuzluca",
+   "Aralık",
+   "Karakoyunlu"
+  ],
+  "ozel_not": "Doğu Anadolu'nun mikroklima ovası — bölgenin en ılıman kışı; Dilucu sınır kapısı (Nahçıvan) üzerinden sınır ticareti hareketliliği.",
+  "tkdk": false
+ },
+ "Yalova": {
+  "plaka": 77,
+  "bolge": "Marmara",
+  "km_istanbul": 100,
+  "sure_saat": 1.5,
+  "iklim": "Marmara kıyısında ılıman ve nemli bir iklim; kışlar yumuşak geçer, kar nadiren yağar ve tutmaz. Çadır kümes için Türkiye'nin en elverişli iklimlerinden biridir.",
+  "kar_yuku": "düşük",
+  "yalitim": "3 kat",
+  "tavukculuk": "Türkiye'nin yüzölçümü en küçük ili olan Yalova'da tarım küçük parselli ama yoğundur; il süs bitkisi yetiştiriciliği ve kivi üretimiyle tanınır. Büyük ölçekli kanatlı üretimi yoktur; buna karşılık İstanbul'dan taşınan ve köy hayatına dönen nüfusun hobi tavukçuluğu ve aile tipi kümes talebi belirgindir. Altınova ve Çiftlikköy kırsalı ile Armutlu-Çınarcık yamaçları küçük çiftlik kurulumlarına uygundur.",
+  "ilceler": [
+   "Altınova",
+   "Çiftlikköy",
+   "Çınarcık",
+   "Termal",
+   "Armutlu"
+  ],
+  "ozel_not": "Osmangazi Köprüsü ile İstanbul'a 1-1,5 saat: şehirden köye dönen hobi çiftçisi kitlesinin merkezi.",
+  "tkdk": false
+ },
+ "Karabük": {
+  "plaka": 78,
+  "bolge": "Karadeniz",
+  "km_istanbul": 405,
+  "sure_saat": 5.5,
+  "iklim": "Vadi tabanındaki merkezde yazlar sıcak, kışlar soğuk ve sisli-karlı geçer; ili çevreleyen dağlık-ormanlık kuşak düzenli kar alır.",
+  "yalitim": "3 veya 4 kat",
+  "kar_yuku": "orta",
+  "tavukculuk": "Demir-çelik (Kardemir) kenti olan Karabük'ün yüzölçümünün büyük bölümü ormanlarla kaplıdır. Tarım, Eflani, Eskipazar ve Ovacık gibi ilçelerde küçük aile işletmeleri ölçeğindedir; köy tavukçuluğu ve arıcılık yaygın ek gelir kaynaklarıdır. Safranbolu safranı ilin en bilinen tarımsal ürünüdür.",
+  "ilceler": [
+   "Eskipazar",
+   "Eflani",
+   "Ovacık",
+   "Yenice",
+   "Safranbolu"
+  ],
+  "ozel_not": "Safranbolu'nun yoğun turizmi, köy kahvaltısı ve yöresel ürün mutfağı üzerinden köy yumurtasına sürekli talep yaratır.",
+  "tkdk": false
+ },
+ "Kilis": {
+  "plaka": 79,
+  "bolge": "Güneydoğu Anadolu",
+  "km_istanbul": 1170,
+  "sure_saat": 16,
+  "iklim": "Akdeniz etkili ılıman iklim; kışlar yumuşak ve yağmurlu, kar nadirdir. Çadır kümeste asıl konu kar değil, yaz sıcağında havalandırma ve gölgelemedir.",
+  "kar_yuku": "düşük",
+  "yalitim": "3 kat",
+  "tavukculuk": "Kilis'in tarımı zeytinlikler ve bağcılıkla, hayvancılığı ise meşhur Kilis keçisiyle anılır. Kanatlı üretimi küçük ölçekli, aile tipi köy tavukçuluğu düzeyindedir; ticari entegrasyon yoktur. Kırsal hanelerde kendi yumurtası için tavuk besleme geleneği yaygındır.",
+  "ilceler": [
+   "Musabeyli",
+   "Polateli",
+   "Elbeyli"
+  ],
+  "ozel_not": "2023 depremlerinde afet bölgesi ilan edilen iller arasındaydı; küçük arazili aile işletmeleri için kompakt modeller öne çıkarılabilir.",
+  "tkdk": false
+ },
+ "Osmaniye": {
+  "plaka": 80,
+  "bolge": "Akdeniz",
+  "km_istanbul": 1025,
+  "sure_saat": 13.5,
+  "iklim": "Akdeniz iklimi: ılık-yağışlı kış, sıcak yaz. Kar yalnızca Amanos eteklerindeki yüksek köylerde görülür; il genelinde kar yükü düşüktür.",
+  "kar_yuku": "düşük",
+  "yalitim": "3 kat",
+  "tavukculuk": "Türkiye yer fıstığı üretiminin merkezi; Kadirli ve Düziçi ovaları tahıl, mısır ve fıstıkla geçinir. Tarımsal nüfusun yüksek olduğu ilde aile tipi köy tavukçuluğu yaygındır; büyük kanatlı entegrasyonundan çok küçük üretici dokusu hakimdir.",
+  "ilceler": [
+   "Kadirli",
+   "Düziçi",
+   "Bahçe",
+   "Sumbas",
+   "Toprakkale",
+   "Hasanbeyli"
+  ],
+  "ozel_not": "2023 Kahramanmaraş depremlerinde ağır hasar gören illerden; yeniden yapılanma sürecinde temelsiz, aynı gün kurulan çadır kümes güçlü bir çözüm mesajı.",
+  "tkdk": false
+ },
+ "Düzce": {
+  "plaka": 81,
+  "bolge": "Karadeniz",
+  "km_istanbul": 215,
+  "sure_saat": 3,
+  "iklim": "Karadeniz etkisinde ılıman ve yağışlı; kışlar çoğunlukla yağmurlu geçer, kar kısa sürelidir. Asıl konu yüksek nem — havalandırma yalıtım kadar önemlidir.",
+  "yalitim": "3 kat",
+  "kar_yuku": "düşük",
+  "tavukculuk": "1999'a kadar Bolu'ya bağlı olan Düzce, Bolu merkezli piliç entegrasyonlarının sözleşmeli üretim havzası içindedir; kırsalda etlik piliç kümesleri yaygındır ve yetiştiricilik kültürü yerleşiktir. Fındık üretimi ilin tarımsal kimliğinin diğer ayağıdır.",
+  "ilceler": [
+   "Akçakoca",
+   "Yığılca",
+   "Gölyaka",
+   "Çilimli",
+   "Kaynaşlı",
+   "Gümüşova"
+  ],
+  "ozel_not": "TEM/D-100 üzerinde İstanbul'a en yakın illerden (yaklaşık 3 saat) — hızlı, hatta aynı gün teslim-kurulum vurgusu yapılabilir.",
+  "tkdk": false
+ }
+}

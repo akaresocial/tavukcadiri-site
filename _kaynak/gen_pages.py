@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import os, html, json
-PROJ="/Volumes/ABDURRAHMAN/APP/Tavuk Çadırı"
-SCR="/private/tmp/claude-501/-Volumes-ABDURRAHMAN-APP-Tavuk--ad-r-/c4778228-16bc-4e77-b9dd-f19e5b0e793d/scratchpad"
+PROJ=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASES=(PROJ,)  # üretim hedefleri (önizleme kopyası gerekirse buraya eklenir)
 SITE="https://tavukcadiri.com"
 WA="905526663606"
 WA_DISP="0552 666 36 06"
@@ -88,9 +88,9 @@ def footer(pre):
       '<div><img src="%sassets/logo.png" alt="Tavuk Çadırı" style="width:150px"><p class="about">3 ve 4 kat yalıtımlı, TSE damgalı brandalı anahtar teslim tavuk çadırı. Türkiye geneli 81 ile nakliye ve kurulum. Üretim: DEHA Çadır.</p>'
       '<a href="https://wa.me/%s" target="_blank" rel="noopener" class="wa-btn" style="font-size:14.5px;padding:11px 17px">%s<span>Bize ulaşın</span></a></div>'
       '<div><h5>Ürünler</h5><ul>%s</ul></div>'
-      '<div><h5>Kurumsal</h5><ul><li><a href="%shakkimizda/">Hakkımızda</a></li><li><a href="%siletisim/">İletişim</a></li><li><a href="%sindex.html#sss">S.S.S.</a></li><li><a href="%sblog/">Blog</a></li></ul></div>'
+      '<div><h5>Kurumsal</h5><ul><li><a href="%shakkimizda/">Hakkımızda</a></li><li><a href="%siletisim/">İletişim</a></li><li><a href="%skurulum-bolgeleri/">Kurulum Bölgeleri</a></li><li><a href="%sindex.html#sss">S.S.S.</a></li><li><a href="%sblog/">Blog</a></li></ul></div>'
       '<div><h5>Yasal</h5><ul><li><a href="%skvkk/">KVKK Aydınlatma Metni</a></li><li><a href="%sgizlilik/">Gizlilik &amp; Çerez Politikası</a></li></ul></div>'
-      '</div><div class="foot-bottom"><span>© 2026 Tavuk Çadırı. Tüm hakları saklıdır.</span><span>Üretim &amp; kurulum: DEHA Çadır · 81 il</span></div></div></footer>')%(pre,WA,WA_SVG.format(w=17,f="#fff"),m,pre,pre,pre,pre,pre,pre)
+      '</div><div class="foot-bottom"><span>© 2026 Tavuk Çadırı. Tüm hakları saklıdır.</span><span>Üretim &amp; kurulum: DEHA Çadır · 81 il</span></div></div></footer>')%(pre,WA,WA_SVG.format(w=17,f="#fff"),m,pre,pre,pre,pre,pre,pre,pre)
 
 COOKIE=''
 
@@ -210,7 +210,7 @@ new_slugs=[]
 for slug,title,desc,body,noindex,*rest in [(p[0],p[1],p[2],p[3],p[4],*(p[5:])) for p in pages]:
     ejs=rest[0] if rest else ""
     d=doc(title,desc,slug,body,pre="../",noindex=noindex,extra_js=ejs)
-    for base in (PROJ,SCR):
+    for base in BASES:
         os.makedirs(os.path.join(base,slug),exist_ok=True)
         open(os.path.join(base,slug,"index.html"),"w",encoding="utf-8").write(d)
     if not noindex: new_slugs.append(slug)
@@ -223,7 +223,7 @@ body404=('<section class="phead"><div class="wrap" style="text-align:center;padd
  '<div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap"><a href="/" class="wa-btn" style="background:#2E5A2C">Ana sayfaya dön</a>'
  '<a href="/iletisim/" class="wa-btn" style="background:#fff;color:#221A12;border:1px solid #E3D7C5">İletişim</a></div></div></section>')
 d404=doc("Sayfa Bulunamadı (404) | Tavuk Çadırı","Aradığınız sayfa bulunamadı.","",body404.replace('href="../','href="/').replace('%sassets','/assets').replace(header("../"),header("/")) if False else body404,pre="/",noindex=True)
-for base in (PROJ,SCR): open(os.path.join(base,"404.html"),"w",encoding="utf-8").write(d404)
+for base in BASES: open(os.path.join(base,"404.html"),"w",encoding="utf-8").write(d404)
 
 print("new pages:", [p[0] for p in pages], "+ 404.html")
 print("indexable new slugs:", new_slugs)

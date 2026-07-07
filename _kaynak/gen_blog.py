@@ -3,10 +3,10 @@
 # Tasarım sistemi gen_pages.py'den exec ile alınır (header/footer/CSS/doc senkron kalır).
 import os, html, json, re
 
-SCR="/private/tmp/claude-501/-Volumes-ABDURRAHMAN-APP-Tavuk--ad-r-/c4778228-16bc-4e77-b9dd-f19e5b0e793d/scratchpad"
-PROJ="/Volumes/ABDURRAHMAN/APP/Tavuk Çadırı"
+HERE=os.path.dirname(os.path.abspath(__file__))
+PROJ=os.path.dirname(HERE)
 
-_src=open(os.path.join(SCR,"gen_pages.py"),encoding="utf-8").read()
+_src=open(os.path.join(HERE,"gen_pages.py"),encoding="utf-8").read()
 exec(_src.split("pages=[]")[0])  # e, SITE, WA, CSS, header, footer, doc, phead, cta_block
 
 # Blog'a özel ek CSS (faq/rel gen_pages CSS'inde yok + kart/tablo stilleri)
@@ -146,7 +146,7 @@ def index_page(arts):
     return out
 
 def patch_sitemap(arts):
-    for base in (PROJ,SCR):
+    for base in (PROJ,):
         p=os.path.join(base,"sitemap.xml")
         if not os.path.exists(p): continue
         s=open(p,encoding="utf-8").read()
@@ -160,7 +160,7 @@ def patch_sitemap(arts):
 
 arts=load_articles()
 by_slug={r["slug"]:r for r in arts}
-for base in (PROJ,SCR):
+for base in (PROJ,):
     os.makedirs(os.path.join(base,"blog"),exist_ok=True)
     open(os.path.join(base,"blog","index.html"),"w",encoding="utf-8").write(index_page(arts))
     for rec in arts:

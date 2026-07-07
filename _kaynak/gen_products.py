@@ -83,7 +83,7 @@ def footer():
       '<div><img src="../assets/logo.png" alt="Tavuk Çadırı" style="width:150px"><p class="about">3 ve 4 kat yalıtımlı, TSE damgalı brandalı anahtar teslim tavuk çadırı. Türkiye geneli 81 ile nakliye ve kurulum. Üretim: DEHA Çadır.</p>'
       '<a href="https://wa.me/%s" target="_blank" rel="noopener" class="wa-btn" style="font-size:14.5px;padding:11px 17px">%s<span>Bize ulaşın</span></a></div>'
       '<div><h5>Ürünler</h5><ul>%s</ul></div>'
-      '<div><h5>Kurumsal</h5><ul><li><a href="../hakkimizda/">Hakkımızda</a></li><li><a href="../iletisim/">İletişim</a></li><li><a href="../index.html#sss">S.S.S.</a></li><li><a href="../blog/">Blog</a></li></ul></div>'
+      '<div><h5>Kurumsal</h5><ul><li><a href="../hakkimizda/">Hakkımızda</a></li><li><a href="../iletisim/">İletişim</a></li><li><a href="../kurulum-bolgeleri/">Kurulum Bölgeleri</a></li><li><a href="../index.html#sss">S.S.S.</a></li><li><a href="../blog/">Blog</a></li></ul></div>'
       '<div><h5>Yasal</h5><ul><li><a href="../kvkk/">KVKK Aydınlatma Metni</a></li><li><a href="../gizlilik/">Gizlilik &amp; Çerez Politikası</a></li></ul></div>'
       '</div><div class="foot-bottom"><span>© 2026 Tavuk Çadırı. Tüm hakları saklıdır.</span><span>Üretim &amp; kurulum: DEHA Çadır · 81 il</span></div></div></footer>')%(WA,WA_SVG.format(w=17,f="#fff"),prod)
 
