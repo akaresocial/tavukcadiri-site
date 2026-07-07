@@ -11,8 +11,8 @@ PROJ = os.path.dirname(HERE)
 _src = open(os.path.join(HERE, "gen_pages.py"), encoding="utf-8").read()
 exec(_src.split("pages=[]")[0])  # e, SITE, WA, WA_DISP, WA_SVG, CSS, header, footer, doc, phead, cta_block
 
-DATE = "2026-07-06"
-DATE_DISP = "6 Temmuz 2026"
+DATE = "2026-07-07"
+DATE_DISP = "7 Temmuz 2026"
 
 # il sayfalarına özel ek CSS (blog'dakiyle uyumlu: faq/rel/bmeta + fiyat kartları)
 CSS = CSS + """
