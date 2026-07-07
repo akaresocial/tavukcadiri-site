@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # Gerçek DEHA Çadır verisiyle: ölçü + yalıtım(3/4 kat) + fiyat. Marka nötr (Tavuk Çadırı).
 import os, html, json
-PROJ="/Volumes/ABDURRAHMAN/APP/Tavuk Çadırı"
-SCR="/private/tmp/claude-501/-Volumes-ABDURRAHMAN-APP-Tavuk--ad-r-/c4778228-16bc-4e77-b9dd-f19e5b0e793d/scratchpad"
+HERE=os.path.dirname(os.path.abspath(__file__))
+PROJ=os.path.dirname(HERE)
 SITE="https://tavukcadiri.com"
 WA="905526663606"
 def e(t): return html.escape(str(t),quote=True)
@@ -62,10 +62,9 @@ FEAT_ICON={
  "badge":'<path d="M12 15l-3.5 2 1-4L6 10l4-.5L12 6l2 3.5 4 .5-3.5 3 1 4z"/>',
 }
 
-CSS=open(os.path.join(SCR,"_prodcss.txt"),encoding="utf-8").read() if os.path.exists(os.path.join(SCR,"_prodcss.txt")) else ""
-# fallback: inline CSS (base + product)
+CSS=open(os.path.join(HERE,"_prodcss.txt"),encoding="utf-8").read() if os.path.exists(os.path.join(HERE,"_prodcss.txt")) else ""
 if not CSS:
- CSS = """__CSS__"""
+    raise SystemExit("HATA: _kaynak/_prodcss.txt bulunamadı — ürün sayfaları CSS'siz üretilemez.")
 
 def header(links_extra=""):
     L=[("Modeller","../index.html#modeller"),("Fiyatlar","../fiyatlar/"),("Özellikler","../index.html#ozellikler"),("Neden Biz","../index.html#referanslar"),("S.S.S.","../index.html#sss"),("Blog","../blog/"),("İletişim","../iletisim/")]
@@ -227,11 +226,11 @@ def fiyatlar_page():
 # ---- WRITE ----
 for slug,idx in FEAT:
     d=detail_page(slug,idx)
-    for base in (PROJ,SCR):
+    for base in (PROJ,):
         os.makedirs(os.path.join(base,slug),exist_ok=True)
         open(os.path.join(base,slug,"index.html"),"w",encoding="utf-8").write(d)
 fp=fiyatlar_page()
-for base in (PROJ,SCR):
+for base in (PROJ,):
     os.makedirs(os.path.join(base,"fiyatlar"),exist_ok=True)
     open(os.path.join(base,"fiyatlar","index.html"),"w",encoding="utf-8").write(fp)
 print("detail:",FEAT_SLUGS,"+ fiyatlar")
