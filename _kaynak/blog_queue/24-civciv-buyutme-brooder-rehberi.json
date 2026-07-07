@@ -1,0 +1,102 @@
+{
+ "slug": "civciv-buyutme-brooder-rehberi",
+ "order": 24,
+ "date": "2026-07-28",
+ "date_disp": "28 Temmuz 2026",
+ "related": [
+  "yarka-alirken-dikkat-edilecekler",
+  "tavuk-basina-kac-m2-gerekir"
+ ],
+ "article": {
+  "title": "Civciv büyütme rehberi: brooder kurulumu ve haftalık ısı takvimi",
+  "meta_title": "Civciv Büyütme Rehberi: Brooder Kurulumu ve Isı Takvimi",
+  "meta_desc": "Brooder nedir, nasıl kurulur? Civciv büyütmede haftalık sıcaklık takvimi, malzeme listesi ve büyük kümese geçiş zamanı — sahadan pratik rehber.",
+  "intro_html": "<p>Civciv aldıktan sonraki ilk telefonlar hep aynı cümleyle başlar: \"Civcivler bir köşeye toplanmış, üst üste yığılmışlar, bir şey mi oldu?\" Çoğu zaman ortada hastalık falan yoktur; sorun basitçe ısıdır. Yeni çıkmış bir civciv kendi vücut ısısını düzenleyemez, tüyü henüz yoktur, anasının kanadı da yoktur; o işi ilk üç dört hafta siz üstlenirsiniz.</p><p>Bu işin adı brooder kurmaktır ve basit bir düzenektir. Bir kutu, bir ısı kaynağı, küçük boy yemlik-suluk ve doğru altlık; dördü bir araya gelince civciv büyütmenin en kritik dönemini güvenle geçirirsiniz. Asıl beceri, ısıyı haftadan haftaya doğru kademeyle düşürebilmek ve civcivin davranışını okuyabilmektir.</p>",
+  "sections": [
+   {
+    "h2": "Brooder nedir, ne işe yarar?",
+    "html": "<div class=\"note\"><strong>Tanım:</strong> Brooder, civcivlerin yumurtadan çıktıktan sonraki ilk haftalarını geçirdiği, ısı kontrollü küçük büyütme bölmesidir.</div><p>Yeni çıkmış civciv tüysüzdür ve vücut ısısını kendi başına dengeleyemez; doğal ortamda bu işi ana tavuk kanadının altında yapar. Brooder, o kanadın yerini tutan yapay bir sistemdir: sınırlı bir alan, üstünde bir ısı kaynağı ve civcivin kaçamayacağı bir çember ya da kutu.</p><p>Küçük ölçekte bir mukavva kutu ya da naylon çember yeterlidir; onlarca-yüzlerce civcivlik büyütmede ahşap ya da metal çerçeveli, daha geniş bir bölme kurulur. Büyüklük ne olursa olsun mantık aynıdır: civcivin sıcak bölgeyle serin bölge arasında kendi seçimini yapabileceği bir alan.</p><p>Brooder süresi ırka ve mevsime göre değişse de genel çerçeve 4-6 haftadır. Bu süre boyunca civciv hem tüylenir hem de bağışıklık sistemi olgunlaşır; ikisi tamamlanmadan dış ortama veya büyük kümese çıkarmak kayıplara yol açar.</p>"
+   },
+   {
+    "h2": "Brooder için hangi malzemeler gerekli?",
+    "html": "<p>Brooder kurmak için özel ekipmandan çok, doğru dört kalemi bir araya getirmek gerekir. Liste kısadır ama her kalemin işlevi nettir:</p><ul><li><strong>Kutu veya çember:</strong> Kenarları civcivin atlayıp kaçamayacağı yükseklikte (30-40 cm) mukavva kutu, naylon çember veya ahşap çerçeve. Köşeli kutularda civcivler köşeye sıkışıp üst üste yığılabilir; mümkünse köşesiz, yuvarlak bir sınır tercih edin.</li><li><strong>Isı lambası:</strong> Kızılötesi ısıtıcı lamba veya seramik ısıtıcı, bölmenin bir kenarına asılır, tam ortaya asılmaz. Sahada en sık kullanılan güç 250W kızılötesi lambadır; küçük bölmelerde (30-50 civciv) tek lamba genelde yeterli olur, daha kalabalık gruplarda ikinci bir lamba veya daha geniş bölme gerekir. Böylece civciv sıcak ve serin bölge arasında gidip gelebilir. Lamba yüksekliği ayarlanabilir olmalı; haftalık ısı düşüşünü çoğunlukla lambayı yükselterek yaparsınız.</li><li><strong>Küçük boy yemlik-suluk:</strong> Civcivin gagası büyük kaplara ulaşamaz, ayrıca büyük suluğa düşüp ıslanma riski vardır. İlk haftalarda civciv boyuna uygun sığ tabaklı suluk ve düz yemlik kullanın.</li><li><strong>Altlık:</strong> Kalın talaş veya benzeri emici bir altlık, hem nemi çeker hem de civcivin ayağını kaymadan tutar. Gazete gibi kaygan yüzeyler bacak deformasyonuna yol açabileceği için ilk günlerde tek başına kullanılmamalı.</li></ul><p>Bölme büyüklüğünü belirlerken genel pratik kural, ilk hafta civciv başına yaklaşık 0.06-0.1 m² alan ayırmaktır; bu kesin bir şart değil, kaba bir yoğunluk referansıdır ve civciv büyüdükçe alan haftalık olarak artırılmalıdır. Bunlara bir termometre eklemek işi kolaylaştırır; lambanın altındaki gerçek sıcaklığı gözle tahmin etmek yerine ölçmek, haftalık takvimi tutturmanın en pratik yolu.</p>"
+   },
+   {
+    "h2": "Haftalık sıcaklık takvimi nasıl uygulanır?",
+    "html": "<p>Civciv büyütmede ısı haftadan haftaya düşen bir eğri izler. Genel kabul gören pratik: ilk hafta lamba altında yaklaşık 35°C, sonraki her hafta 2-3°C azaltılır. Altıncı hafta civarında sıcaklık oda sıcaklığına yaklaşır ve ek ısıya ihtiyaç büyük ölçüde biter.</p><table><thead><tr><th>Hafta</th><th>Lamba altı sıcaklık</th><th>Genel not</th></tr></thead><tbody><tr><td>1. hafta</td><td>~35°C</td><td>Tüysüz dönem, ısı toleransı en düşük</td></tr><tr><td>2. hafta</td><td>~32-33°C</td><td>İlk tüylenme başlar</td></tr><tr><td>3. hafta</td><td>~29-30°C</td><td>Hareket ve yemlenme artar</td></tr><tr><td>4. hafta</td><td>~26-27°C</td><td>Kanat tüyleri belirginleşir</td></tr><tr><td>5. hafta</td><td>~23-24°C</td><td>Isı ihtiyacı belirgin şekilde azalır</td></tr><tr><td>6. hafta</td><td>Oda sıcaklığına yakın</td><td>Ek ısı çoğu bölgede gereksizleşir</td></tr></tbody></table><p>Bu tablo genel bir çerçeve sunar. Mevsim, bölge ve kümesin genel ısısı takvimi birkaç derece kaydırabilir; kışın soğuk bir bölgede altıncı haftada hâlâ hafif destek gerekebilir, yazın sıcak bir bölgede düşüş daha erken tamamlanabilir. Sayılar yerine eğriye — her hafta kademeli ve düzenli azalışa — odaklanın.</p>"
+   },
+   {
+    "h2": "Civcivin davranışından ısı ayarı nasıl anlaşılır?",
+    "html": "<p>Termometre olmasa bile civcivler size doğru ısıyı gösterir; saha gözleminin en güvenilir yolu budur. Sıcaklık ayarını her gün bu üç davranışa bakarak kontrol edin.</p><ol><li><strong>Lamba altında sıkı toplanma, cıyaklama:</strong> Civcivler üst üste yığılıp lambaya doğru kümeleniyorsa ortam soğuktur. Lambayı biraz alçaltın veya gücünü artırın.</li><li><strong>Lambadan kaçış, kenarlara ve köşelere yayılma:</strong> Civcivler ısı kaynağından mümkün olduğunca uzaklaşıp bölmenin kenarlarına, ağızları açık şekilde dağılıyorsa ortam sıcaktır. Lambayı yükseltin veya bölmeyi biraz havalandırın.</li><li><strong>Bölme içinde rahat ve eşit dağılım:</strong> Civcivler bölme genelinde serbestçe dolaşıyor, yiyor, içiyor, ara sıra lambanın altına gidip çıkıyorsa sıcaklık doğrudur. Aradığınız görüntü budur.</li></ol><p>Bu gözlemi günde birkaç kez, özellikle sabah erken ve akşam yapın; gece sıcaklığı gündüzden daha çok düşer ve civciv davranışı buna en hızlı tepki veren göstergedir.</p>"
+   },
+   {
+    "h2": "Brooder kurulum adımları",
+    "html": "<p>Civcivler gelmeden önce brooder tam kurulu ve ısınmış olmalı; hayvan kutuya konduğu anda ortam hazır olsun.</p><ol><li><strong>Bölmeyi kurun:</strong> Kutu veya çemberi rüzgârsız, cereyansız bir iç mekâna yerleştirin, kenarları civcivin atlayamayacağı yükseklikte olsun.</li><li><strong>Altlığı serin:</strong> Tabana kalın bir talaş katmanı serin, ıslanmaya karşı yedek altlık ayırın.</li><li><strong>Lambayı asın ve önceden çalıştırın:</strong> Isı lambasını bölmenin bir kenarına, civcivler gelmeden en az bir saat önce yakın; lamba altı sıcaklığın 35°C civarına oturduğunu termometreyle doğrulayın.</li><li><strong>Yemlik ve suluğu yerleştirin:</strong> Küçük boy yemlik ve suluğu lambanın ne çok altına ne de çok uzağına, civcivin kolayca ulaşabileceği bir noktaya koyun.</li><li><strong>Civcivleri yerleştirin ve önce suya yönlendirin:</strong> Her civcivin gagasını suya değdirerek suluğu bulmasına yardım edin, ardından yeme bırakın.</li><li><strong>İlk saatleri gözlemleyin:</strong> Yerleşimden sonraki birkaç saat civcivlerin dağılımını izleyin, toplanma veya kaçış varsa lamba yüksekliğini o gün içinde ayarlayın.</li></ol>"
+   },
+   {
+    "h2": "Büyük kümese veya çadıra geçiş ne zaman yapılır?",
+    "html": "<p>Civcivler tüylenmesini tamamladığında ve dış ortam sıcaklığına dayanacak hale geldiğinde büyük kümese geçiş yapılır; bu genellikle 6-8 hafta civarına denk gelir. Erken geçiş, henüz brooder ısısına muhtaç civcivi soğuk bir ortamda bırakma riski taşır.</p><p>Geçiş kararını tek bir yaşa değil, birkaç işarete bakarak verin: kanat ve gövde tüylerinin büyük ölçüde tamamlanmış olması, brooder ısısı oda sıcaklığına indiğinde civcivlerin artık toplanma göstermemesi ve hava şartlarının (özellikle gece sıcaklığının) makul olması. Kışın bu üç şart aynı anda oluşmayabilir; o durumda geçişi birkaç hafta erteleyip brooder'ı biraz daha uzatmak, aceleyle çıkarıp kayıp yaşamaktan daha ucuza gelir.</p><p>Geçiş sonrası ilk hafta kümeste ayrı bir bölmede tutup kademeli alıştırmak, doğrudan büyük sürüye karıştırmaktan daha güvenlidir. Büyüyen sürü için tavuk başına kaç m² gerektiğini <a href=\"../tavuk-basina-kac-m2-gerekir/\">buradan</a> hesaplayabilirsiniz; alan ihtiyacı civcivler tüylendikçe haftalar içinde hızla artar.</p>"
+   },
+   {
+    "h2": "Civciv büyütmede sık yapılan hatalar",
+    "html": "<p>Brooder kurulumundaki teknik hatalar genellikle malzeme eksikliğinden değil, ısı ve kalabalık yönetiminden kaynaklanır.</p><ul><li><strong>Lambayı tam ortaya asmak:</strong> Civcivin sıcak-serin arası seçim yapacağı alan kalmaz; ya sürekli fazla sıcak ya da fazla soğuk kalır. Lamba bir kenarda olmalı.</li><li><strong>Isıyı takvime göre değil göze göre ayarlamak:</strong> Sanki soğukmuş gibi hislere göre lamba değiştirmek yerine hem termometreye hem davranışa bakın; ikisi çelişirse davranışı esas alın.</li><li><strong>Bölmeyi fazla kalabalık tutmak:</strong> Dar alanda çok sayıda civciv, hem ısı dağılımını bozar hem de altlığın hızla kirlenip nemlenmesine yol açar. Büyüdükçe bölmeyi genişletmek gerekir.</li><li><strong>Cereyanlı bir noktaya kurmak:</strong> Kapı önü veya pencere dibi gibi hava akımı olan yerler, lamba doğru ayarlansa bile bölge bölge soğuk-sıcak dengesizliği yaratır.</li><li><strong>Altlığı ıslak bırakmak:</strong> Suluk taşmaları ile ıslanan altlık hem soğuk yapar hem de hastalık riskini artırır; günlük kontrolle nemli bölgeleri değiştirin.</li></ul><p>Bu beş hatanın ortak noktası, hepsinin ilk bakışta önemsiz görünüp haftalar içinde toplu etki yapmasıdır: tek başına bir gecelik cereyan ya da bir günlük ıslak altlık civcivi öldürmez, ama üst üste binince kayıp oranı hızla yükselir. Günlük kısa bir kontrol turu bu beşini büyük ölçüde önler.</p>"
+   },
+   {
+    "h2": "Civciv mi yarka mı almalıydınız? Karar brooder kurulumundan önce verilir",
+    "html": "<p>Brooder kurup civcivden başlamak emek ve sabır ister; bu satırları okuyorsanız muhtemelen o kararı çoktan verdiniz. Yine de işin başında civciv ile yarka arasında tereddüt yaşayanlar için kısa bir hatırlatma: civciv, süreci baştan sona sizin yönetmenizi sağlar ama brooder, aşı takvimi ve ilk haftaların riskini de üstlenmenizi gerektirir.</p><p>Civciv ile yarka arasındaki bedel ve zamanlama farkı, <a href=\"../yarka-alirken-dikkat-edilecekler/\">yarka alırken dikkat edilecekler</a> başlığının konusu; yeni bir parti almadan önce göz atmak iki yolu yan yana görmenizi sağlar. Hangi yolu seçerseniz seçin, brooder becerisi bir kez öğrenildikten sonra sonraki her parti civcivde aynı rutinle tekrarlanır.</p>"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Brooder nedir, evde kurulabilir mi?",
+    "a": "Brooder, civcivlerin ilk haftalarını geçirdiği ısı kontrollü küçük büyütme bölmesidir. Küçük sayıda civciv için mukavva kutu veya naylon çemberle, uygun ısı lambası ve küçük boy yemlik-suluk eklenerek evde de kurulabilir; büyük sayılarda daha geniş bir bölme gerekir."
+   },
+   {
+    "q": "Civciv ilk hafta kaç derece ister?",
+    "a": "İlk hafta brooder içinde lamba altı sıcaklığın yaklaşık 35°C olması genel kabul gören pratik bilgidir. Sonraki her hafta bu sıcaklık 2-3°C kademeli olarak azaltılır, altıncı hafta civarında oda sıcaklığına yaklaşılır."
+   },
+   {
+    "q": "Civcivlerin üşüdüğü nasıl anlaşılır?",
+    "a": "Civcivler lambanın altında sıkı sıkıya toplanıp üst üste yığılıyor ve cıyaklıyorsa üşüyorlar demektir. Tam tersine lambadan kaçıp kenarlara dağılıyorlarsa ortam fazla sıcaktır. Bölme genelinde rahat ve eşit dağılmışlarsa sıcaklık doğrudur."
+   },
+   {
+    "q": "Civciv büyütme brooder'ı ne kadar sürer?",
+    "a": "Genel çerçeve 4-6 haftadır; bu sürede civciv hem tüylenir hem bağışıklığı olgunlaşır. Kesin süre mevsime ve bölgeye göre birkaç hafta kayabilir, bu yüzden sabit tarihten çok tüylenme ve ısı ihtiyacındaki azalmaya bakılır."
+   },
+   {
+    "q": "Civcivler büyük kümese ne zaman taşınır?",
+    "a": "Tüylenme tamamlandığında ve brooder ısısına ihtiyaç belirgin şekilde azaldığında, genellikle 6-8 hafta civarında büyük kümese veya çadıra geçiş yapılır. Kışın bu süre biraz uzayabilir; geçişi hava şartlarına göre birkaç hafta ertelemek kayıp riskini azaltır."
+   },
+   {
+    "q": "Brooder için hangi malzemeler gerekli?",
+    "a": "Kenarları civcivin atlayamayacağı bir kutu veya çember, bir kenara asılan ısı lambası, civciv boyuna uygun küçük yemlik-suluk ve kalın, emici bir altlık temel malzeme listesidir. Bir termometre eklemek ısı takvimini takip etmeyi kolaylaştırır."
+   }
+  ],
+  "howto_steps": [
+   {
+    "ad": "Bölmeyi kurun",
+    "aciklama": "Cereyansız bir iç mekâna, civcivin atlayamayacağı yükseklikte kutu veya çember yerleştirin."
+   },
+   {
+    "ad": "Altlığı serin",
+    "aciklama": "Tabana kalın talaş serin ve ıslanma ihtimaline karşı yedek altlık ayırın."
+   },
+   {
+    "ad": "Lambayı önceden çalıştırın",
+    "aciklama": "Isı lambasını bir kenara asıp civcivlerden en az bir saat önce yakarak 35°C civarını tutturun."
+   },
+   {
+    "ad": "Yemlik ve suluğu yerleştirin",
+    "aciklama": "Küçük boy yemlik ve suluğu civcivin kolayca ulaşabileceği bir noktaya koyun."
+   },
+   {
+    "ad": "Civcivleri yerleştirin",
+    "aciklama": "Her civcivin gagasını suya değdirip suluğu bulmasına yardım ettikten sonra yeme bırakın."
+   },
+   {
+    "ad": "İlk saatleri gözlemleyin",
+    "aciklama": "Dağılımı izleyip toplanma veya kaçış görürseniz lamba yüksekliğini aynı gün ayarlayın."
+   }
+  ]
+ }
+}

@@ -1,0 +1,102 @@
+{
+ "slug": "kumes-havalandirma-fani-koku-onleme",
+ "order": 23,
+ "related": [
+  "kisin-kumes-nasil-sicak-tutulur",
+  "kumes-zemini-ne-olmali"
+ ],
+ "date": "2026-07-21",
+ "date_disp": "21 Temmuz 2026",
+ "article": {
+  "title": "Kümes havalandırması: kaç fan gerekir, koku ve amonyak nasıl önlenir?",
+  "meta_title": "Kümes havalandırması: kaç fan gerekir? Koku ve amonyak",
+  "meta_desc": "Kümese kaç fan gerekir, m² başına hesap nasıl yapılır? Koku ve amonyağın 3 kaynağını, çözümlerini ve örnek fan sayısı tablosunu adım adım anlatıyoruz.",
+  "intro_html": "<p>Kapıyı açar açmaz burnunuzu yakan o keskin koku var ya, işte o amonyaktır ve göstergesi tektir: havalandırma yetmiyor demektir. Müşterilerimizin bir kısmı bize \"kaç fan takmalıyım\" diye soruyor, bir kısmı da hiç sormadan kümesi kuruyor ve üç ay sonra aynı soruyla arıyor. İkisi de aynı yere çıkıyor: fan sayısı tahminle değil, hesapla belirlenir.</p><p>Havalandırmanın kümeste iki ayrı görevi var. Biri nemi dışarı atmak, diğeri amonyağı seyreltmek. İkisi de aynı havayla, aynı fanla yapılır ama ihtiyaç mevsime göre değişir; yazın sıcaklık atmak öne çıkar, kışın ise ısıyı kaçırmadan nemi ve gazı tahliye etmek gerekir. Kışa özel yalıtım ve yoğuşma dengesi <a href=\"../kisin-kumes-nasil-sicak-tutulur/\">kışın kümes nasıl sıcak tutulur</a> yazısının konusu; burada doğrudan sayıya odaklanıyoruz: kaç m²'ye kaç fan, hangi kapasiteye ne kadar hava debisi.</p><p>Konu, dört mevsim geçerli olan fan hesabı ve kokunun üç gerçek kaynağı.</p>",
+  "sections": [
+   {
+    "h2": "Havalandırmanın kümesteki iki görevi nedir?",
+    "html": "<p>Kümes havalandırması iki işi birden yapar: nemli havayı dışarı atmak ve amonyak gazını seyreltip solunacak seviyeye çekmek. İkisi de aynı hava akışıyla sağlanır, ama kaynakları farklıdır; biri su buharı, diğeri dışkının ürettiği gaz.</p><div class=\"note\"><strong>Tanım:</strong> Havalandırma, kümes içindeki kirli, nemli ve gaz yüklü havanın dışarı atılıp yerine temiz havanın alınması işlemidir; cereyandan farkı, tavuk seviyesinin üstünden kontrollü şekilde yapılmasıdır.</div><p>Nem tarafı basit bir fizik kuralına dayanır: sıcak hava soğuktan daha fazla su buharı taşıyabilir. Kümes içindeki hava tavuğun nefesi, dışkısı ve suluk sızıntılarıyla sürekli nem kazanır; bu hava dışarı atılmazsa soğuk yüzeylerde yoğuşur, altlığı ıslatır. Amonyak tarafı ise kimyasal bir süreç: dışkıdaki azotlu bileşikler bakteri etkisiyle parçalanırken amonyak gazı açığa çıkarır. Hava durgunsa bu gaz tavuk seviyesinde birikir.</p><p>İkisinin ortak paydası altlık nemidir. Islak altlıkta hem yoğuşma riski artar hem amonyak üretimi hızlanır; kuru altlıkta ikisi de yavaşlar. Fan yeterli olsa da altlık sürekli ıslanıyorsa sorun havalandırmada değil, suluk veya çatı sızıntısındadır; bu durumda zemin ve altlık seçimini de gözden geçirin.</p><p>Havalandırma ihtiyacı sabit bir sayı değildir; mevsime, sürü yoğunluğuna ve kümesin yalıtım durumuna göre değişir. Kışın amaç minimum havayı değiştirip ısıyı korumak, yazın amaç fazla havayı hareket ettirip sıcaklığı düşürmektir. Bu ihtiyacı somut sayıya döken hesap bir sonraki başlıkta.</p>"
+   },
+   {
+    "h2": "Kümese kaç fan gerekir? Hesabın mantığı",
+    "html": "<p>Fan sayısı, kümesin toplam hacmine, sürü büyüklüğüne ve mevsime göre değişir; tek bir doğru rakam yoktur. Zooteknik pratikte kaba bir kural kullanılır: kışın minimum havalandırma, tavuk başına saatte belli bir hava hacminin değişimini hedefler; yazın bu rakam sıcaklık atmak için kat kat artar. Kesin debiyi fan üreticisinin kataloğundan, kümesinizin hacmine ve iklime göre teyit edin. Hesabı kendi kümesinize adım adım uygulamak için:</p><ol><li><strong>Kümesin taban alanını ve hacmini çıkarın.</strong> Uzunluk × genişlik × ortalama yükseklik, m³ cinsinden hacmi verir.</li><li><strong>Sürü büyüklüğünü belirleyin.</strong> 7 tavuk/m² standart yoğunluğa göre kümesteki tahmini tavuk sayısını not edin.</li><li><strong>Mevsim ihtiyacına karar verin.</strong> Kış için minimum hava değişimi, yaz için sıcaklık atma amaçlı yüksek debi hedeflenir; ikisi farklı fan senaryosudur.</li><li><strong>Fanın debi değerine (m³/saat) bakın.</strong> Üretici kataloğunda yazan debiyi kümes hacmiyle karşılaştırarak kaç fanın gerekli havayı karşılayacağını hesaplayın.</li><li><strong>Konumlandırmayı planlayın.</strong> Fanları hâkim rüzgârın ters cephesine, hava girişini karşı cepheye koyarak kümes boyunca düzenli bir akış kurun.</li><li><strong>Kademeli çalıştırma düşünün.</strong> Termostat veya zaman ayarlı kademeli sistemler, kışın minimum, yazın maksimum debiyi otomatik ayarlar.</li></ol><p>Standart ölçüler için bu hesabın somut çıktısı aşağıdaki tabloda.</p>"
+   },
+   {
+    "h2": "Kümes büyüklüğüne göre örnek fan tablosu",
+    "html": "<p>Aşağıdaki tablo, standart kapasitelerimiz için kaba bir başlangıç noktası veriyor; kesin sayı kümesin yalıtımına, yerleşimine ve bulunduğunuz iklime göre yukarı ya da aşağı kayabilir.</p><table><thead><tr><th>Ölçü / alan</th><th>Kapasite</th><th>Tahmini fan adedi</th><th>Yerleşim önerisi</th></tr></thead><tbody><tr><td>7x10 m / 70 m²</td><td>~500 tavuk</td><td>1-2 fan</td><td>Uzun kenarın karşılıklı uçlarına</td></tr><tr><td>7x14 m / 98 m²</td><td>~750 tavuk</td><td>2 fan</td><td>Giriş karşı cephede, fanlar çıkış ucunda</td></tr><tr><td>7x20 m / 140 m²</td><td>~1.000 tavuk</td><td>2-3 fan</td><td>Fanlar eşit aralıkla çıkış cephesinde</td></tr><tr><td>10x30 m / 300 m²</td><td>~2.000 tavuk</td><td>4-6 fan</td><td>İki sıra, karşılıklı cephelerde dengeli dağıtım</td></tr></tbody></table><p>Bu rakamlar sabit havalandırma (tünel değil, yan duvar fanı) mantığıyla verilmiştir; yazın hepsi devrede, kışın bir-ikisi devrede olacak şekilde kademeli ayarlanmış sistemler için düşünülmüştür. Yazın sıcak bastırdığında bu sayının üstüne çıkmak, hatta tünel havalandırma veya sisleme sistemi eklemek gerekebilir; yaz aylarına özel önlemler <a href=\"../yazin-kumes-nasil-serin-tutulur/\">yazın kümes nasıl serin tutulur</a> yazısında.</p><p>Fan seçerken debi (m³/saat) değerine bakın, sadece fiziksel boyuta değil. Kataloglarda genelde 3.000-15.000 m³/saat aralığında modeller bulunur; küçük kümeste iki adet orta debili fan, büyük kümeste birkaç adet yüksek debili fan tercih edilir.</p>"
+   },
+   {
+    "h2": "Koku ve amonyağın 3 kaynağı, 3 çözümü",
+    "html": "<p>Kümes kokusunun neredeyse tamamı üç kaynaktan gelir: nemli altlık, aşırı yoğunluk ve yetersiz hava değişimi. Üçü birbirini besler; birini ihmal ederseniz diğer ikisi de kötüleşir.</p><h3>Kaynak 1: Nemli altlık</h3><p>Islak altlıkta bakteri faaliyeti hızlanır, amonyak üretimi katlanır. Nemin kaynağı çoğunlukla suluk taşması, çatı sızıntısı veya zemin drenajının yetersizliğidir. Çözüm: altlığı düzenli kontrol edin, ıslanan bölgeyi bekletmeden değiştirin, açık kap yerine nipel suluk kullanın. Zeminin nem tutup tutmadığı da altlığın kuru kalma süresini belirler; bu seçim <a href=\"../kumes-zemini-ne-olmali/\">kümes zemini ne olmalı</a> başlığının konusu.</p><h3>Kaynak 2: Aşırı yoğunluk</h3><p>Sıkışık sürü daha fazla dışkı, daha fazla su buharı ve daha fazla ısı üretir; aynı hacimdeki hava bu yükü kaldıramaz. Çözüm burada havalandırma değil alandır: <a href=\"../tavuk-basina-kac-m2-gerekir/\">tavuk başına kaç m² gerekir</a> yazısındaki 7 tavuk/m² tavan değerini aşmayın. Fan eklemek sıkışıklığı telafi etmez, sadece kokuyu bir miktar geciktirir.</p><h3>Kaynak 3: Yetersiz hava değişimi</h3><p>Kapıları ve açıklıkları tamamen kapatmak, özellikle kışın en sık yapılan hatadır; ısı korunur ama nemli ve gazlı hava içeride hapsolur. Çözüm: tavuk seviyesinin üstünden sürekli ama kısık bir hava akışı sağlamak. Cereyanla havalandırmayı karıştırmayın; biri zararlı, diğeri zorunlu.</p><p>Üç kaynağı aynı anda kontrol ettiğinizde koku sorunu büyük ölçüde çözülür. Tek başına fan takıp altlığı ıslak bırakırsanız, fan kokunun şiddetini azaltır ama kaynağını ortadan kaldırmaz.</p>"
+   },
+   {
+    "h2": "Amonyak seviyesi nasıl anlaşılır?",
+    "html": "<p>Amonyak seviyesini ölçmenin en pratik yolu kendi duyularınızdır. İnsan burnu genelde yaklaşık 5 ppm üzerindeki amonyağı fark edebilir; kanatlı yetiştiriciliğinde genel kabul gören pratik referans, amonyağın 10-25 ppm aralığını üst sınır olarak görmesidir. Bu aralığın üzerine çıkıldığında göz yaşarması ve genizde yanma hissi belirgin hâle gelir; kümese girdiğinizde bunu hissediyorsanız seviye zaten bu üst sınırı aşmış demektir.</p><p>Görsel işaretler de vardır. Tavan ve camlarda sürekli yoğuşma, hep ıslak kalan altlık, hırıltılı solunum sesleri amonyak ve nem birikiminin dışa vuran belirtileridir.</p><p>Daha teknik ölçüm isteyen üreticiler için piyasada amonyak ölçüm cihazları (gaz detektörleri) bulunur; büyük ölçekli işletmelerde yatırıma değer olabilir. Küçük ve orta ölçekli kümeste günlük burun testi ve haftalık altlık kontrolü çoğu zaman yeterli erken uyarı sistemidir.</p><p>Amonyağın tavuk sağlığına etkisi kümülatiftir. Düşük seviyede sürekli maruziyet bile solunum yollarını yorar ve sürüyü hastalıklara karşı savunmasız bırakır.</p>"
+   },
+   {
+    "h2": "Fan mı, doğal havalandırma mı?",
+    "html": "<p>Küçük ve orta ölçekli kümeslerde doğal havalandırma (açıklık ve pencere düzeni) çoğu zaman yeterlidir; fan sistemi kalabalık sürülerde ve yaz aylarında nem-amonyak kontrolünü belirgin biçimde kolaylaştırır. İkisi rakip değil, tamamlayıcı sistemlerdir.</p><table><thead><tr><th>Kriter</th><th>Doğal havalandırma</th><th>Fan sistemi</th></tr></thead><tbody><tr><td>Kurulum maliyeti</td><td>Düşük, ek maliyet yok</td><td>Fan ve elektrik altyapısı gerekir</td></tr><tr><td>Kontrol hassasiyeti</td><td>Rüzgâra bağımlı, değişken</td><td>Sabit debi, termostatla otomatik</td></tr><tr><td>Küçük kümes (70-98 m²)</td><td>Genelde yeterli</td><td>Yaz için destek amaçlı faydalı</td></tr><tr><td>Büyük kümes (200 m²+)</td><td>Tek başına yetersiz kalabilir</td><td>Önerilir</td></tr><tr><td>Elektrik kesintisi riski</td><td>Etkilenmez</td><td>Yedek güç planı gerekir</td></tr></tbody></table><p>Fan sistemi kuracaksanız elektrik altyapınızı önceden hazırlayın; kesinti durumunda kümes tamamen havasız kalmasın diye açıklıklı bir yedek plan bulundurun. Talep eden müşterilerimize fan sistemini kurulum aşamasında ekliyoruz.</p><p>Doğal havalandırmayı seçenler için de öneri aynı: açıklıkları hâkim rüzgârın ters cephesine ve üst seviyeye yerleştirin, tavuk hizasında hava akımı hissetmeyin. Bu dengeyi <a href=\"../kisin-kumes-nasil-sicak-tutulur/\">kışın kümes nasıl sıcak tutulur</a> yazısında kurduk.</p>"
+   },
+   {
+    "h2": "Fan sistemi kurarken sık yapılan hatalar",
+    "html": "<p>Fan sayısını doğru hesaplasanız bile yanlış yerleştirme veya yanlış kullanım, havalandırmanın işe yaramamasına yol açar. Sahada en sık gördüğümüz hatalar şunlar.</p><ul><li><strong>Fanları aynı cepheye toplamak.</strong> Hava girişi ve çıkışı aynı tarafta olursa kümesin öbür ucunda durgun bir cep oluşur, koku orada birikir.</li><li><strong>Sadece yaz için düşünmek.</strong> Fan sistemini yalnızca sıcak günlerde çalıştırıp kışın tamamen kapatmak, kış boyunca amonyak birikimine davetiye çıkarır. Kademeli çalışan, kışın düşük devirde sürekli çalışan bir sistem daha doğrudur.</li><li><strong>Debiyi kümes büyüklüğüne göre seçmemek.</strong> Küçük kümese aşırı güçlü fan koymak tavuk seviyesinde cereyan yaratır; büyük kümeste yetersiz fan koymak da havayı hiç hareket ettiremez.</li><li><strong>Fanı temiz tutmamak.</strong> Toz ve tüy birikimi fanın debisini zamanla düşürür; periyodik temizlik yapılmazsa ilk kurulan sistem yıllar içinde yetersiz kalmaya başlar.</li><li><strong>Elektrik yedeği düşünmemek.</strong> Kesinti anında havalandırma tamamen durur; en azından acil açılabilecek manuel bir açıklık planı bulunmalı.</li></ul><p>Doğru yerleştirme, doğru fan sayısı kadar belirleyicidir: hesap tutsa da fanlar yanlış cephede durursa kümesin bir ucu havasız kalır.</p>"
+   },
+   {
+    "h2": "Havalandırma yatırımı neye bağlı, ne zaman planlanmalı?",
+    "html": "<p>Fan sistemi ve havalandırma planlaması, kümes kurulmadan önce, ölçü seçimiyle birlikte yapılmalıdır. Sonradan eklemek de mümkündür ama elektrik hattı ve konumlandırma baştan düşünülmediğinde iş daha maliyetli ve daha eksik hâle gelir.</p><p>Ölçü büyüdükçe havalandırma ihtiyacı orantılı artmaz; büyük kümeste hava hareketi daha planlı olmak zorundadır çünkü durgun hava ceplerinin oluşma riski yükselir. Bu yüzden <a href=\"../500-tavukla-yumurta-isine-baslamak/\">500 tavukla işe başlayan</a> bir üretici için doğal havalandırma çoğu zaman yeterliyken, 2.000 tavuk kapasiteli bir kümeste fan sistemi neredeyse standart hâle gelir.</p><p>Havalandırma planını ölçüyle birlikte konuşmakta fayda var; hangi cephenin hâkim rüzgâra baktığı, elektrik hattının nereden geçeceği gibi detaylar kurulumdan önce netleşirse sonradan ek iş çıkmaz. Ölçü ve kapasite seçimi için <a href=\"../../fiyatlar/\">fiyatlar sayfasına</a> bakabilir, fan sistemi dahil kurulum detaylarını WhatsApp hattından (0552 666 36 06) sorabilirsiniz.</p>"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Kümese kaç fan gerekir?",
+    "a": "Kesin sayı kümes hacmine, sürü yoğunluğuna ve mevsime göre değişir. Kaba bir başlangıç noktası olarak 70 m²'lik kümeste 1-2 fan, 300 m²'lik kümeste 4-6 fan yeterli olabilir; kesin debiyi fan üreticisinin kataloğundan kümesinizin hacmine göre teyit edin."
+   },
+   {
+    "q": "Kümeste koku nasıl önlenir?",
+    "a": "Kokunun üç kaynağı vardır: nemli altlık, aşırı yoğunluk ve yetersiz hava değişimi. Altlığı kuru tutarak, 7 tavuk/m² yoğunluğunu aşmayarak ve tavuk seviyesinin üstünden sürekli hava değişimi sağlayarak koku büyük ölçüde önlenir."
+   },
+   {
+    "q": "Amonyak kokusu tavuğa zararlı mı?",
+    "a": "Evet. Düşük seviyede sürekli maruziyet bile solunum yollarını tahriş eder, sürüyü diğer hastalıklara karşı savunmasız bırakır. Kümese girdiğinizde gözünüz yanıyorsa amonyak seviyesi çoktan yükselmiştir ve aynı gün müdahale gerekir."
+   },
+   {
+    "q": "Fan sistemi mi doğal havalandırma mı daha iyi?",
+    "a": "Küçük ve orta ölçekli kümeste doğal havalandırma çoğu zaman yeterlidir. Kalabalık sürülerde ve yaz aylarında fan sistemi nem-amonyak kontrolünü belirgin biçimde kolaylaştırır; ikisi birbirini dışlamaz, birlikte kullanılabilir."
+   },
+   {
+    "q": "Havalandırma ile cereyan arasındaki fark nedir?",
+    "a": "Cereyan, tavuk seviyesinden geçen hızlı ve kontrolsüz hava akımıdır ve zararlıdır. Havalandırma ise tavuk seviyesinin üstünden yapılan kontrollü hava değişimidir ve amonyak ile nem birikimini önlemek için gereklidir."
+   },
+   {
+    "q": "Fan sistemi kışın da çalıştırılmalı mı?",
+    "a": "Evet, düşük devirde de olsa sürekli çalışması gerekir. Fanı yalnızca yaz için düşünüp kışın tamamen kapatmak, kış boyunca nem ve amonyak birikimine yol açan sık bir hatadır."
+   }
+  ],
+  "howto_steps": [
+   {
+    "ad": "Kümes hacmini hesaplayın",
+    "aciklama": "Uzunluk × genişlik × ortalama yükseklik ile kümesin m³ cinsinden hacmini çıkarın."
+   },
+   {
+    "ad": "Sürü büyüklüğünü belirleyin",
+    "aciklama": "7 tavuk/m² standart yoğunluğa göre kümesteki tahmini tavuk sayısını not edin."
+   },
+   {
+    "ad": "Mevsim ihtiyacına karar verin",
+    "aciklama": "Kış için minimum hava değişimini, yaz için sıcaklık atma amaçlı yüksek debiyi ayrı ayrı planlayın."
+   },
+   {
+    "ad": "Fan debisini karşılaştırın",
+    "aciklama": "Üretici kataloğundaki m³/saat debi değerini kümes hacmiyle karşılaştırıp gereken fan adedini bulun."
+   },
+   {
+    "ad": "Konumlandırmayı planlayın",
+    "aciklama": "Fanları hâkim rüzgârın ters cephesine, hava girişini karşı cepheye yerleştirerek düzenli akış kurun."
+   },
+   {
+    "ad": "Kademeli çalıştırmayı ayarlayın",
+    "aciklama": "Termostat veya zaman ayarlı sistemle kışın düşük, yazın yüksek debide otomatik çalışmayı sağlayın."
+   }
+  ]
+ }
+}

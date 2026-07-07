@@ -1,0 +1,72 @@
+{
+ "slug": "tavuklarda-tuy-dokumu-molt-normal-mi",
+ "order": 30,
+ "related": [
+  "yumurta-verimini-dusuren-hatalar",
+  "tavukta-bit-ve-akar"
+ ],
+ "date": "2026-09-08",
+ "date_disp": "8 Eylül 2026",
+ "article": {
+  "title": "Tavuklarda tüy dökümü (molt) normal mi? Ne zaman olur, nasıl beslenmeli?",
+  "meta_title": "Tavuklarda Tüy Dökümü (Molt) Normal mi? Beslenme Rehberi",
+  "meta_desc": "Tavuklarınız aniden tüy döküp yumurtayı kesti mi? Molt döneminin ne zaman geldiğini, süresini, doğru protein desteğini ve endişe sinyallerini bu rehberde bulun.",
+  "intro_html": "<p>Eylül-ekim ayı gelir gelmez telefonlarımız aynı cümleyle çalar: \"Tavuklarımın tüyleri dökülüyor, yumurtayı da tamamen kesti, bir şey mi oldu?\" Genelde bir şey olmamıştır; tavuk sadece yılın en doğal işlerinden birini yapıyordur.</p><p>Baştan rahatlatalım: tüy dökümü, yani molt, hastalık değil, sürünün her yıl düzenli olarak yaşadığı bir yenilenme sürecidir. Bu dönemde yumurtanın azalması ya da tamamen durması da beklenen bir sonuçtur. Üretici bu tabloyu görüp sürüde hastalık ya da beslenme hatası aramaya başlarsa hem kendini hem tavuğu gereksiz yere yorar.</p><p>Verim düşüşünün molt dışındaki nedenlerini <a href=\"../yumurta-verimini-dusuren-hatalar/\">yedi kümes hatası</a> yazısında topladık.</p>",
+  "sections": [
+   {
+    "h2": "Molt (tüy dökümü) nedir?",
+    "html": "<div class=\"note\"><strong>Tanım:</strong> Molt (tüy dökümü), tavuğun yılda bir kez yaşadığı, eski ve yıpranmış tüylerini dökerek yerine yenilerini çıkardığı doğal yenileme sürecidir.</div><p>Tüy, tavuk için sadece görüntü meselesi değildir; yalıtım sağlar, suya karşı koruma yapar, kanat ve kuyrukta uçuş ile denge işlevi görür. Bir yıl boyunca güneş, sürtünme ve günlük hareket bu tüyleri yıpratır, sap kısımları zayıflar, renk matlaşır. Molt, doğanın bu aşınmaya verdiği yanıttır.</p><p>Süreç genelde baştan başlar, boyun ve göğüse iner, sırt ve kanatlara, en son da kuyruğa yayılır. Bazı tavuklarda bu sıralama belirgin görülür, bazılarında ise daha dağınık ve hızlı ilerler; bu bireysel bir fark olup ırk ve yaşa göre de değişir.</p><p>Molt döneminde tavuğun görünüşü ürkütücü olabilir; sırtta ya da boyunda çıplak yamalar, yerde ve tünekte tüy yığınları normaldir. Deri altta sağlıklı, pembemsi görünür ve yeni tüyün ucundaki sert, tüplü \"kanat kılıfı\" (pin feather) zamanla açılıp yumuşar. Bu görüntüyü ilk kez yaşayan üretici genelde sürüde bir hastalık salgını başladığını düşünür; oysa aynı anda birden fazla tavukta benzer bir dökülme görmek, tam tersine, sürünün mevsimsel döngüyü birlikte yaşadığının işaretidir.</p>"
+   },
+   {
+    "h2": "Molt ne zaman olur?",
+    "html": "<p>Tüy dökümünü asıl tetikleyen gün ışığı süresinin kısalmasıdır; bu yüzden çoğu sürüde molt sonbaharda, günler kısaldıkça başlar. Yumurtlamayı artıran hormon salgısı azalan ışıkla birlikte düşer, vücut enerjisini yumurtadan tüy yapımına kaydırır.</p><p>Genelde birinci yaşını dolduran tavuklar ilk moltlarını yaşar; sonraki yıllarda bu döngü tekrarlanır. Yaşlı tavuklarda molt daha erken ve bazen daha uzun sürebilir, genç ve yüksek verimli hibrit ırklarda ise daha kısa ve hafif geçebilir.</p><p>Ayrıca stres kaynaklı \"zorlanmış molt\" da görülür: ani yem kesintisi, su kesintisi, aşırı sıcak, nakliye ya da sürü değişikliği gibi ciddi bir stres, mevsimden bağımsız olarak tüy dökümünü tetikleyebilir. Bu noktada altta yatan stres kaynağını bulup gidermek, sadece beslenmeyi düzeltmekten daha önemlidir.</p><p>Kümeste yapay aydınlatma kullanan üreticiler, ışık süresini sabit tutarak moltun zamanlamasını bir miktar geciktirebilir; tamamen engellemek pratik değildir. Ticari yumurtacı işletmelerinde bazen kasıtlı olarak uygulanan \"zorlamalı molt\" programları vardır: yem tamamen kesilerek tüy dökümü hızlandırılır. Küçük ölçekli bir üretici bu yöntemi uyguladığında elinde yemi bırakılmış, günlerce aç kalan ve stres altındaki bir sürü kalır; sürünün kendi doğal zamanlamasına bırakmak hem daha az emek hem daha az risk taşır.</p>"
+   },
+   {
+    "h2": "Molt ne kadar sürer?",
+    "html": "<p>Tüy dökümünün süresi sabit değildir; hafif geçiren bir tavukta birkaç hafta, ağır geçiren bir tavukta üç aya kadar uzayabilir. Bu geniş aralık bireysel farktan, yaştan ve ırktan kaynaklanır; aynı kümeste bir tavuk üç haftada toparlanırken bir diğeri iki ayı bulabilir.</p><table><thead><tr><th>Molt tipi</th><th>Yaklaşık süre</th><th>Yumurta durumu</th></tr></thead><tbody><tr><td>Hafif (kısmi) molt</td><td>2-4 hafta</td><td>Azalır, tamamen kesilmeyebilir</td></tr><tr><td>Orta şiddette molt</td><td>1-2 ay</td><td>Genelde durur</td></tr><tr><td>Ağır (sert) molt</td><td>2-3 ay</td><td>Tamamen durur</td></tr></tbody></table><p>Yumurtlama, yeni tüyler tamamen çıkıp sertleştikten sonra kendiliğinden yeniden başlar; genelde eski verimin biraz üzerinde bir seviyeyle döner, çünkü molt aynı zamanda üreme sisteminin de kendini yenilediği bir dinlenme fırsatıdır. Üç ayı aşan uzun süreli tüy dökümlerinde beslenme ve genel sağlık kontrolünü birlikte gözden geçirmek gerekir.</p>"
+   },
+   {
+    "h2": "Molt döneminde nasıl beslenmeli?",
+    "html": "<p>Tüyün yapı taşı keratin, keratin de bir protein türüdür; bu yüzden molt döneminde yemdeki protein oranını artırmak yeni tüy üretimini destekler. Standart yumurtacı yeminin protein oranı genelde yüzde 16-18 civarındayken, molt döneminde bu oranı yüzde 20'nin üzerine çıkaran özel karışımlar tercih edilir.</p><ol><li><strong>Protein oranını yükseltin:</strong> Piyasada bulunan \"tüy dökümü yemi\" ya da yüksek proteinli büyütme yemine kısmi geçiş yapın; tamamen kesip aniden değiştirmek yerine birkaç gün içinde kademeli geçirin.</li><li><strong>Kalsiyum oranını hafifletin:</strong> Yumurtlama durduğu için yüksek kalsiyumlu yumurtacı yemine devam etmek gereksizdir; molt döneminde kalsiyum ihtiyacı düşer, protein ağırlıklı yem daha uygundur.</li><li><strong>Doğal protein takviyesi ekleyin:</strong> Yulaf, mısır yerine az miktarda yağlı tohum, balık unu içeren karma ya da haşlanmış yumurta gibi ek protein kaynakları destekleyici olabilir; ana öğün değil, takviye olarak düşünün.</li><li><strong>Suyu ve stres yönetimini aksatmayın:</strong> Tüy yapımı zaten enerji yoğun bir süreçtir; su kesintisi ya da ani yem değişimi bu döneme binen ek bir stres olur, kaçının.</li><li><strong>Normale dönüşte kademeli geçin:</strong> Yeni tüyler tamamlanıp yumurta yeniden başladığında yemi kademeli olarak standart yumurtacı yemine döndürün.</li></ol><p>Yem maliyetini bu dönemde biraz artırmak normaldir; kısa vadeli bu ek maliyet, kalitesiz beslenmeyle uzayan bir molt döneminden çok daha ucuza gelir. Genel yem bütçesini <a href=\"../tavuk-yem-maliyeti-hesabi/\">yem maliyeti hesabı</a> yazısında ayrıntılı çıkardık.</p>"
+   },
+   {
+    "h2": "Molt sırasında yumurta neden azalır ya da durur?",
+    "html": "<p>Tüy üretimi vücut için yumurta üretiminden daha öncelikli bir enerji harcamasıdır; ikisi aynı anda tam kapasitede yürümez. Vücut kaynağını tüye yönlendirdiği için yumurtlama yavaşlar ya da tamamen durur.</p><p>Bazı yüksek verimli hibrit ırklar molt sırasında bile düşük seviyede yumurtlamaya devam edebilir, bazı yerli ve karma ırklarda ise tam bir durma görülür. Her iki tablo da normal kabul edilir; hangisinin olacağını önceden kesin kestirmek zordur.</p><p>Üreticinin buradaki asıl işi doğru yemi vermek ve beklemektir; yumurta üretimini zorlamak için ekstra ışık ya da hormon benzeri müdahaleler kısa vadede işe yarasa da tavuğun uzun vadeli verim ömrünü ve sağlığını riske atar. Sürü genelinde verim planlaması yapan üretici, molt dönemini yıllık üretim takvimine baştan dahil ederek sonbaharda paniklemekten kurtulur. Ticari işletmeler bu dönemi genelde kâr-zarar tablosunda ayrı bir kalem olarak planlar; küçük aile işletmesinde ise birkaç haftalık düşük yumurta geliriyle idare etmek yeterlidir.</p>"
+   },
+   {
+    "h2": "Ne zaman endişelenmeli? Molt ile kanibalizm ve parazit farkı",
+    "html": "<p>Molt kendi başına endişe kaynağı değildir ama üç işaret varsa dikkatli bakmak gerekir: dökülüm üç ayı aşacak kadar uzuyorsa, belli bölgelerde yoğunlaşıp simetrik değilse ya da deride yara ve kanama görülüyorsa. Bu üç durumda molttan farklı bir sorun aramak gerekir.</p><p>Ayırt edici işaret şudur: normal molt vücuda simetrik ve yaygın şekilde yayılır, tüm sürüde benzer bir zamanlamayla görülür. Buna karşılık kanibalizm ve tüy yolma kaynaklı tüy kaybı genelde lokalize olur; sırtın belli bir bölgesi, kuyruk dibi ya da kanat ucu gibi tek bir noktada yoğunlaşır ve çoğu zaman çıplak deride kanlı ya da tahriş izi bırakır.</p><table><thead><tr><th>Belirti</th><th>Normal molt</th><th>Kanibalizm / parazit şüphesi</th></tr></thead><tbody><tr><td>Yayılım</td><td>Simetrik, tüm vücuda yaygın</td><td>Lokalize, tek bölgede yoğun</td></tr><tr><td>Deri görünümü</td><td>Sağlıklı, pembemsi</td><td>Kızarık, yaralı, bazen kanlı</td></tr><tr><td>Sürü geneli</td><td>Çoğu tavukta yakın zamanlama</td><td>Genelde birkaç bireyde, belirli</td></tr><tr><td>Eşlik eden davranış</td><td>Sakin, iştah normal</td><td>Huzursuzluk, kaşınma, gagalama</td></tr></tbody></table><p>Kanlı ya da yaralı tüy kaybında ilk şüphe kanibalizm ya da dış parazit olmalıdır; bit ve akarın nasıl teşhis edilip temizlendiğini <a href=\"../tavukta-bit-ve-akar/\">bit ve akar</a> yazısında, sürüde gagalama ve kanibalizmi tetikleyen kümes hatalarını ise <a href=\"../yumurta-verimini-dusuren-hatalar/\">verim düşüren hatalar</a> yazısında bulabilirsiniz. Şüpheniz varsa kısa süre gözlem yapıp gerekirse veteriner desteği alın.</p>"
+   },
+   {
+    "h2": "Molt döneminde kümes yönetiminde nelere dikkat etmeli?",
+    "html": "<ol><li><strong>Stresi azaltın:</strong> Bu dönemde sürü değişikliği, nakliye ya da yeni hayvan katma gibi ek streslerden kaçının; tavuk zaten enerji yoğun bir süreçten geçiyor.</li><li><strong>Yaralanmaya karşı gözlemleyin:</strong> Yeni çıkan pin feather adı verilen sert tüy uçları hassastır, diğer tavuklar tarafından gagalanabilir; kalabalık kümeste bu gagalamayı önlemek için yer ve yemlik yeterliliğini kontrol edin.</li><li><strong>Sıcaklığa ekstra özen gösterin:</strong> Tüy örtüsü seyrekleştiği için deri ile hava arasındaki doğal yalıtım katmanı incelir, tavuğun vücut ısısını koruma yeteneği bu dönemde geçici olarak zayıflar. Molt sonbahara denk geldiğinden, tam da hava serinlerken kümeste taslak ve rüzgar alan boşlukların kapanmış olması normalden biraz daha önemli hale gelir; kış öncesi kontrolü <a href=\"../kisin-kumes-nasil-sicak-tutulur/\">kışın kümes nasıl sıcak tutulur</a> yazısında adım adım anlattık.</li><li><strong>Yem ve suyu kesintisiz tutun:</strong> Ek stres kaynağı olmasın diye yemlik ve suluk kontrolünü sıklaştırın.</li><li><strong>Kayıt tutun:</strong> Hangi tavuğun ne zaman molta girdiğini not etmek, sürü yaşlandıkça verim planlamasında işinize yarar; erken ya da geç molt bazen yaşlanan bir tavuğun ilk işaretidir.</li></ol>"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Tavuklarda tüy dökümü (molt) neden olur?",
+    "a": "Molt, gün ışığı süresinin kısalmasıyla tetiklenen doğal bir yenilenme sürecidir; vücut enerjisini yumurtadan tüy üretimine kaydırır. Genelde sonbaharda görülür ve yılda bir kez tekrarlanan normal bir döngüdür, hastalık belirtisi değildir."
+   },
+   {
+    "q": "Molt döneminde yumurta tamamen kesilir mi?",
+    "a": "Bazı tavuklarda tamamen durur, bazılarında sadece azalır; bu ırka, yaşa ve moltun şiddetine göre değişir. Her iki durum da normaldir ve yeni tüyler tamamlandığında yumurtlama kendiliğinden yeniden başlar."
+   },
+   {
+    "q": "Molt ne kadar sürer?",
+    "a": "Hafif bir molt birkaç hafta içinde biterken, ağır geçen bir molt yaklaşık üç aya kadar uzayabilir. Süre bireysel farklılık gösterir; aynı sürüde bazı tavuklar daha hızlı, bazıları daha yavaş toparlanır."
+   },
+   {
+    "q": "Molt döneminde tavuklara ne yedirilmeli?",
+    "a": "Tüyün yapı taşı protein olduğundan, standart yumurtacı yemi yerine protein oranı yüzde 20 civarına çıkarılmış bir yeme kademeli geçiş yapmak önerilir. Kalsiyum ihtiyacı bu dönemde düştüğü için yüksek kalsiyumlu yumurtacı yemine ısrarla devam etmek gerekmez."
+   },
+   {
+    "q": "Tüy dökümü ile kanibalizmi nasıl ayırt ederim?",
+    "a": "Normal molt vücuda simetrik ve yaygın şekilde dağılır, deri altı sağlıklı görünür. Kanibalizm ya da parazit kaynaklı tüy kaybı ise genelde tek bir bölgede yoğunlaşır ve çoğu zaman kızarık ya da kanlı deri izi bırakır."
+   },
+   {
+    "q": "Molt sırasında tüy dökümü kanlıysa ne yapmalı?",
+    "a": "Kanlı ya da yaralı görünüm normal molt değildir; kanibalizm veya dış parazit (bit, akar) şüphesiyle sürüyü yakından incelemek gerekir. Böyle bir durumda kümes ve sürüyü gözden geçirip gerekirse veteriner desteği almak en doğrusudur."
+   }
+  ]
+ }
+}

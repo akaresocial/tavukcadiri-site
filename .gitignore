@@ -13,3 +13,6 @@ Birlikte bölüm foto/
 
 # İl görselleri ham kaynağı (webp/jpg yayınlanır, raw PNG değil)
 assets/photos/iller/raw/
+
+# Blog görselleri ham kaynağı
+assets/photos/blog/raw/

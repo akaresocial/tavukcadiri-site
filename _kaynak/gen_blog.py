@@ -66,10 +66,20 @@ IMG_ALT={
  "tavukculuk-karli-mi":"Çiftlik masasında hesap defteri, hesap makinesi ve yumurta viyolleri",
  "tavukta-bit-ve-akar":"Kümes bahçesinde kül banyosu yapan tavuk",
  "koye-donus-tavukculuk-hatalari":"Gün doğumunda tepeden köydeki kümesine bakan üretici",
+ "kumeste-horoz-sart-mi":"Sürünün ortasında dimdik duran horoz ve etrafındaki tavuklar",
+ "tavuklarda-kanibalizm-ve-gagalama":"Kümes içinde birbirinden ayrılmış, sakin dağılmış tavuk sürüsü",
+ "kumes-havalandirma-fanı-koku-onleme":"Çadır kümes tavanında çalışan havalandırma fanı",
+ "civciv-buyutme-brooder-rehberi":"Isı lambası altında toplanmış sarı civcivler",
+ "yumurtaci-tavuk-emeklilik-verim-omru":"Farklı yaşlarda tavukların bir arada olduğu karışık yaş sürüsü",
+ "deprem-bolgesinde-kumes-cadir-mi-betonarme-mi":"Beton saha üzerine kurulmuş çelik iskeletli çadır kümes, mühendislik detayı",
+ "yeni-baslayanlar-icin-tavuk-irki-secimi":"Farklı tüy renginde birkaç tavuk ırkı yan yana",
+ "kumes-nereye-kurulmali-komsu-sikayeti":"Ağaç sırasıyla çevrili, komşu evden uzakta konumlanmış çadır kümes",
+ "yumurta-kabugu-neden-inceliyor-kalsiyum":"Elde tutulan yumurta ve yanında istiridye kabuğu kalsiyum takviyesi",
+ "tavuklarda-tuy-dokumu-molt-normal-mi":"Tüy dökümü geçiren bir tavuğun yakın çekimi",
 }
 CHEV='<svg class="faq-chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C25E10" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M6 9l6 6 6-6"></path></svg>'
 
-ALLOWED=re.compile(r'</?(p|ul|ol|li|strong|em|a|h3|table|thead|tbody|tr|th|td)(\s[^>]*)?>', re.I)
+ALLOWED=re.compile(r'</?(p|ul|ol|li|strong|em|a|h3|table|thead|tbody|tr|th|td|div)(\s[^>]*)?>', re.I)
 def sanitize(h):
     # izinli etiket dışındakileri sök (script/style dahil)
     h=re.sub(r'<script.*?</script>','',h,flags=re.S|re.I)
@@ -117,8 +127,8 @@ def article_page(rec, by_slug):
     body=hero+body_secs+faq+related+cta_block()
     out=doc(a["meta_title"]+" | Tavuk Çadırı Blog", a["meta_desc"], "blog/"+slug, body, pre="../../")
     out=out.replace('og:type" content="website"','og:type" content="article"',1)
-    out=out.replace(SITE+"/assets/photos/model-1000.jpg", "%s/assets/photos/blog/%s.jpg"%(SITE,slug))  # og:image + twitter:image
-    graph={"@context":"https://schema.org","@graph":[
+    out=out.replace(SITE+"/assets/photos/og/og-home.jpg", "%s/assets/photos/blog/%s.jpg"%(SITE,slug))  # og:image + twitter:image → yazı-özel görsel
+    graph_nodes=[
       {"@type":"BlogPosting","headline":a["title"],"description":a["meta_desc"],"inLanguage":"tr-TR",
        "datePublished":date_iso,"dateModified":date_iso,
        "image":"%s/assets/photos/blog/%s.jpg"%(SITE,slug),
@@ -129,7 +139,11 @@ def article_page(rec, by_slug):
       {"@type":"BreadcrumbList","itemListElement":[
         {"@type":"ListItem","position":1,"name":"Ana Sayfa","item":SITE+"/"},
         {"@type":"ListItem","position":2,"name":"Blog","item":SITE+"/blog/"},
-        {"@type":"ListItem","position":3,"name":a["title"],"item":"%s/blog/%s/"%(SITE,slug)}]}]}
+        {"@type":"ListItem","position":3,"name":a["title"],"item":"%s/blog/%s/"%(SITE,slug)}]}]
+    if a.get("howto_steps"):
+        graph_nodes.append({"@type":"HowTo","name":a["title"],
+          "step":[{"@type":"HowToStep","position":i+1,"name":st["ad"],"text":st["aciklama"]} for i,st in enumerate(a["howto_steps"])]})
+    graph={"@context":"https://schema.org","@graph":graph_nodes}
     out=out.replace('</head>','<script type="application/ld+json">%s</script></head>'%json.dumps(graph,ensure_ascii=False,separators=(",",":")),1)
     return out
 
