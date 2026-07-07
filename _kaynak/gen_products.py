@@ -101,7 +101,11 @@ def doc(title,desc,canon_slug,body,jsonld="",img_num="1000"):
       '<title>%s</title><meta name="description" content="%s"><meta name="robots" content="index,follow"><link rel="canonical" href="%s/%s/">'
       '<meta property="og:type" content="product"><meta property="og:site_name" content="Tavuk Çadırı"><meta property="og:title" content="%s"><meta property="og:description" content="%s"><meta property="og:url" content="%s/%s/"><meta property="og:image" content="%s/assets/photos/og/og-%s.jpg?v=2"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:locale" content="tr_TR"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="%s/assets/photos/og/og-%s.jpg?v=2">'
       '<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png"><link rel="icon" type="image/png" sizes="512x512" href="../assets/favicon.png"><link rel="apple-touch-icon" href="../assets/apple-touch-icon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
-      '<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"><style>%s</style>%s</head>'
+      '<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"><style>%s</style>%s'
+      '<!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-RES77XE6HP"></script>'
+      '<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-RES77XE6HP");'
+      'document.addEventListener("click",function(ev){var a=ev.target&&ev.target.closest?ev.target.closest("a"):null;if(!a)return;var h=a.href||"";'
+      'if(h.indexOf("wa.me")>-1){gtag("event","whatsapp_click",{link_url:h});}else if(h.indexOf("tel:")===0){gtag("event","phone_click",{link_url:h});}});</script></head>'
       '<body><a href="#main" class="skip">İçeriğe geç</a>%s<main id="main">%s</main>%s%s<script>%s</script></body></html>')%(
       e(title),e(desc),SITE,canon_slug,e(title),e(desc),SITE,canon_slug,SITE,img_num,SITE,img_num,CSS,
       ('<script type="application/ld+json">%s</script>'%jsonld if jsonld else ''),
