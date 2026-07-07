@@ -44,7 +44,15 @@ details>summary{list-style:none;cursor:pointer}details>summary::-webkit-details-
 .hubgrid a{background:#fff;border:1px solid #ECE3D6;border-radius:12px;padding:11px 14px;font-weight:600;font-size:14.5px;color:#3C342B}
 .hubgrid a:hover{border-color:#E5751B;color:#C25E10}
 .hubreg h2{font-family:'Poppins';font-weight:700;font-size:clamp(19px,2.4vw,24px);margin:30px 0 14px}
-@media(min-width:680px){.pmodels{grid-template-columns:repeat(4,1fr)}.rel{grid-template-columns:repeat(3,1fr)}.hubgrid{grid-template-columns:repeat(3,1fr)}}
+.kunye{background:#fff;border:1px solid #EFE7DA;border-radius:18px;padding:clamp(20px,3vw,30px)}
+.kunye h2{font-family:'Poppins';font-weight:700;font-size:clamp(20px,2.6vw,26px);margin:0 0 4px}
+.kn-sub{color:#6E6256;font-size:14.5px;margin:0 0 16px;max-width:640px}
+.kn-grid{display:grid;grid-template-columns:1fr;gap:0;margin:0}
+.kn-row{display:grid;grid-template-columns:140px 1fr;gap:14px;padding:12px 0;border-top:1px solid #F1E9DC}
+.kn-grid .kn-row:first-child{border-top:0}
+.kn-row dt{font-weight:700;font-size:13.5px;color:#8F5314}
+.kn-row dd{margin:0;font-size:15px;color:#4C443A;line-height:1.55}
+@media(min-width:680px){.pmodels{grid-template-columns:repeat(4,1fr)}.rel{grid-template-columns:repeat(3,1fr)}.hubgrid{grid-template-columns:repeat(3,1fr)}.kn-grid{grid-template-columns:1fr 1fr;column-gap:36px}.kn-grid .kn-row:nth-child(2){border-top:0}}
 @media(min-width:980px){.hubgrid{grid-template-columns:repeat(4,1fr)}}
 """
 
@@ -135,6 +143,23 @@ def cta_il(rec):
             '<a href="%s" target="_blank" rel="noopener" class="wa-btn" style="background:#fff;color:#1B3D1A;font-size:16px;padding:14px 24px;border-radius:13px">%s WhatsApp\'tan yazın</a>'
             '</div></div></section>') % (e(il), wa_link(rec), WA_SVG.format(w=19, f="#1FA855"))
 
+KUNYE_ROWS = [
+    ("İskelet", "40x40 mm / 2 mm galvaniz çelik makas profil"),
+    ("Branda", "650 g/m² TSE damgalı, UV dayanımlı, alev yürütmez"),
+    ("İç astar", "180 g/m² antibakteriyel, yıkanabilir"),
+    ("Yalıtım", "Alüminyum bizafol — 3 veya 4 kat"),
+    ("Dayanıklılık", "Standart çadırlara göre 3 kat (kar, rüzgâr, yağış)"),
+    ("Garanti", "2 yıl üretim garantisi"),
+    ("Teslim", "Sipariş sonrası ~10 gün, kurulu"),
+    ("Kapasite", "m² başına ~7 tavuk (70 m² ≈ 500 tavuk)"),
+]
+def kunye_block(il):
+    dl = "".join('<div class="kn-row"><dt>%s</dt><dd>%s</dd></div>' % (e(k), e(v)) for k, v in KUNYE_ROWS)
+    return ('<section class="sec" style="padding-top:clamp(20px,3vw,32px)"><div class="wrap"><div class="kunye">'
+            '<h2>Teknik künye</h2>'
+            '<p class="kn-sub">%s dahil 81 ilde aynı üretim standardı; nakliye ve kurulum her ölçüde fiyata dahildir. Ölçü ve yalıtım katı kapasitenize göre belirlenir.</p>'
+            '<dl class="kn-grid">%s</dl></div></div></section>') % (e(il), dl)
+
 def il_page(rec, by_slug):
     il = rec["il"]; slug = rec["slug"]; d = rec["data"]
     crumb = '<a href="../index.html">Ana Sayfa</a> › <a href="../kurulum-bolgeleri/">Kurulum Bölgeleri</a> › <b>%s</b>' % e(il)
@@ -156,7 +181,7 @@ def il_page(rec, by_slug):
         if rs in BLOG_TITLES:
             rel_items += '<a href="../blog/%s/">%s %s</a>' % (rs, e(BLOG_TITLES[rs]), ARROW)
     related = ('<section class="sec" style="background:#FBF8F3;padding-top:clamp(24px,3vw,40px)"><div class="wrap"><h2 style="font-family:Poppins;font-weight:700;font-size:clamp(20px,2.6vw,26px);margin:0 0 18px">İşinize yarayacak rehberler</h2><div class="rel">%s</div></div></section>' % rel_items) if rel_items else ''
-    body = hero + body_secs + models_block(rec) + faq + related + cta_il(rec)
+    body = hero + body_secs + models_block(rec) + kunye_block(il) + faq + related + cta_il(rec)
     out = doc(rec["meta_title"], rec["meta_desc"], slug, body, pre="../")
     out = out.replace(SITE + "/assets/photos/og/og-home.jpg", "%s/assets/photos/iller/%s.jpg" % (SITE, rec["ilslug"]))  # og/twitter image → il görseli
     graph = {"@context": "https://schema.org", "@graph": [
