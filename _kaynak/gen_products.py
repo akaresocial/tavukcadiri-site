@@ -99,7 +99,7 @@ var h=document.querySelector('header');window.addEventListener('scroll',function
 def doc(title,desc,canon_slug,body,jsonld="",img_num="1000"):
     return ('<!DOCTYPE html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">'
       '<title>%s</title><meta name="description" content="%s"><meta name="robots" content="index,follow"><link rel="canonical" href="%s/%s/">'
-      '<meta property="og:type" content="product"><meta property="og:site_name" content="Tavuk Çadırı"><meta property="og:title" content="%s"><meta property="og:description" content="%s"><meta property="og:url" content="%s/%s/"><meta property="og:image" content="%s/assets/photos/model-%s.jpg"><meta property="og:locale" content="tr_TR"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="%s/assets/photos/model-%s.jpg">'
+      '<meta property="og:type" content="product"><meta property="og:site_name" content="Tavuk Çadırı"><meta property="og:title" content="%s"><meta property="og:description" content="%s"><meta property="og:url" content="%s/%s/"><meta property="og:image" content="%s/assets/photos/og/og-%s.jpg?v=2"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:locale" content="tr_TR"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="%s/assets/photos/og/og-%s.jpg?v=2">'
       '<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png"><link rel="icon" type="image/png" sizes="512x512" href="../assets/favicon.png"><link rel="apple-touch-icon" href="../assets/apple-touch-icon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
       '<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"><style>%s</style>%s</head>'
       '<body><a href="#main" class="skip">İçeriğe geç</a>%s<main id="main">%s</main>%s%s<script>%s</script></body></html>')%(
@@ -140,9 +140,9 @@ def detail_page(slug,idx):
     num=slug.split("-")[0]
     num_disp="2.000+" if num=="2000" else format(int(num),",d").replace(",",".")
     cap="%s tavuk"%(("2.000+" if num=="2000" else format(int(num),',d').replace(",","."))) if num.isdigit() else "%d tavuk"%tavuk
-    title="%s Tavukluk Tavuk Çadırı (%dx%d = %d m²) Fiyatları | tavukcadiri.com"%(num if num!="2000" else "2000+",int(en),int(boy),m2)
+    title="%s Kapasiteli Tavuk Çadırı (%dx%d = %d m²) Fiyatları | tavukcadiri.com"%(num if num!="2000" else "2000+",int(en),int(boy),m2)
     desc="%s tavukluk (%dx%d, %d m²) yalıtımlı tavuk çadırı. 3 kat %s / 4 kat %s. 40x40 galvaniz makas, 650g TSE branda, 2 yıl garanti; nakliye+kurulum dahil."%(num,int(en),int(boy),m2,tl(p3),tl(p4))
-    h1="%s Tavukluk Tavuk Çadırı"%num_disp
+    h1="%s Kapasiteli Tavuk Çadırı"%num_disp
     badges=[("Ölçü","%dx%d m"%(int(en),int(boy))),("Alan","%d m²"%m2),("Kapasite","~%s tavuk"%format(tavuk,',d').replace(",",".")),
             ("3 Kat","%s"%tl(p3)),("4 Kat","%s"%tl(p4)),("Garanti","2 yıl"),("Teslim","10 gün / kurulu"),("Nakliye","81 il — dahil")]
     bd='<div class="badges">%s</div>'%("".join('<div class="badge"><div class="l">%s</div><div class="v">%s</div></div>'%(e(l),e(v)) for l,v in badges))
@@ -151,7 +151,7 @@ def detail_page(slug,idx):
       '<div><div class="ey">Anahtar Teslim Kümes Çadırı · %dx%d m · %d m²</div><h1>%s</h1>'
       '<p class="lead">Yaklaşık %s tavuk için %d m² yalıtımlı, anahtar teslim kümes çadırı. Galvaniz makas iskelet, TSE damgalı branda ve 3-4 kat bizafol yalıtımla üretilir; nakliye ve kurulum dahil, 10 günde kurulu teslim.</p>'
       '%s<div class="actions"><a href="https://wa.me/%s" target="_blank" rel="noopener" class="btn-wa">%s Bu ürünü sorun</a><a href="#fiyat" class="btn-ghost">Fiyat &amp; detay</a></div></div>'
-      '<div><img class="hero-img" src="../assets/photos/model-%s.webp?v=2" alt="%s"><div class="pgal"><img src="../assets/photos/tech-1.webp?v=2" loading="lazy" alt="%s tavukluk tavuk çadırı — iç mekan"><img src="../assets/photos/tech-2.webp?v=2" loading="lazy" alt="%s tavukluk tavuk çadırı — yakın çekim"><img src="../assets/photos/tech-3.webp?v=2" loading="lazy" alt="%s tavukluk tavuk çadırı — iç görünüm"></div></div></div></div></section>')%(crumb,int(en),int(boy),m2,e(h1),num_disp,m2,bd,WA,WA_SVG.format(w=20,f="#fff"),num,e(h1),num,num,num)
+      '<div><img class="hero-img" src="../assets/photos/model-%s.webp?v=2" alt="%s"><div class="pgal"><img src="../assets/photos/tech-1.webp?v=2" loading="lazy" alt="%s kapasiteli tavuk çadırı — iç mekan"><img src="../assets/photos/tech-2.webp?v=2" loading="lazy" alt="%s kapasiteli tavuk çadırı — yakın çekim"><img src="../assets/photos/tech-3.webp?v=2" loading="lazy" alt="%s kapasiteli tavuk çadırı — iç görünüm"></div></div></div></div></section>')%(crumb,int(en),int(boy),m2,e(h1),num_disp,m2,bd,WA,WA_SVG.format(w=20,f="#fff"),num,e(h1),num,num,num)
     # kapasite açıklaması (per-size unique intro)
     who={"500":"Yeni başlayan ve yarı-ticari üreticiler için en uygun başlangıç ölçüsü.","750":"Küçük kümesini büyütmek isteyen üreticiler için dengeli orta ölçü.","1000":"Ticari yumurta/et üretimine geçenlerin en çok tercih ettiği ölçü.","2000":"Büyük ölçekli, ciddi ticari üretim için geniş kapasiteli model."}.get(num,"")
     body=(hero
@@ -179,7 +179,7 @@ def detail_page(slug,idx):
       +cta_band())
     # JSON-LD with Offer price (3 kat as low price)
     faqld=[{"@type":"Question","name":"%s tavukluk çadır kaç m²?"%num_disp,"acceptedAnswer":{"@type":"Answer","text":"%d m² (%dx%d m), ~%s tavuk kapasiteli."%(m2,int(en),int(boy),tavuk_f)}},
-           {"@type":"Question","name":"%s tavukluk tavuk çadırı fiyatı ne kadar?"%num_disp,"acceptedAnswer":{"@type":"Answer","text":"3 kat yalıtımlı %s, 4 kat yalıtımlı %s; nakliye ve kurulum dahil."%(tl(p3),tl(p4))}}]
+           {"@type":"Question","name":"%s kapasiteli tavuk çadırı fiyatı ne kadar?"%num_disp,"acceptedAnswer":{"@type":"Answer","text":"3 kat yalıtımlı %s, 4 kat yalıtımlı %s; nakliye ve kurulum dahil."%(tl(p3),tl(p4))}}]
     graph={"@context":"https://schema.org","@graph":[
      {"@type":"Product","name":h1,"description":desc,"image":"%s/assets/photos/model-%s.jpg"%(SITE,num),"category":"Tavuk Çadırı / Kümes Çadırı","brand":{"@type":"Brand","name":"Tavuk Çadırı"},
       "offers":{"@type":"AggregateOffer","priceCurrency":"TRY","lowPrice":p3,"highPrice":p4,"offerCount":2,"availability":"https://schema.org/InStock","url":"%s/%s/"%(SITE,slug)},

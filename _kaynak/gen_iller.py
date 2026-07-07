@@ -158,7 +158,7 @@ def il_page(rec, by_slug):
     related = ('<section class="sec" style="background:#FBF8F3;padding-top:clamp(24px,3vw,40px)"><div class="wrap"><h2 style="font-family:Poppins;font-weight:700;font-size:clamp(20px,2.6vw,26px);margin:0 0 18px">İşinize yarayacak rehberler</h2><div class="rel">%s</div></div></section>' % rel_items) if rel_items else ''
     body = hero + body_secs + models_block(rec) + faq + related + cta_il(rec)
     out = doc(rec["meta_title"], rec["meta_desc"], slug, body, pre="../")
-    out = out.replace(SITE + "/assets/photos/model-1000.jpg", "%s/assets/photos/iller/%s.jpg" % (SITE, rec["ilslug"]))  # og/twitter image
+    out = out.replace(SITE + "/assets/photos/og/og-home.jpg", "%s/assets/photos/iller/%s.jpg" % (SITE, rec["ilslug"]))  # og/twitter image → il görseli
     graph = {"@context": "https://schema.org", "@graph": [
         {"@type": "Service", "name": "%s Tavuk Çadırı Kurulumu" % il,
          "serviceType": "Anahtar teslim tavuk çadırı (çadır kümes) üretim, nakliye ve kurulum",

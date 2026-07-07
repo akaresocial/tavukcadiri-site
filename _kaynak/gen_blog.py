@@ -56,6 +56,16 @@ IMG_ALT={
  "tavuk-basina-kac-m2-gerekir":"Ferah çadır kümes içinde rahatça dağılmış yumurtacı tavuklar",
  "yumurta-verimini-dusuren-hatalar":"Folluklarda taze yumurtalar ve yuvada oturan tavuk",
  "cadir-kumes-ne-kadar-dayanikli":"Fırtınalı havada sağlam duran çadır kümes",
+ "cadir-kumes-alirken-dikkat-edilecekler":"Çadır kümes brandasını ve iskelet profilini elle kontrol eden üretici",
+ "yazin-kumes-nasil-serin-tutulur":"Yaz sıcağında pencereleri açık çadır kümes ve gölgede serinleyen tavuklar",
+ "kumesi-yirticilardan-korumak":"Alt eteği toprağa gömülü kümes çiti ve gerideki ağaçlıkta tilki silüeti",
+ "tavuk-yem-maliyeti-hesabi":"Yem çuvalları, dolu yem kepçesi ve yemlikte yem yiyen tavuklar",
+ "yarka-alirken-dikkat-edilecekler":"Teslimatta kasadaki genç yarkaları kontrol eden üretici",
+ "tavuk-hastaliklari-ve-asi-takvimi":"Kümeste tavuğun gözünü ve ibiğini kontrol eden üretici",
+ "koy-yumurtasi-nasil-satilir":"Pazar tezgâhında viyoller içinde taze köy yumurtaları",
+ "tavukculuk-karli-mi":"Çiftlik masasında hesap defteri, hesap makinesi ve yumurta viyolleri",
+ "tavukta-bit-ve-akar":"Kümes bahçesinde kül banyosu yapan tavuk",
+ "koye-donus-tavukculuk-hatalari":"Gün doğumunda tepeden köydeki kümesine bakan üretici",
 }
 CHEV='<svg class="faq-chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C25E10" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M6 9l6 6 6-6"></path></svg>'
 

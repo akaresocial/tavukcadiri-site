@@ -90,7 +90,7 @@ def footer(pre):
       '<div><h5>Ürünler</h5><ul>%s</ul></div>'
       '<div><h5>Kurumsal</h5><ul><li><a href="%shakkimizda/">Hakkımızda</a></li><li><a href="%siletisim/">İletişim</a></li><li><a href="%skurulum-bolgeleri/">Kurulum Bölgeleri</a></li><li><a href="%sindex.html#sss">S.S.S.</a></li><li><a href="%sblog/">Blog</a></li></ul></div>'
       '<div><h5>Yasal</h5><ul><li><a href="%skvkk/">KVKK Aydınlatma Metni</a></li><li><a href="%sgizlilik/">Gizlilik &amp; Çerez Politikası</a></li></ul></div>'
-      '</div><div class="foot-bottom"><span>© 2026 Tavuk Çadırı. Tüm hakları saklıdır.</span><span>Üretim &amp; kurulum: DEHA Çadır · 81 il</span></div></div></footer>')%(pre,WA,WA_SVG.format(w=17,f="#fff"),m,pre,pre,pre,pre,pre,pre,pre)
+      '</div><div class="foot-bottom"><span>© 2026 Tavuk Çadırı. Tüm hakları saklıdır.</span><span>Üretim &amp; kurulum: DEHA Çadır · 81 il</span><span>Web tasarım: <a href="https://akaremedya.com" target="_blank" rel="noopener" style="font-weight:600">Akare Medya</a></span></div></div></footer>')%(pre,WA,WA_SVG.format(w=17,f="#fff"),m,pre,pre,pre,pre,pre,pre,pre)
 
 COOKIE=''
 
@@ -102,15 +102,24 @@ var h=document.querySelector('header');window.addEventListener('scroll',function
 })();
 """)
 
+# Google Analytics 4 (G-RES77XE6HP) + WhatsApp/telefon tiklama olaylari — tum sayfalarin head'ine girer
+GA_TAG = ('<!-- Google tag (gtag.js) -->'
+ '<script async src="https://www.googletagmanager.com/gtag/js?id=G-RES77XE6HP"></script>'
+ '<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-RES77XE6HP");'
+ 'document.addEventListener("click",function(ev){var a=ev.target&&ev.target.closest?ev.target.closest("a"):null;if(!a)return;var h=a.href||"";'
+ 'if(h.indexOf("wa.me")>-1){gtag("event","whatsapp_click",{link_url:h});}'
+ 'else if(h.indexOf("tel:")===0){gtag("event","phone_click",{link_url:h});}});</script>')
+
 def doc(title,desc,slug,body_main,pre="../",noindex=False,extra_js=""):
     robots='<meta name="robots" content="noindex,follow">' if noindex else '<meta name="robots" content="index,follow">'
     canon='' if noindex else '<link rel="canonical" href="%s/%s/">'%(SITE,slug)
-    og='' if noindex else '<meta property="og:url" content="%s/%s/"><meta property="og:image" content="%s/assets/photos/model-1000.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="%s/assets/photos/model-1000.jpg">'%(SITE,slug,SITE,SITE)
+    og='' if noindex else '<meta property="og:url" content="%s/%s/"><meta property="og:image" content="%s/assets/photos/og/og-home.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="%s/assets/photos/og/og-home.jpg">'%(SITE,slug,SITE,SITE)
     return ('<!DOCTYPE html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">'
       '<title>%s</title><meta name="description" content="%s">%s%s'
       '<meta property="og:type" content="website"><meta property="og:site_name" content="Tavuk Çadırı"><meta property="og:title" content="%s"><meta property="og:description" content="%s"><meta property="og:locale" content="tr_TR">%s'
       '<link rel="icon" type="image/png" sizes="32x32" href="%sassets/favicon-32.png"><link rel="icon" type="image/png" sizes="512x512" href="%sassets/favicon.png"><link rel="apple-touch-icon" href="%sassets/apple-touch-icon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
-      '<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"><style>%s</style></head>'
+      '<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"><style>%s</style>'
+      +GA_TAG+'</head>'
       '<body><a href="#main" class="skip">İçeriğe geç</a>%s<main id="main">%s</main>%s%s<script>%s</script>%s</body></html>')%(
       e(title),e(desc),robots,canon,e(title),e(desc),og,pre,pre,pre,CSS,header(pre),body_main,footer(pre),COOKIE,JS,('<script>%s</script>'%extra_js if extra_js else ''))
 
