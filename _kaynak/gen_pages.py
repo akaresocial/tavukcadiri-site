@@ -164,7 +164,7 @@ contact_body=(phead("İletişim","Teklif ve bilgi için bize ulaşın",
  +'<div class="cinfo"><a href="https://wa.me/%s" target="_blank" rel="noopener"><span class="ic">%s</span>WhatsApp: %s</a>'%(WA,WA_SVG.format(w=20,f="#2E5A2C"),WA_DISP)
  +'<a href="tel:0%s"><span class="ic">%s</span>Telefon: %s</a>'%(WA[2:],tel_svg,WA_DISP)
  +'</div>'
- +'<p style="font-size:14px;color:#6E6256">Merkez: İstanbul / Sancaktepe · E-posta: <a href="mailto:info@tavukcadiri.com" style="color:#C25E10">info@tavukcadiri.com</a> · Türkiye geneli 81 ilde üretim ve kurulum (Deha Yapı ve Mimarlık Ltd. Şti.).</p></div>'
+ +'<p style="font-size:14px;color:#6E6256">Merkez: İstanbul / Beykoz (Cumhuriyetköy) · E-posta: <a href="mailto:info@tavukcadiri.com" style="color:#C25E10">info@tavukcadiri.com</a> · Türkiye geneli 81 ilde üretim ve kurulum (Deha Yapı ve Mimarlık Ltd. Şti.).</p></div>'
  # form
  +'<div><form class="form" id="lead" onsubmit="return sendWA(event)">'
  +'<div class="row"><div><label for="f-ad">Ad Soyad</label><input id="f-ad" name="ad" required></div></div>'
@@ -188,7 +188,7 @@ kvkk_body=(phead("KVKK Aydınlatma Metni","Kişisel Verilerin Korunması Aydınl
   "6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında veri sorumlusu sıfatıyla hazırlanmıştır.",
   '<a href="../index.html">Ana Sayfa</a> › <b>KVKK Aydınlatma Metni</b>')
  +'<section class="sec"><div class="wrap"><div class="prose">'
- +'<h2>1. Veri Sorumlusu</h2><p>İşbu aydınlatma metni, Deha Yapı ve Mimarlık Ltd. Şti. (“DEHA Çadır”, tavukcadiri.com) tarafından, 6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) 10. maddesi uyarınca hazırlanmıştır. Adres: Sancaktepe, İstanbul. E-posta: info@tavukcadiri.com.</p>'
+ +'<h2>1. Veri Sorumlusu</h2><p>İşbu aydınlatma metni, Deha Yapı ve Mimarlık Ltd. Şti. (“DEHA Çadır”, tavukcadiri.com) tarafından, 6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) 10. maddesi uyarınca hazırlanmıştır. Adres: Cumhuriyetköy Mah., Beykoz / İstanbul. E-posta: info@tavukcadiri.com.</p>'
  +'<h2>2. İşlenen Kişisel Veriler</h2><p>Sitemizdeki iletişim/teklif formu ve WhatsApp üzerinden bizimle iletişime geçtiğinizde; ad-soyad, telefon numarası, bulunduğunuz il/ilçe ve talebinize ilişkin ilettiğiniz bilgiler işlenir. Ayrıca site kullanımına dair zorunlu çerezler aracılığıyla teknik veriler işlenebilir.</p>'
  +'<h2>3. İşleme Amaçları</h2><ul><li>Teklif ve fiyatlandırma taleplerinizin karşılanması,</li><li>Ürün ve hizmetlerimiz hakkında sizinle iletişim kurulması,</li><li>Sözleşme öncesi görüşme ve satış-kurulum süreçlerinin yürütülmesi,</li><li>Yasal yükümlülüklerin yerine getirilmesi.</li></ul>'
  +'<h2>4. Hukuki Sebep</h2><p>Verileriniz KVKK 5. madde kapsamında; talebinize istinaden sözleşmenin kurulması/ifası ve meşru menfaat hukuki sebeplerine dayanılarak, açık rızanızın gerektiği hallerde ise rızanıza dayanılarak işlenir.</p>'
