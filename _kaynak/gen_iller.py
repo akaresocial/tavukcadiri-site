@@ -61,10 +61,10 @@ CHEV = '<svg class="faq-chev" width="22" height="22" viewBox="0 0 24 24" fill="n
 
 # Gerçek DEHA fiyatları (3 kat / 4 kat, nakliye+kurulum dahil) — fiyatlar/ sayfasıyla senkron
 MODELS = [
-    ("500-tavukluk-tavuk-cadiri",  "500 Tavukluk",    "7x10 · 70 m²",  95_000, 105_000),
-    ("750-tavukluk-tavuk-cadiri",  "750 Tavukluk",    "7x14 · 98 m²",  110_000, 135_000),
-    ("1000-tavukluk-tavuk-cadiri", "1.000 Tavukluk",  "7x20 · 140 m²", 185_000, 195_000),
-    ("2000-tavukluk-tavuk-cadiri", "2.000+ Tavukluk", "10x30 · 300 m²", 325_000, 395_000),
+    ("500-tavukluk-tavuk-cadiri",  "500 Tavukluk",    "7x10 · 70 m²"),
+    ("750-tavukluk-tavuk-cadiri",  "750 Tavukluk",    "7x15 · 105 m²"),
+    ("1000-tavukluk-tavuk-cadiri", "1.000 Tavukluk",  "7x20 · 140 m²"),
+    ("2000-tavukluk-tavuk-cadiri", "2.000+ Tavukluk", "10x30 · 300 m²"),
 ]
 BLOG_TITLES = {
     "kumes-maliyeti-betonarme-mi-cadir-mi": "Kümes maliyeti: betonarme mi, çadır mı?",
@@ -118,18 +118,18 @@ def models_block(rec):
     four = d["yalitim"] == "4 kat"
     both = d["yalitim"] == "3 veya 4 kat"
     cards = ""
-    for slug, name, size, p3, p4 in MODELS:
+    for slug, name, size in MODELS:
         if both:
-            f = "%s / %s TL" % (tl(p3), tl(p4)); s = "3 kat / 4 kat · nakliye+kurulum dahil"
+            s = "3 kat / 4 kat seçeneği · nakliye+kurulum dahil"
         elif four:
-            f = "%s TL" % tl(p4); s = "4 kat yalıtımlı · nakliye+kurulum dahil"
+            s = "4 kat yalıtımlı · nakliye+kurulum dahil"
         else:
-            f = "%s TL" % tl(p3); s = "3 kat yalıtımlı · nakliye+kurulum dahil"
+            s = "3 kat yalıtımlı · nakliye+kurulum dahil"
         cards += ('<a class="pmodel" href="../%s/"><span class="pm-k">%s</span><span class="pm-m">%s</span>'
-                  '<span class="pm-f">%s<small>%s</small></span></a>') % (slug, e(name), e(size), e(f), e(s))
+                  '<span class="pm-f">Güncel fiyatı gör →<small>%s</small></span></a>') % (slug, e(name), e(size), e(s))
     return ('<section class="sec" style="background:#FBF8F3"><div class="wrap">'
-            '<h2 style="font-family:Poppins;font-weight:700;font-size:clamp(22px,3vw,30px);margin:0 0 4px">%s için güncel fiyatlar</h2>'
-            '<p style="color:#6E6256;margin:0;max-width:720px">Fiyatlara nakliye ve kurulum dahildir; %s teslimatı da ücretsizdir. 7 farklı ölçünün tamamı için <a href="../fiyatlar/" style="color:#C25E10;font-weight:600">fiyat tablosuna</a> bakabilirsiniz.</p>'
+            '<h2 style="font-family:Poppins;font-weight:700;font-size:clamp(22px,3vw,30px);margin:0 0 4px">%s için modeller</h2>'
+            '<p style="color:#6E6256;margin:0;max-width:720px">Fiyatlara nakliye ve kurulum dahildir; %s teslimatı da ücretsizdir. 8 farklı ölçünün tamamı için <a href="../fiyatlar/" style="color:#C25E10;font-weight:600">fiyat tablosuna</a> bakabilirsiniz.</p>'
             '<div class="pmodels">%s</div></div></section>') % (e(il), e(il), cards)
 
 def wa_link(rec):
@@ -191,7 +191,7 @@ def il_page(rec, by_slug):
          "areaServed": {"@type": "State", "name": il},
          "url": "%s/%s/" % (SITE, slug),
          "description": rec["meta_desc"],
-         "offers": {"@type": "AggregateOffer", "priceCurrency": "TRY", "lowPrice": "95000", "highPrice": "495000",
+         "offers": {"@type": "AggregateOffer", "priceCurrency": "TRY", "lowPrice": "99000", "highPrice": "820000",
                     "url": SITE + "/fiyatlar/"}},
         {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": x["q"], "acceptedAnswer": {"@type": "Answer", "text": x["a"]}} for x in rec["faq"]]},
         {"@type": "BreadcrumbList", "itemListElement": [

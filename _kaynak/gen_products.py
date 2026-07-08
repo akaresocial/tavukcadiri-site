@@ -10,21 +10,26 @@ def e(t): return html.escape(str(t),quote=True)
 WA_SVG='<svg width="{w}" height="{w}" viewBox="0 0 24 24" fill="{f}" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.8 14.06c-.24.68-1.42 1.31-1.96 1.36-.5.05-.95.23-3.2-.67-2.7-1.07-4.42-3.84-4.55-4.02-.13-.18-1.1-1.46-1.1-2.79 0-1.33.7-1.98.94-2.25.24-.27.53-.34.7-.34.18 0 .35 0 .5.01.16.01.38-.06.59.45.24.59.81 2.04.88 2.19.07.15.12.32.02.5-.09.18-.14.29-.27.45-.14.16-.29.34-.41.46-.14.14-.28.29-.12.56.16.27.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.21 1.37.27.14.43.12.59-.07.16-.18.68-.79.86-1.06.18-.27.36-.22.6-.13.24.09 1.55.73 1.82.86.27.13.45.2.51.31.07.11.07.63-.17 1.31z"></path></svg>'
 CHECK='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2E5A2C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:2px"><path d="M20 6 9 17l-5-5"></path></svg>'
 
-# ---- REAL DATA ----
-# (en, boy, m2, tavuk~7/m2, 3kat fiyat, 4kat fiyat)
+# ---- REAL DATA (Temmuz 2026 güncel liste — Deha Çadır) ----
+# (en, boy, m2, tavuk~7/m2, 3kat fiyat veya None, 4kat fiyat)
+# 3 Katlı yalıtım SADECE 7x10 ölçüsünde sunulur; diğer tüm ölçüler 4 Katlıdır (p3=None).
 SIZES=[
- ("7","10",70,500,95000,105000),
- ("7","14",98,680,110000,135000),
- ("7","20",140,980,185000,195000),
- ("7","30",210,1470,235000,270000),
- ("10","20",200,1400,225000,265000),
- ("10","30",300,2100,325000,395000),
- ("10","40",400,2800,425000,495000),
+ ("7","10",70,500,99000,110000),
+ ("7","15",105,750,None,140000),
+ ("7","20",140,980,None,195000),
+ ("10","20",200,1400,None,285000),
+ ("10","30",300,2100,None,410000),
+ ("10","40",400,2800,None,550000),
+ ("10","50",500,3500,None,685000),
+ ("12","50",600,4200,None,820000),
 ]
 def tl(n): return format(n,",d").replace(",",".")+" TL"
 
+# metrekareye göre yaklaşık fiyat referansı (tabloda olmayan özel ölçüler için)
+CALC_PRICE_PER_M2 = 1350
+
 # featured detail pages: slug -> size index
-FEAT=[("500-tavukluk-tavuk-cadiri",0),("750-tavukluk-tavuk-cadiri",1),("1000-tavukluk-tavuk-cadiri",2),("2000-tavukluk-tavuk-cadiri",5)]
+FEAT=[("500-tavukluk-tavuk-cadiri",0),("750-tavukluk-tavuk-cadiri",1),("1000-tavukluk-tavuk-cadiri",2),("2000-tavukluk-tavuk-cadiri",4)]
 FEAT_SLUGS=[f[0] for f in FEAT]
 
 SPECS=[
@@ -32,7 +37,7 @@ SPECS=[
  ("Dayanım","Standart çadırlara göre 3 kat daha dayanıklı — kar, tipik rüzgâr ve yağmura karşı; yıkılma/çökme yapmaz"),
  ("Dış örtü","650 g/m² TSE damgalı branda (su geçirmez, dayanıklı)"),
  ("İç astar","180 g antibakteriyel, yıkanabilir astar (hijyenik iç ortam)"),
- ("Yalıtım","Alüminyum bizafol yalıtım — 3 kat veya 4 kat seçenek (sıcak/soğuktan koruma)"),
+ ("Yalıtım","3 Kat: Astar - Yalıtım - Folyo Yalıtım · 4 Kat: Astar - Yalıtım - Folyo Yalıtım - Keçe Yalıtım (3 Kat sadece 7x10 ölçüsünde sunulur)"),
  ("Montaj","Hafif sistem, her zemine montaj"),
  ("Nakliye + Kurulum","Türkiye geneli 81 il — fiyata dahil"),
  ("Teslim","Sipariş sonrası 10 gün içinde kurulu teslim"),
@@ -49,7 +54,7 @@ FEATURES=[
  ("wind","Rüzgâra dayanıklı","Standart çadırlara göre 3 kat daha dayanıklı; kar, tipik rüzgâr ve yağmurda yıkılma/çökme yapmaz."),
  ("frame","Sağlam iskelet","40x40 / 2 mm profil makas sistemiyle güçlü, taşıyıcı galvaniz iskelet."),
  ("shield","Hijyenik iç ortam","180 g antibakteriyel, yıkanabilir astar; kolay temizlenen sağlıklı iç yüzey."),
- ("thermo","Isı yalıtımı","Alüminyum bizafol yalıtım (3/4 kat) ile yazın serin, kışın sıcak dengeli ortam."),
+ ("thermo","Isı yalıtımı","Astar, yalıtım, folyo yalıtım (7x10'da 3 kat) ve keçe yalıtımlı 4 kat seçenekle yazın serin, kışın sıcak dengeli ortam."),
  ("layers","650 g TSE branda","Su geçirmez, TSE damgalı dış örtü; uzun ömürlü ve dayanıklı."),
  ("badge","2 yıl garanti","Üretim kaynaklı hatalara karşı 2 yıl üretim garantisi; uzun ömürlü kullanım."),
 ]
@@ -111,6 +116,9 @@ def doc(title,desc,canon_slug,body,jsonld="",img_num="1000"):
       header(),body,footer(),COOKIE,JS)
 
 def price_box(m2,p3,p4):
+    if p3 is None:
+        return ('<div class="pricebox"><div class="pb pb-hot" style="flex:1"><span class="pb-badge">4 Kat Yalıtımlı</span><div class="pb-t">Anahtar Teslim Fiyat</div><div class="pb-p">%s</div><div class="pb-s">%d m² · nakliye + kurulum dahil</div></div></div>'
+          '<p class="pb-note">Bu ölçüde 4 Kat Yalıtım (Astar - Yalıtım - Folyo Yalıtım - Keçe Yalıtım) sunulur; 3 Katlı seçenek sadece 7x10 ölçüsünde vardır. Ölçüye özel ve diğer boyutlar için <a href="../fiyatlar/">tüm fiyat tablosuna</a> bakın veya WhatsApp’tan yazın.</p>')%(tl(p4),m2)
     return ('<div class="pricebox"><div class="pb"><div class="pb-t">3 Kat Yalıtımlı</div><div class="pb-p">%s</div><div class="pb-s">%d m² · anahtar teslim</div></div>'
       '<div class="pb pb-hot"><span class="pb-badge">Daha güçlü yalıtım</span><div class="pb-t">4 Kat Yalıtımlı</div><div class="pb-p">%s</div><div class="pb-s">%d m² · sert iklim için</div></div></div>'
       '<p class="pb-note">Fiyatlara nakliye ve kurulum dahildir. Ölçüye özel ve diğer boyutlar için <a href="../fiyatlar/">tüm fiyat tablosuna</a> bakın veya WhatsApp’tan yazın.</p>')%(tl(p3),m2,tl(p4),m2)
@@ -139,15 +147,19 @@ def cta_band(txt="Ölçünüz ve bütçenize en uygun tavuk çadırını birlikt
 # ---- DETAIL PAGE ----
 def detail_page(slug,idx):
     en,boy,m2,tavuk,p3,p4=SIZES[idx]
+    has3=p3 is not None
     tavuk_f=format(tavuk,',d').replace(",",".")
     num=slug.split("-")[0]
     num_disp="2.000+" if num=="2000" else format(int(num),",d").replace(",",".")
     cap="%s tavuk"%(("2.000+" if num=="2000" else format(int(num),',d').replace(",","."))) if num.isdigit() else "%d tavuk"%tavuk
     title="%s Kapasiteli Tavuk Çadırı (%dx%d = %d m²) Fiyatları | tavukcadiri.com"%(num if num!="2000" else "2000+",int(en),int(boy),m2)
-    desc="%s tavukluk (%dx%d, %d m²) yalıtımlı tavuk çadırı. 3 kat %s / 4 kat %s. 40x40 galvaniz makas, 650g TSE branda, 2 yıl garanti; nakliye+kurulum dahil."%(num,int(en),int(boy),m2,tl(p3),tl(p4))
+    desc=("%s tavukluk (%dx%d, %d m²) yalıtımlı tavuk çadırı. 3 kat %s / 4 kat %s. 40x40 galvaniz makas, 650g TSE branda, 2 yıl garanti; nakliye+kurulum dahil."%(num,int(en),int(boy),m2,tl(p3),tl(p4))) if has3 else (
+      "%s tavukluk (%dx%d, %d m²) 4 kat yalıtımlı tavuk çadırı: %s. 40x40 galvaniz makas, 650g TSE branda, 2 yıl garanti; nakliye+kurulum dahil."%(num,int(en),int(boy),m2,tl(p4)))
     h1="%s Kapasiteli Tavuk Çadırı"%num_disp
-    badges=[("Ölçü","%dx%d m"%(int(en),int(boy))),("Alan","%d m²"%m2),("Kapasite","~%s tavuk"%format(tavuk,',d').replace(",",".")),
-            ("3 Kat","%s"%tl(p3)),("4 Kat","%s"%tl(p4)),("Garanti","2 yıl"),("Teslim","10 gün / kurulu"),("Nakliye","81 il — dahil")]
+    badges=([("Ölçü","%dx%d m"%(int(en),int(boy))),("Alan","%d m²"%m2),("Kapasite","~%s tavuk"%format(tavuk,',d').replace(",",".")),
+            ("3 Kat","%s"%tl(p3)),("4 Kat","%s"%tl(p4)),("Garanti","2 yıl"),("Teslim","10 gün / kurulu"),("Nakliye","81 il — dahil")]) if has3 else (
+           [("Ölçü","%dx%d m"%(int(en),int(boy))),("Alan","%d m²"%m2),("Kapasite","~%s tavuk"%format(tavuk,',d').replace(",",".")),
+            ("Fiyat (4 Kat)","%s"%tl(p4)),("Garanti","2 yıl"),("Teslim","10 gün / kurulu"),("Nakliye","81 il — dahil")])
     bd='<div class="badges">%s</div>'%("".join('<div class="badge"><div class="l">%s</div><div class="v">%s</div></div>'%(e(l),e(v)) for l,v in badges))
     crumb='<a href="../index.html">Ana Sayfa</a> › <a href="../index.html#modeller">Tavuk Çadırı Modelleri</a> › <b>%s Tavukluk / %d m²</b>'%(num_disp,m2)
     hero=('<div class="wrap"><div class="crumb">%s</div></div><section class="hero"><div class="wrap"><div class="hero-grid">'
@@ -161,7 +173,8 @@ def detail_page(slug,idx):
       +'<section class="sec" id="fiyat"><div class="wrap"><div class="sec-head"><div class="ey">Fiyat</div><h2>%s Tavukluk (%d m²) Fiyatları</h2></div>%s</div></section>'%(num_disp,m2,price_box(m2,p3,p4))
       +'<section class="sec alt"><div class="wrap"><div class="prose">'
       +'<div class="block"><h2>Bu ölçü kime uygun?</h2><p>%s %d m²’lik kapalı alan, barınak içi standart yoğunlukla (m²’ye ~7 tavuk) yaklaşık %s tavuğu doğru şekilde barındırır. Serbest/gezen sistemde bu çadır, tavukların gecelediği ve yumurtladığı korunaklı barınak olarak kullanılır.</p></div>'%(who,m2,format(tavuk,',d').replace(",","."))
-      +'<div class="block"><h2>3 kat mı, 4 kat yalıtım mı?</h2><p>Her iki seçenekte de alüminyum bizafol yalıtım kullanılır; fark katman sayısındadır. <strong>3 kat</strong> çoğu bölge için yeterli, dengeli bir çözümdür (%s). <strong>4 kat</strong>, sert kış/aşırı sıcak bölgelerde ekstra ısı yalıtımı sağlar (%s). Bölgenizin iklimine göre birlikte seçelim.</p></div>'%(tl(p3),tl(p4))
+      +(('<div class="block"><h2>3 kat mı, 4 kat yalıtım mı?</h2><p><strong>3 Kat</strong> (Astar - Yalıtım - Folyo Yalıtım) çoğu bölge için yeterli, dengeli bir çözümdür (%s). <strong>4 Kat</strong> (Astar - Yalıtım - Folyo Yalıtım - Keçe Yalıtım), sert kış/aşırı sıcak bölgelerde ekstra ısı yalıtımı sağlar (%s). Bölgenizin iklimine göre birlikte seçelim.</p></div>'%(tl(p3),tl(p4))) if has3 else
+      ('<div class="block"><h2>Yalıtım</h2><p>Bu ölçü <strong>4 Kat Yalıtımlı</strong> üretilir: Astar - Yalıtım - Folyo Yalıtım - Keçe Yalıtım (%s). 3 Katlı (Astar - Yalıtım - Folyo Yalıtım) seçenek sadece 7x10 ölçüsünde sunulur.</p></div>'%tl(p4)))
       +'<div class="block"><h2>Neden dayanıklı?</h2><p>Taşıyıcı iskelet 40x40 mm / 2 mm et kalınlığında galvaniz profil makas (kemerli) sistemdir; standart çadırlara göre 3 kat daha dayanıklıdır. Kar yükü, tipik rüzgâr ve yağmura karşı yıkılma/çökme yapmaz. Dış örtü 650 g/m² TSE damgalı branda, iç yüzey 180 g antibakteriyel yıkanabilir astardır — hem sağlam hem hijyenik.</p></div>'
       +'<div class="block"><h2>Nakliye, kurulum ve teslim</h2><p>Türkiye’nin 81 iline hizmet veriyoruz; nakliye ve kurulum fiyata dahildir. Hafif sistem her zemine monte edilebilir. Sipariş sonrası <strong>10 gün içinde kurulu şekilde</strong> teslim ediyoruz. Ürün <strong>2 yıl üretim garantilidir</strong>; üretim kaynaklı hatalar kapsamdadır (doğal afet ve kullanıcı hataları hariç).</p></div>'
       +'<div class="block"><h2>İsteğe bağlı ekipman</h2><p>Barınağı, talebinize göre iç ekipmanla birlikte teslim edebiliriz; ihtiyacınıza göre birlikte belirleyelim.</p><div class="equip">%s</div></div>'%equip_list()
@@ -170,8 +183,10 @@ def detail_page(slug,idx):
       +'<section class="sec alt"><div class="wrap"><div class="sec-head"><div class="ey">Öne çıkanlar</div><h2>Öne Çıkan Özellikler</h2></div>%s</div></section>'%features_grid()
       +'<section class="sec"><div class="wrap"><div class="sec-head"><div class="ey">Sıkça sorulanlar</div><h2>Merak Edilenler</h2></div>%s</div></section>'%faq_block([
          ("%s tavukluk çadır kaç m²?"%num_disp,"%d m² (%dx%d m). Barınak içi standart yoğunlukla ~%s tavuk kapasitelidir."%(m2,int(en),int(boy),format(tavuk,',d').replace(",","."))),
-         ("Fiyata neler dahil?","3 kat yalıtımlı %s, 4 kat yalıtımlı %s. Her iki fiyata da nakliye ve kurulum dahildir; zemin, su ve elektrik altyapısı hariçtir."%(tl(p3),tl(p4))),
-         ("3 kat ve 4 kat farkı nedir?","4 kat yalıtım, ekstra bir katmanla soğuk/sıcak yalıtımını güçlendirir; sert iklim bölgeleri için önerilir. 3 kat çoğu bölge için yeterlidir."),
+         ("Fiyata neler dahil?", ("3 kat yalıtımlı %s, 4 kat yalıtımlı %s. Her iki fiyata da nakliye ve kurulum dahildir; zemin, su ve elektrik altyapısı hariçtir."%(tl(p3),tl(p4))) if has3 else
+                                 ("4 kat yalıtımlı %s. Nakliye ve kurulum dahildir; zemin, su ve elektrik altyapısı hariçtir."%tl(p4))),
+         ("3 kat ve 4 kat farkı nedir?","4 kat yalıtım (Astar - Yalıtım - Folyo Yalıtım - Keçe Yalıtım), 3 kata göre bir katman fazlasıyla soğuk/sıcak yalıtımını güçlendirir; sert iklim bölgeleri için önerilir. 3 Katlı seçenek sadece 7x10 ölçüsünde sunulur." if not has3 else
+          "4 kat yalıtım, ekstra bir katmanla (keçe yalıtım) soğuk/sıcak yalıtımını güçlendirir; sert iklim bölgeleri için önerilir. 3 kat çoğu bölge için yeterlidir."),
          ("Çadır ne kadar dayanıklı, garanti var mı?","40x40/2 mm galvaniz makas iskelet ve 650 g TSE brandayla standart çadırlardan 3 kat dayanıklıdır; kar/rüzgâr/yağmurda çökme yapmaz. 2 yıl üretim garantilidir."),
          ("Ne kadar sürede teslim edilir?","Sipariş sonrası 10 gün içinde, kurulu şekilde teslim edilir. Türkiye geneli 81 ile kurulum yapıyoruz."),
          ("Zemin beton mu olmalı?","Hafif sistem her zemine monte edilir; beton şart değildir. Temizlik kolaylığı için beton veya kilit taşı öneririz."),
@@ -180,12 +195,14 @@ def detail_page(slug,idx):
          "".join('<a href="../%s/">%s <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C25E10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>'%(fs, e(dict([("500-tavukluk-tavuk-cadiri","500 Tavuk / 70 m²"),("750-tavukluk-tavuk-cadiri","750 Tavuk / 98 m²"),("1000-tavukluk-tavuk-cadiri","1.000 Tavuk / 140 m²"),("2000-tavukluk-tavuk-cadiri","2.000+ / 300 m²")])[fs])) for fs in FEAT_SLUGS if fs!=slug)
          + '<a href="../fiyatlar/">Tüm ölçüler &amp; fiyat tablosu <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C25E10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>')
       +cta_band())
-    # JSON-LD with Offer price (3 kat as low price)
+    # JSON-LD with Offer price (3 kat as low price, sadece 7x10'da; diğerlerinde tek Offer)
     faqld=[{"@type":"Question","name":"%s tavukluk çadır kaç m²?"%num_disp,"acceptedAnswer":{"@type":"Answer","text":"%d m² (%dx%d m), ~%s tavuk kapasiteli."%(m2,int(en),int(boy),tavuk_f)}},
-           {"@type":"Question","name":"%s kapasiteli tavuk çadırı fiyatı ne kadar?"%num_disp,"acceptedAnswer":{"@type":"Answer","text":"3 kat yalıtımlı %s, 4 kat yalıtımlı %s; nakliye ve kurulum dahil."%(tl(p3),tl(p4))}}]
+           {"@type":"Question","name":"%s kapasiteli tavuk çadırı fiyatı ne kadar?"%num_disp,"acceptedAnswer":{"@type":"Answer","text":("3 kat yalıtımlı %s, 4 kat yalıtımlı %s; nakliye ve kurulum dahil."%(tl(p3),tl(p4))) if has3 else ("4 kat yalıtımlı %s; nakliye ve kurulum dahil."%tl(p4))}}]
+    offers=({"@type":"AggregateOffer","priceCurrency":"TRY","lowPrice":p3,"highPrice":p4,"offerCount":2,"availability":"https://schema.org/InStock","url":"%s/%s/"%(SITE,slug)} if has3 else
+            {"@type":"Offer","priceCurrency":"TRY","price":p4,"availability":"https://schema.org/InStock","url":"%s/%s/"%(SITE,slug)})
     graph={"@context":"https://schema.org","@graph":[
      {"@type":"Product","name":h1,"description":desc,"image":"%s/assets/photos/model-%s.jpg"%(SITE,num),"category":"Tavuk Çadırı / Kümes Çadırı","brand":{"@type":"Brand","name":"Tavuk Çadırı"},
-      "offers":{"@type":"AggregateOffer","priceCurrency":"TRY","lowPrice":p3,"highPrice":p4,"offerCount":2,"availability":"https://schema.org/InStock","url":"%s/%s/"%(SITE,slug)},
+      "offers":offers,
       "additionalProperty":[{"@type":"PropertyValue","name":"Ölçü","value":"%dx%d m"%(int(en),int(boy))},{"@type":"PropertyValue","name":"Alan","value":"%d m²"%m2},{"@type":"PropertyValue","name":"Kapasite","value":"~%s tavuk"%tavuk_f},{"@type":"PropertyValue","name":"İskelet","value":"40x40/2mm galvaniz makas"},{"@type":"PropertyValue","name":"Branda","value":"650 g TSE"},{"@type":"PropertyValue","name":"Garanti","value":"2 yıl"}]},
      {"@type":"FAQPage","mainEntity":faqld},
      {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Ana Sayfa","item":SITE+"/"},{"@type":"ListItem","position":2,"name":"Tavuk Çadırı Modelleri","item":SITE+"/#modeller"},{"@type":"ListItem","position":3,"name":"%s Tavukluk / %d m²"%(num_disp,m2),"item":"%s/%s/"%(SITE,slug)}]}
@@ -194,9 +211,11 @@ def detail_page(slug,idx):
 
 # ---- FIYATLAR PAGE ----
 def price_table(kat):
-    i2s={0:"500-tavukluk-tavuk-cadiri",1:"750-tavukluk-tavuk-cadiri",2:"1000-tavukluk-tavuk-cadiri",5:"2000-tavukluk-tavuk-cadiri"}
+    i2s={0:"500-tavukluk-tavuk-cadiri",1:"750-tavukluk-tavuk-cadiri",2:"1000-tavukluk-tavuk-cadiri",4:"2000-tavukluk-tavuk-cadiri"}
     rows=""
     for i,(en,boy,m2,tavuk,p3,p4) in enumerate(SIZES):
+        if kat==3 and p3 is None:
+            continue
         olc="%dx%d m"%(int(en),int(boy))
         cell=('<a href="../%s/">%s</a>'%(i2s[i],olc)) if i in i2s else olc
         rows+='<tr><td>%s</td><td>%d m²</td><td>~%s</td><td class="pr">%s</td></tr>'%(cell,m2,format(tavuk,',d').replace(",","."),tl(p3 if kat==3 else p4))
@@ -204,19 +223,19 @@ def price_table(kat):
 
 def fiyatlar_page():
     title="Tavuk Çadırı Fiyatları 2026 — 3 & 4 Kat Yalıtımlı Ölçü Tablosu | tavukcadiri.com"
-    desc="Tavuk çadırı fiyatları: 7x10’dan 10x40’a tüm ölçüler, 3 kat ve 4 kat yalıtımlı. 70 m² 95.000 TL’den başlayan; nakliye + kurulum dahil, 81 il, 10 gün teslim, 2 yıl garanti."
+    desc="Tavuk çadırı fiyatları: 7x10’dan 12x50’ye tüm ölçüler. 70 m² 99.000 TL’den başlayan; nakliye + kurulum dahil, 81 il, 10 gün teslim, 2 yıl garanti."
     crumb='<a href="../index.html">Ana Sayfa</a> › <b>Fiyatlar</b>'
     body=('<div class="wrap"><div class="crumb">%s</div></div><section class="phead"><div class="wrap"><div class="ey">Şeffaf Fiyat</div><h1>Tavuk Çadırı Fiyatları (2026)</h1><p>Ölçü ve yalıtım seviyesine göre güncel fiyatlarımız. Tüm fiyatlara <strong>nakliye ve kurulum dahildir</strong>; Türkiye geneli 81 ile hizmet, 10 gün içinde kurulu teslim, 2 yıl üretim garantisi.</p></div></section>'%crumb
       +'<section class="sec" style="padding:clamp(24px,3vw,34px) 0 0"><div class="wrap"><p style="font-size:15px;color:#6E6256;margin:0">Öne çıkan ölçüler için detay sayfaları: <a class="lnk-u" style="color:#C25E10;font-weight:600" href="../500-tavukluk-tavuk-cadiri/">500</a> · <a class="lnk-u" style="color:#C25E10;font-weight:600" href="../750-tavukluk-tavuk-cadiri/">750</a> · <a class="lnk-u" style="color:#C25E10;font-weight:600" href="../1000-tavukluk-tavuk-cadiri/">1.000</a> · <a class="lnk-u" style="color:#C25E10;font-weight:600" href="../2000-tavukluk-tavuk-cadiri/">2.000+</a> tavukluk</p></div></section>'
-      +'<section class="sec"><div class="wrap"><div class="sec-head"><div class="ey">3 Kat Yalıtımlı</div><h2>3 Kat Yalıtımlı Çadır Fiyatları</h2><p style="color:#6E6256;margin:8px 0 0">Çoğu bölge için dengeli ve ekonomik çözüm.</p></div>%s</div></section>'%price_table(3)
-      +'<section class="sec alt"><div class="wrap"><div class="sec-head"><div class="ey">4 Kat Yalıtımlı</div><h2>4 Kat Yalıtımlı Çadır Fiyatları</h2><p style="color:#6E6256;margin:8px 0 0">Sert kış / aşırı sıcak bölgeler için ekstra yalıtım katmanı.</p></div>%s</div></section>'%price_table(4)
+      +'<section class="sec"><div class="wrap"><div class="sec-head"><div class="ey">3 Kat Yalıtımlı</div><h2>3 Kat Yalıtımlı Çadır Fiyatları</h2><p style="color:#6E6256;margin:8px 0 0">Astar - Yalıtım - Folyo Yalıtım. Sadece 7x10 (70 m²) ölçüsünde sunulan ekonomik seçenek.</p></div>%s</div></section>'%price_table(3)
+      +'<section class="sec alt"><div class="wrap"><div class="sec-head"><div class="ey">4 Kat Yalıtımlı</div><h2>4 Kat Yalıtımlı Çadır Fiyatları</h2><p style="color:#6E6256;margin:8px 0 0">Astar - Yalıtım - Folyo Yalıtım - Keçe Yalıtım. Tüm ölçülerde standart, sert kış / aşırı sıcak bölgeler için ekstra yalıtım katmanı.</p></div>%s</div></section>'%price_table(4)
       +'<section class="sec"><div class="wrap"><div class="prose">'
-      +'<div class="block"><h2>Fiyata neler dahil?</h2><p><strong>Dahil:</strong> 40x40/2 mm galvaniz makaslı iskelet, 650 g TSE damgalı branda, 180 g antibakteriyel astar, alüminyum bizafol yalıtım (3 veya 4 kat), Türkiye geneli nakliye ve yerinde kurulum. <strong>Hariç:</strong> zemin (beton/kilit taşı vb.), su ve elektrik altyapısı.</p></div>'
-      +'<div class="block"><h2>Ölçüye özel üretim</h2><p>Tablodaki ölçülerin dışında ihtiyacınıza özel ölçülerde de imalat yapıyoruz (imalattan halka satış). Farklı en/boy veya ek ekipman için WhatsApp’tan yazın; ölçünüze göre net fiyat çıkaralım.</p></div>'
+      +'<div class="block"><h2>Fiyata neler dahil?</h2><p><strong>Dahil:</strong> 40x40/2 mm galvaniz makaslı iskelet, 650 g TSE damgalı branda, 180 g antibakteriyel astar, yalıtım (3 veya 4 kat), Türkiye geneli nakliye ve yerinde kurulum. <strong>Hariç:</strong> zemin (beton/kilit taşı vb.), su ve elektrik altyapısı.</p></div>'
+      +'<div class="block"><h2>Ölçüye özel üretim</h2><p>Tablodaki ölçülerin dışında ihtiyacınıza özel ölçülerde de imalat yapıyoruz (imalattan halka satış). Yaklaşık fiyat metrekare × %s TL ile hesaplanabilir; kesin fiyat keşifle netleşir. Farklı en/boy veya ek ekipman için WhatsApp’tan yazın.</p></div>'%tl(CALC_PRICE_PER_M2).replace(" TL","")
       +'<div class="block"><h2>Kapasite nasıl hesaplanır?</h2><p>Barınak içi standart yoğunluk m²’ye yaklaşık 7 tavuktur; tablodaki kapasiteler buna göredir. Serbest/gezen sistemde hayvan başına daha fazla alan önerildiğinden kapasite düşer — sisteminize göre birlikte planlayalım.</p></div>'
       +'</div></div></section>'
       +cta_band("Ölçünüze ve bölgenize göre net fiyat alın"))
-    faqld=[{"@type":"Question","name":"Tavuk çadırı fiyatları ne kadar?","acceptedAnswer":{"@type":"Answer","text":"70 m² (7x10) 3 kat yalıtımlı 95.000 TL’den başlar; 4 kat 105.000 TL. Ölçü büyüdükçe fiyat artar (10x40 400 m²’ye kadar). Tüm fiyatlara nakliye ve kurulum dahildir."}},
+    faqld=[{"@type":"Question","name":"Tavuk çadırı fiyatları ne kadar?","acceptedAnswer":{"@type":"Answer","text":"70 m² (7x10) 3 kat yalıtımlı 99.000 TL’den başlar; 4 kat 110.000 TL. Ölçü büyüdükçe fiyat artar (12x50 600 m²’ye kadar). Tüm fiyatlara nakliye ve kurulum dahildir."}},
            {"@type":"Question","name":"Fiyata nakliye ve kurulum dahil mi?","acceptedAnswer":{"@type":"Answer","text":"Evet, tüm fiyatlara Türkiye geneli nakliye ve yerinde kurulum dahildir. Zemin, su ve elektrik altyapısı hariçtir."}}]
     graph={"@context":"https://schema.org","@graph":[
      {"@type":"FAQPage","mainEntity":faqld},
