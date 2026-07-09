@@ -44,7 +44,7 @@
     },
     {
       "q": "Uşak'ın kar yükü ve yaz sıcağı aynı çadırda sorun olur mu?",
-      "a": "Olmaz. Uşak'ta kar yükü orta seviyede; makaslı galvaniz iskelet kışın kar altında çökme yapmaz. Aynı çadırda yaz için düşünülmüş havalandırma açıklıkları, İç Ege'nin sıcak kurak gününde barınağı serin tutar. Tek çatı hem kışı hem yazı karşılar."
+      "a": "Olmaz. Uşak'ta kar yükü orta seviyede; makaslı çelik iskelet kışın kar altında çökme yapmaz. Aynı çadırda yaz için düşünülmüş havalandırma açıklıkları, İç Ege'nin sıcak kurak gününde barınağı serin tutar. Tek çatı hem kışı hem yazı karşılar."
     },
     {
       "q": "Uşak'ta küçük başlayıp sonradan büyütebilir miyim?",
@@ -57,7 +57,7 @@
   ],
   "wa_text": "Merhaba, Usak icin tavuk cadiri teklifi almak istiyorum. Kapasite: ... tavuk / Ilce: ... Yalitim tercihim ve zemin durumu hakkinda da bilgi verebilir misiniz?",
   "img_alt": "Uşak kırsalında geniş tahıl tarlaları arasına kurulmuş beyaz brandalı çadır kümes (temsili görsel)",
-  "img_prompt": "A wide single white tented poultry barn with an arched galvanized frame sitting on a gently rolling plateau in inland Aegean Turkey at around 900 meters altitude. Surrounding fields are pale golden stubble from harvested grain, edged by low dry-stone field boundaries and a distant row of vineyard trellises turning autumn-yellow. Soft late-afternoon October light rakes across the land from the left, long shadows, a few scattered oak shrubs and a hazy blue mountain ridge on the horizon. Cool clear sky with thin high clouds. Slightly elevated three-quarter camera angle looking down the valley. No people, no text, no signage.",
+  "img_prompt": "A wide single white tented poultry barn with an arched steel frame sitting on a gently rolling plateau in inland Aegean Turkey at around 900 meters altitude. Surrounding fields are pale golden stubble from harvested grain, edged by low dry-stone field boundaries and a distant row of vineyard trellises turning autumn-yellow. Soft late-afternoon October light rakes across the land from the left, long shadows, a few scattered oak shrubs and a hazy blue mountain ridge on the horizon. Cool clear sky with thin high clouds. Slightly elevated three-quarter camera angle looking down the valley. No people, no text, no signage.",
   "related_blog": [
     "kumes-maliyeti-betonarme-mi-cadir-mi",
     "gezen-tavuk-sistemi-kurmak",

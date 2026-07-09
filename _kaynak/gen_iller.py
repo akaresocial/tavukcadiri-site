@@ -144,7 +144,7 @@ def cta_il(rec):
             '</div></div></section>') % (e(il), wa_link(rec), WA_SVG.format(w=19, f="#1FA855"))
 
 KUNYE_ROWS = [
-    ("İskelet", "40x40 mm / 2 mm galvaniz çelik makas profil"),
+    ("İskelet", "40x40 mm / 2 mm çelik makas profil"),
     ("Branda", "650 g/m² TSE damgalı, UV dayanımlı, alev yürütmez"),
     ("İç astar", "180 g/m² antibakteriyel, yıkanabilir"),
     ("Yalıtım", "Alüminyum bizafol — 3 veya 4 kat"),

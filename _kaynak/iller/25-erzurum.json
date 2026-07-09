@@ -32,7 +32,7 @@
  "faq": [
   {
    "q": "Erzurum'un -30°C'ye inen kışında çadır kümes yeterli olur mu?",
-   "a": "4 kat yalıtımlı yapı bu koşullar için öneriliyor; galvaniz iskelet kar yükünü, yalıtım katları iç ısıyı tutar. Belirleyici olan yalıtımla birlikte doğru havalandırmadır, çünkü Erzurum'da sürüyü asıl yoran nemli iç ortamdır."
+   "a": "4 kat yalıtımlı yapı bu koşullar için öneriliyor; çelik iskelet kar yükünü, yalıtım katları iç ısıyı tutar. Belirleyici olan yalıtımla birlikte doğru havalandırmadır, çünkü Erzurum'da sürüyü asıl yoran nemli iç ortamdır."
   },
   {
    "q": "Pasinler veya Horasan gibi ilçelere de kurulum yapıyor musunuz?",
@@ -48,7 +48,7 @@
   },
   {
    "q": "Erzurum'un sert rüzgârında çadır kümes sağlam durur mu?",
-   "a": "Galvaniz çelik iskelet zemine ankrajla sabitlenir; açık ovadaki rüzgâr ve kar yükü hesaba katılarak kurulur. Kuruluma en açık, rüzgâr almayan noktayı seçmek ve zemini önceden hazırlamak dayanımı artırır."
+   "a": "Çelik iskelet zemine ankrajla sabitlenir; açık ovadaki rüzgâr ve kar yükü hesaba katılarak kurulur. Kuruluma en açık, rüzgâr almayan noktayı seçmek ve zemini önceden hazırlamak dayanımı artırır."
   },
   {
    "q": "İlk kümesime kaç tavukla başlamalıyım?",

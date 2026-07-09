@@ -138,20 +138,20 @@ pages=[]
 # ---- HAKKIMIZDA ----
 ic=lambda p:'<span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="%s"/></svg></span>'%p
 about_body=(phead("Hakkımızda","Anahtar teslim tavuk çadırında güvenilir çözüm ortağınız",
-  "Galvaniz çelik iskelet ve izolasyonlu branda ile Türkiye geneli anahtar teslim kümes çadırı üretiyor, nakliye ve kurulumu tek elden tamamlıyoruz.",
+  "Çelik iskelet ve izolasyonlu branda ile Türkiye geneli anahtar teslim kümes çadırı üretiyor, nakliye ve kurulumu tek elden tamamlıyoruz.",
   '<a href="../index.html">Ana Sayfa</a> › <b>Hakkımızda</b>')
  +'<section class="sec"><div class="wrap"><div class="prose">'
  +'<p>Tavuk Çadırı olarak amacımız, tavuk ve kümes hayvanı yetiştiriciliğine başlamak ya da işini büyütmek isteyen üreticilere; betonarmenin yüksek maliyeti ve uzun izin süreçleri olmadan, hızlı kurulan, izolasyonlu ve dayanıklı bir barınak çözümü sunmaktır. 500 tavuktan 2.800 tavuğa kadar her kapasitede, ölçüye özel üretim yapıyoruz.</p>'
  +'<h2>Nasıl çalışıyoruz?</h2>'
  +'<p>Çalışma modelimiz baştan sona <strong>anahtar teslim</strong>dir. Kapasitenizi ve bölgenizi konuştuktan sonra ölçü, izolasyon ve ekipmanı birlikte planlar; üretimi tamamlar, ürünü sahaya nakleder ve ekibimizle yerinde kurarız. Siz yalnızca sürünüzü yerleştirirsiniz. Nakliye ve montaj fiyata dahildir; Türkiye’nin her iline hizmet veriyoruz.</p>'
  +'<h2>Neden çadır kümes?</h2>'
- +'<ul><li>Betonarmeye göre belirgin düşük maliyet, temel/inşaat gerektirmez.</li><li>Galvaniz çelik makaslı iskelet + 650 g/m² TSE damgalı, UV ve alev yürütmez branda ile uzun ömür.</li><li>3 veya 4 kat alüminyum bizafol izolasyon: yazın serin, kışın sıcak; yoğuşmayı önleyen dengeli iç ortam.</li><li>Demonte edilip taşınabilir; çoğu bölgede yapı ruhsatı gerektirmez.</li></ul>'
+ +'<ul><li>Betonarmeye göre belirgin düşük maliyet, temel/inşaat gerektirmez.</li><li>Çelik makaslı iskelet + 650 g/m² TSE damgalı, UV ve alev yürütmez branda ile uzun ömür.</li><li>3 veya 4 kat alüminyum bizafol izolasyon: yazın serin, kışın sıcak; yoğuşmayı önleyen dengeli iç ortam.</li><li>Demonte edilip taşınabilir; çoğu bölgede yapı ruhsatı gerektirmez.</li></ul>'
  +'<h2>Şeffaflık sözümüz</h2>'
  +'<p>Neyin fiyata dahil olduğunu (nakliye, montaj, ekipman) ve neyin hariç olduğunu (zemin, su, elektrik altyapısı) baştan net konuşuyoruz. Ruhsat ve devlet desteği konularında da abartısız, dürüst yönlendirme yapıyoruz. Sorularınızı WhatsApp’tan yazın, aynı gün dönüş yapalım.</p>'
  +'<div class="note">Yeni bir markayız ve ilk referanslarımızı oluşturuyoruz; sizinle uzun soluklu çalışmaktan memnuniyet duyarız.</div>'
  +'</div></div></section>'+cta_block())
 pages.append(("hakkimizda","Hakkımızda | Tavuk Çadırı — Anahtar Teslim Kümes Çadırı Üreticisi",
-  "Tavuk Çadırı: galvaniz çelik ve izolasyonlu branda ile Türkiye geneli anahtar teslim kümes çadırı üretimi, nakliye ve kurulum. Şeffaf, dürüst çalışma modeli.",about_body,False))
+  "Tavuk Çadırı: çelik ve izolasyonlu branda ile Türkiye geneli anahtar teslim kümes çadırı üretimi, nakliye ve kurulum. Şeffaf, dürüst çalışma modeli.",about_body,False))
 
 # ---- ILETISIM ----
 tel_svg='<svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>'
