@@ -23,8 +23,13 @@ CSS = CSS + """
 .bmeta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
 .bmeta span{background:#fff;border:1px solid #ECE3D6;border-radius:999px;padding:6px 13px;font-size:13px;font-weight:600;color:#6E6256}
 .proj{background:#fff;border:1px solid #EFE7DA;border-radius:22px;overflow:hidden;margin:0 0 26px;scroll-margin-top:96px}
-.pj-strip{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding:10px 10px 6px;background:#F6F1E8;-webkit-overflow-scrolling:touch;scrollbar-width:thin}
-.pj-strip img{height:clamp(210px,54vw,340px);width:auto;flex:none;scroll-snap-align:center;border-radius:14px;cursor:zoom-in;display:block}
+.pj-strip{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding:10px;background:#F6F1E8;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.pj-strip::-webkit-scrollbar{display:none}
+.pj-strip img{width:100%;aspect-ratio:4/3;object-fit:cover;flex:none;scroll-snap-align:center;border-radius:14px;cursor:zoom-in;display:block}
+.pj-dots{display:flex;justify-content:center;gap:7px;padding:12px 0 2px;background:#fff}
+.pj-dots span{width:7px;height:7px;border-radius:50%;background:#E3D7C5;transition:background .2s,transform .2s}
+.pj-dots span.on{background:#E5751B;transform:scale(1.2)}
+@media(min-width:900px){.pj-strip img{width:auto;aspect-ratio:auto;height:340px}.pj-dots{display:none}.pj-strip{scrollbar-width:thin}.pj-strip::-webkit-scrollbar{display:initial;height:8px}}
 .pj-body{padding:22px clamp(18px,3vw,28px) 24px}
 .pj-body h2{font-family:'Poppins';font-weight:700;font-size:clamp(20px,2.6vw,26px);letter-spacing:-.015em;color:#221A12;margin:0}
 .pj-body .bmeta{margin:12px 0 2px}
@@ -44,7 +49,16 @@ LB_JS = (
  "var im=d.querySelector('img'),cap=d.querySelector('p');"
  "document.querySelectorAll('.pj-strip img').forEach(function(t){t.addEventListener('click',function(){"
  "im.src=t.getAttribute('data-big')||t.src;im.alt=t.alt;cap.textContent=t.alt;d.showModal();});});"
- "d.addEventListener('click',function(ev){if(ev.target===d)d.close();});})();")
+ "d.addEventListener('click',function(ev){if(ev.target===d)d.close();});})();"
+ # mobil: kaydırma konumunu gösteren noktalar (JS yoksa noktalar hiç çizilmez, galeri yine çalışır)
+ "(function(){document.querySelectorAll('.pj-strip').forEach(function(st){"
+ "var ims=st.querySelectorAll('img');if(ims.length<2)return;"
+ "var d=document.createElement('div');d.className='pj-dots';"
+ "ims.forEach(function(_,i){var s=document.createElement('span');if(i===0)s.className='on';d.appendChild(s);});"
+ "st.after(d);"
+ "st.addEventListener('scroll',function(){"
+ "var w=ims[0].offsetWidth+10,i=Math.max(0,Math.min(ims.length-1,Math.round(st.scrollLeft/w)));"
+ "d.querySelectorAll('span').forEach(function(s,j){s.className=j===i?'on':'';});},{passive:true});});})();")
 
 def ingest():
     # /projeler/ içine bırakılan ham klasörleri kaynağa taşı (yayına ham dosya sızmasın)
@@ -75,6 +89,10 @@ def photos(rec):
         return list(range(1, n + 1))
     files = sorted(f for f in os.listdir(src)
                    if not f.startswith("._") and f.lower().endswith((".png", ".jpg", ".jpeg", ".webp")))
+    # eski çıktıları temizle (fotoğraf sayısı azaldıysa bayat webp kalmasın)
+    for f in os.listdir(OUT):
+        if re.match(re.escape(rec["slug"]) + r"-(\d+(-buyuk)?\.webp|og\.jpg)$", f):
+            os.remove(os.path.join(OUT, f))
     out = []
     for i, f in enumerate(files, 1):
         im = Image.open(os.path.join(src, f)).convert("RGB")
