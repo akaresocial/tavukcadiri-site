@@ -32,7 +32,6 @@ CSS = CSS + """
 .pj-links{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
 .pj-links .ln{display:inline-flex;align-items:center;gap:7px;border:1px solid #E3D7C5;border-radius:999px;padding:10px 16px;font-weight:600;font-size:14.5px;color:#3C342B}
 .pj-links .ln:hover{border-color:#E5751B;color:#C25E10}
-.pj-ipucu{font-size:12.5px;color:#8B7E6E;padding:6px 12px 10px;background:#F6F1E8;margin:0}
 #lb{border:0;padding:0;background:transparent;max-width:min(96vw,1200px);max-height:92vh}
 #lb::backdrop{background:rgba(24,18,12,.82)}
 #lb img{max-width:min(96vw,1200px);max-height:88vh;width:auto;height:auto;border-radius:14px;display:block;margin:0 auto}
@@ -116,9 +115,8 @@ def proj_card(rec, n, first=False):
              '</div>') % (wa, WA_SVG.format(w=17, f="#fff"), rec["model_slug"], e(rec["model_ad"]), ARROW,
                           rec["il_page"], e(rec["il"]), ARROW)
     return ('<article class="proj" id="%s">%s'
-            '<p class="pj-ipucu">Fotoğrafa dokunarak büyütebilirsiniz · %d fotoğraf</p>'
-            '<div class="pj-body"><h2>%s %s — %s Tavuk Çadırı</h2>%s<p>%s</p>%s</div></article>') % (
-            rec["slug"], strip_html(rec, n, pre="../", eager=first), n,
+            '<div class="pj-body"><h2>%s %s — %s Tavuk Çadırı Kurulumu Tamamlandı</h2>%s<p>%s</p>%s</div></article>') % (
+            rec["slug"], strip_html(rec, n, pre="../", eager=first),
             e(rec["il"]), e(rec["ilce"]), e(rec["model_ad"]), chips(rec), e(rec["aciklama"]), links)
 
 def hub_page(recs, counts):
@@ -144,7 +142,7 @@ def hub_page(recs, counts):
          "description": "Tavuk Çadırı tarafından tamamlanan kurulumların saha fotoğrafları."},
         {"@type": "ItemList", "itemListElement": [
             {"@type": "ListItem", "position": i + 1,
-             "name": "%s %s — %s Tavuk Çadırı" % (r["il"], r["ilce"], r["model_ad"]),
+             "name": "%s %s — %s Tavuk Çadırı Kurulumu" % (r["il"], r["ilce"], r["model_ad"]),
              "url": "%s/projeler/#%s" % (SITE, r["slug"]),
              "image": "%s/assets/photos/projeler/%s-1.webp" % (SITE, r["slug"])} for i, r in enumerate(recs)]},
         {"@type": "BreadcrumbList", "itemListElement": [
@@ -159,7 +157,7 @@ def home_card(rec):
             '<img src="assets/photos/projeler/%s-1.webp" alt="%s" loading="lazy" width="1000" height="750" style="width:100%%;height:210px;object-fit:cover;display:block;border-bottom:1px solid #F1E9DC">'
             '<span style="padding:18px 20px 20px;display:flex;flex-direction:column;gap:6px">'
             '<span style="font-weight:600;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#C25E10">%s</span>'
-            '<span style="font-family:\'Poppins\',sans-serif;font-weight:700;font-size:18px;color:#221A12">%s %s — %s</span>'
+            '<span style="font-family:\'Poppins\',sans-serif;font-weight:700;font-size:18px;color:#221A12">%s %s — %s Kurulumu Tamamlandı</span>'
             '<span style="font-size:14px;color:#6E6256">%s · %d m² · nakliye ve kurulum dahil teslim edildi</span>'
             '<span style="display:inline-flex;align-items:center;gap:7px;font-weight:600;font-size:14.5px;color:#C25E10;margin-top:6px">Projeyi incele %s</span>'
             '</span></a>') % (rec["slug"], rec["slug"], e(rec["alt"]), e(rec["date_disp"]),

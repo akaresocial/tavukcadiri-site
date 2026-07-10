@@ -83,7 +83,7 @@ def projeler_block(rec):
     cards = ""
     for p in pjs[:2]:
         cards += ('<div class="pjc"><img src="../assets/photos/projeler/%s-1.webp" alt="%s" loading="lazy" width="1000" height="750">'
-                  '<div class="pjc-b"><p class="pjc-t">%s — %s Tavuk Çadırı</p>'
+                  '<div class="pjc-b"><p class="pjc-t">%s — %s Tavuk Çadırı Kurulumu Tamamlandı</p>'
                   '<p class="pjc-m">%s · %d m² · %s · nakliye ve kurulum dahil teslim edildi (%s).</p>'
                   '<a class="pjc-l" href="../projeler/#%s">Proje fotoğraflarını gör %s</a></div></div>') % (
                   p["slug"], e(p["alt"]), e(p["ilce"]), e(p["model_ad"]),
