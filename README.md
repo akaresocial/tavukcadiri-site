@@ -38,18 +38,29 @@ Mekanizma:
 Yani güncelleme akışı: değişiklik yap → commit → push → ~1 dk içinde canlıda
 (webhook kurulana kadar: en geç bir cron döngüsü).
 
-## Yapı
+## Yapı — önce bunu oku
 
-- `index.html` — ana sayfa (elle yazılır)
-- `*-tavukluk-tavuk-cadiri/`, `fiyatlar/` — `_kaynak/gen_products.py` ÜRETİR
-- `hakkimizda/`, `iletisim/`, `kvkk/`, `gizlilik/`, `404.html` — `_kaynak/gen_pages.py` ÜRETİR
-- `assets/photos/*.webp` — ekran görselleri; `model-*.jpg` sadece og:image (WhatsApp önizleme) için
-- `.htaccess` — HTTPS & www yönlendirme, 404, önbellek
+Kökteki ~90 klasörün ÇOĞU **otomatik üretilen yayın çıktısıdır** (bir "build/dist" klasörü gibi).
+Her klasör = sitede bir sayfa = bir URL. **Bunları elle açıp düzenleme.** Tüm iş `_kaynak/`'ta olur:
+üreteci değiştir → çalıştır → klasörler yeniden üretilir → commit + push.
 
-Ürün/kurumsal sayfaları elle düzenleme; `_kaynak/` içindeki üreteci değiştirip çalıştır.
-Görsel güncellemede `?v=` sürümünü artır.
+| Kökteki klasör/dosya | Kim üretir? | Elle mi? |
+|---|---|---|
+| `index.html` | — | ✍️ elle yazılır |
+| `500/750/1000/2000-tavukluk-tavuk-cadiri/`, `fiyatlar/` | `_kaynak/gen_products.py` | 🤖 otomatik |
+| `hakkimizda/`, `iletisim/`, `kvkk/`, `gizlilik/`, `404.html` | `_kaynak/gen_pages.py` | 🤖 otomatik |
+| `<il>-tavuk-cadiri/` (81 il), `kurulum-bolgeleri/` | `_kaynak/gen_iller.py` | 🤖 otomatik |
+| `blog/` + alt yazılar | `_kaynak/gen_blog.py` | 🤖 otomatik |
+| `projeler/` | `_kaynak/gen_projeler.py` | 🤖 otomatik |
+| `assets/` | görseller (webp) + logo/favicon | — |
+| `sitemap.xml` | üreteçler günceller | 🤖 otomatik |
+| `.htaccess` | HTTPS & www yönlendirme, 404, önbellek | ✍️ elle |
+
+Yeni proje eklemek için: `python3 _kaynak/proje_ekle.py --klasor "…" --il … --ilce … --olcu … --uret`
+(detay: memory `tavukcadiri-projeler-sistemi`). Görsel güncellemede `?v=` sürümünü artır.
 
 ## Yayına dahil OLMAYANLAR
 
-`Hero Fotoğraflar/`, `Ürün Fotoğrafları/`, `Birlikte bölüm foto/` (orijinal kaynak fotoğraflar, gitignore'da),
-`_kaynak/`, `README.md`, `Tavuk Çadırı Logo.png` (FTP exclude).
+- `_kaynak/` — tüm üreteçler, JSON verileri ve `_kaynak/_orijinal-gorseller/` (orijinal kaynak
+  fotoğraflar: Hero / Ürün / Birlikte; gitignore'da, siteye dahil değil)
+- `README.md`, `deploy.sh`, `Tavuk Çadırı Logo.png` (FTP/deploy exclude)

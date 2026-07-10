@@ -6,7 +6,8 @@
 # Claude çalışma dosyaları
 .claude/
 
-# Orijinal fotoğraf klasörleri (kaynak; siteye dahil değil)
+# Orijinal fotoğraf arşivi (kaynak; siteye dahil değil) — _kaynak/_orijinal-gorseller/ altında toplandı
+_kaynak/_orijinal-gorseller/
 Hero Fotoğraflar/
 Ürün Fotoğrafları/
 Birlikte bölüm foto/
