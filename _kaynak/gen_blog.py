@@ -125,7 +125,7 @@ def article_page(rec, by_slug):
         if r: rel_items+='<a href="../%s/">%s %s</a>'%(rs,e(r["article"]["title"]),ARROW)
     related='<section class="sec"><div class="wrap"><h2 style="font-family:Poppins;font-weight:700;font-size:clamp(20px,2.6vw,26px);margin:0 0 18px">İlgili yazılar</h2><div class="rel">%s</div></div></section>'%rel_items if rel_items else ''
     body=hero+body_secs+faq+related+cta_block()
-    out=doc(a["meta_title"]+" | Tavuk Çadırı Blog", a["meta_desc"], "blog/"+slug, body, pre="../../")
+    out=doc(a["meta_title"], a["meta_desc"], "blog/"+slug, body, pre="../../")
     out=out.replace('og:type" content="website"','og:type" content="article"',1)
     out=out.replace(SITE+"/assets/photos/og/og-home.jpg", "%s/assets/photos/blog/%s.jpg"%(SITE,slug))  # og:image + twitter:image → yazı-özel görsel
     graph_nodes=[

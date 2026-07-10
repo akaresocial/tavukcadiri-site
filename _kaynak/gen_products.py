@@ -152,7 +152,7 @@ def detail_page(slug,idx):
     num=slug.split("-")[0]
     num_disp="2.000+" if num=="2000" else format(int(num),",d").replace(",",".")
     cap="%s tavuk"%(("2.000+" if num=="2000" else format(int(num),',d').replace(",","."))) if num.isdigit() else "%d tavuk"%tavuk
-    title="%s Kapasiteli Tavuk Çadırı (%dx%d = %d m²) Fiyatları | tavukcadiri.com"%(num if num!="2000" else "2000+",int(en),int(boy),m2)
+    title="%s Kapasiteli Tavuk Çadırı (%dx%d = %d m²) Fiyatları"%(num if num!="2000" else "2000+",int(en),int(boy),m2)
     desc=("%s tavukluk (%dx%d, %d m²) yalıtımlı tavuk çadırı. 3 kat %s / 4 kat %s. 40x40 çelik makas, 650g TSE branda, 2 yıl garanti; nakliye+kurulum dahil."%(num,int(en),int(boy),m2,tl(p3),tl(p4))) if has3 else (
       "%s tavukluk (%dx%d, %d m²) 4 kat yalıtımlı tavuk çadırı: %s. 40x40 çelik makas, 650g TSE branda, 2 yıl garanti; nakliye+kurulum dahil."%(num,int(en),int(boy),m2,tl(p4)))
     h1="%s Kapasiteli Tavuk Çadırı"%num_disp
@@ -222,7 +222,7 @@ def price_table(kat):
     return '<table class="ptable"><thead><tr><th>Ölçü</th><th>Alan</th><th>Kapasite</th><th>Fiyat</th></tr></thead><tbody>%s</tbody></table>'%rows
 
 def fiyatlar_page():
-    title="Tavuk Çadırı Fiyatları 2026 — 3 & 4 Kat Yalıtımlı Ölçü Tablosu | tavukcadiri.com"
+    title="Tavuk Çadırı Fiyatları 2026 — Ölçü ve Yalıtım Tablosu"
     desc="Tavuk çadırı fiyatları: 7x10’dan 12x50’ye tüm ölçüler. 70 m² 99.000 TL’den başlayan; nakliye + kurulum dahil, 81 il, 10 gün teslim, 2 yıl garanti."
     crumb='<a href="../index.html">Ana Sayfa</a> › <b>Fiyatlar</b>'
     body=('<div class="wrap"><div class="crumb">%s</div></div><section class="phead"><div class="wrap"><div class="ey">Şeffaf Fiyat</div><h1>Tavuk Çadırı Fiyatları (2026)</h1><p>Ölçü ve yalıtım seviyesine göre güncel fiyatlarımız. Tüm fiyatlara <strong>nakliye ve kurulum dahildir</strong>; Türkiye geneli 81 ile hizmet, 10 gün içinde kurulu teslim, 2 yıl üretim garantisi.</p></div></section>'%crumb

@@ -261,7 +261,7 @@ def hub_page(recs):
             + '<p>Fiyat her ilde aynıdır: <a href="../fiyatlar/">fiyat tablosundaki</a> rakamlara nakliye ve kurulum dahildir, il için ek ücret çıkmaz. '
             + 'Zemin hazırlığı, su ve elektrik aboneliği ise her yerde olduğu gibi alıcıya aittir.</p>'
             + '</div></div></section>' + cta_block())
-    out = doc("Kurulum Bölgeleri — 81 İle Nakliye ve Kurulum Dahil | Tavuk Çadırı",
+    out = doc("Kurulum Bölgeleri — 81 İle Nakliye ve Kurulum Dahil",
               "Tavuk çadırında 81 ilin tamamına ücretsiz nakliye ve kurulum. İlinizi seçin; iklime göre yalıtım önerisi, teslim süresi ve güncel fiyatları görün.",
               "kurulum-bolgeleri", body, pre="../")
     graph = {"@context": "https://schema.org", "@graph": [

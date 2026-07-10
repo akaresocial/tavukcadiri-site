@@ -149,7 +149,7 @@ def hub_page(recs, counts):
              'veya <a href="../fiyatlar/" style="color:#C25E10;font-weight:600">güncel fiyat tablosuna</a> bakın.</p>'
              '</div></div></section>')
     body = hero + '<section class="sec"><div class="wrap">' + cards + '</div></section>' + davet + cta_block()
-    out = doc("Tamamlanan Projeler — Sahadan Kurulum Fotoğrafları | Tavuk Çadırı",
+    out = doc("Tamamlanan Projeler — Sahadan Kurulum Fotoğrafları",
               "Türkiye genelinde kurduğumuz tavuk çadırlarından saha fotoğrafları: il il tamamlanan projeler, ölçü ve kurulum detayları. Benzer kurulum için teklif alın.",
               "projeler", body, pre="../", extra_js=DOTS_JS)
     if recs and counts.get(recs[0]["slug"]):
