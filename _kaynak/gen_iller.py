@@ -86,7 +86,7 @@ def projeler_block(rec):
                   '<div class="pjc-b"><p class="pjc-t">%s — %s Tavuk Çadırı Kurulumu Tamamlandı</p>'
                   '<p class="pjc-m">%s · %d m² · %s · nakliye ve kurulum dahil teslim edildi (%s).</p>'
                   '<a class="pjc-l" href="../projeler/#%s">Proje fotoğraflarını gör %s</a></div></div>') % (
-                  p["slug"], e(p["alt"]), e(p["ilce"]), e(p["model_ad"]),
+                  p["slug"], e(p["alt"]), e(p["ilce"] or p["il"]), e(p["model_ad"]),
                   p["olcu"].replace("x", "×"), p["m2"], e(p["yalitim"]), e(p["date_disp"]), p["slug"], ARROW)
     return ('<section class="sec" style="background:#FBF8F3"><div class="wrap">'
             '<h2 style="font-family:Poppins;font-weight:700;font-size:clamp(22px,3vw,30px);margin:0 0 4px">%s tamamlanan projeler</h2>'
