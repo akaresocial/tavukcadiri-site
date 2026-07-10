@@ -17,7 +17,7 @@ exec(_src.split("pages=[]")[0])  # e, SITE, WA, WA_DISP, WA_SVG, CSS, header, fo
 RAW = os.path.join(HERE, "projeler")          # ham fotoğraf kaynağı (deploy edilmez)
 GELEN = os.path.join(PROJ, "projeler")        # yayın klasörü; içine bırakılan ham klasörler _kaynak'a taşınır
 OUT = os.path.join(PROJ, "assets", "photos", "projeler")
-CARD_W, BIG_W, Q = 1000, 1600, 82
+CARD_W, Q = 1000, 82
 
 CSS = CSS + """
 .bmeta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
@@ -25,7 +25,7 @@ CSS = CSS + """
 .proj{background:#fff;border:1px solid #EFE7DA;border-radius:22px;overflow:hidden;margin:0 0 26px;scroll-margin-top:96px}
 .pj-strip{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding:10px;background:#F6F1E8;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .pj-strip::-webkit-scrollbar{display:none}
-.pj-strip img{width:100%;aspect-ratio:4/3;object-fit:cover;flex:none;scroll-snap-align:center;border-radius:14px;cursor:zoom-in;display:block}
+.pj-strip img{width:100%;aspect-ratio:4/3;object-fit:cover;flex:none;scroll-snap-align:center;border-radius:14px;display:block;pointer-events:none;user-select:none}
 .pj-dots{display:flex;justify-content:center;gap:7px;padding:12px 0 2px;background:#fff}
 .pj-dots span{width:7px;height:7px;border-radius:50%;background:#E3D7C5;transition:background .2s,transform .2s}
 .pj-dots span.on{background:#E5751B;transform:scale(1.2)}
@@ -45,20 +45,10 @@ CSS = CSS + """
 .pj-links{justify-content:center}
 .pj-links .wa-btn{font-size:15.5px;padding:13px 24px}
 }
-#lb{border:0;padding:0;background:transparent;max-width:min(96vw,1200px);max-height:92vh}
-#lb::backdrop{background:rgba(24,18,12,.82)}
-#lb img{max-width:min(96vw,1200px);max-height:88vh;width:auto;height:auto;border-radius:14px;display:block;margin:0 auto}
-#lb p{color:#fff;text-align:center;font-size:13.5px;margin:10px 0 0;opacity:.85}
-@media(min-width:900px){.pj-strip img{cursor:zoom-in}}
 """
 
-LB_JS = (
- "(function(){var d=document.getElementById('lb');if(!d||!window.HTMLDialogElement)return;"
- "var im=d.querySelector('img'),cap=d.querySelector('p');"
- "document.querySelectorAll('.pj-strip img').forEach(function(t){t.addEventListener('click',function(){"
- "im.src=t.getAttribute('data-big')||t.src;im.alt=t.alt;cap.textContent=t.alt;d.showModal();});});"
- "d.addEventListener('click',function(ev){if(ev.target===d)d.close();});})();"
- # mobil: kaydırma konumunu gösteren noktalar (JS yoksa noktalar hiç çizilmez, galeri yine çalışır)
+# mobil: kaydırma konumunu gösteren noktalar (JS yoksa noktalar hiç çizilmez, galeri yine çalışır)
+DOTS_JS = (
  "(function(){document.querySelectorAll('.pj-strip').forEach(function(st){"
  "var ims=st.querySelectorAll('img');if(ims.length<2)return;"
  "var d=document.createElement('div');d.className='pj-dots';"
@@ -104,9 +94,8 @@ def photos(rec):
     out = []
     for i, f in enumerate(files, 1):
         im = Image.open(os.path.join(src, f)).convert("RGB")
-        for suffix, w in (("", CARD_W), ("-buyuk", BIG_W)):
-            r = im if im.width <= w else im.resize((w, round(im.height * w / im.width)), Image.LANCZOS)
-            r.save(os.path.join(OUT, "%s-%d%s.webp" % (rec["slug"], i, suffix)), "WEBP", quality=Q, method=6)
+        r = im if im.width <= CARD_W else im.resize((CARD_W, round(im.height * CARD_W / im.width)), Image.LANCZOS)
+        r.save(os.path.join(OUT, "%s-%d.webp" % (rec["slug"], i)), "WEBP", quality=Q, method=6)
         if i == 1:  # og:image — 1200x630 merkez kırpma, jpg
             ow, oh = 1200, 630
             s = max(ow / im.width, oh / im.height)
@@ -125,8 +114,8 @@ def strip_html(rec, n, pre="", eager=False):
     imgs = ""
     for i in range(1, n + 1):
         alt = "%s — fotoğraf %d/%d" % (rec["alt"], i, n)
-        imgs += ('<img src="%sassets/photos/projeler/%s-%d.webp" data-big="%sassets/photos/projeler/%s-%d-buyuk.webp" '
-                 'alt="%s" %s>') % (pre, rec["slug"], i, pre, rec["slug"], i, e(alt),
+        imgs += ('<img src="%sassets/photos/projeler/%s-%d.webp" alt="%s" %s>') % (
+                 pre, rec["slug"], i, e(alt),
                  'fetchpriority="high"' if (eager and i == 1) else 'loading="lazy"')
     return '<div class="pj-strip">%s</div>' % imgs
 
@@ -157,10 +146,9 @@ def hub_page(recs, counts):
              'veya <a href="../fiyatlar/" style="color:#C25E10;font-weight:600">güncel fiyat tablosuna</a> bakın.</p>'
              '</div></div></section>')
     body = hero + '<section class="sec"><div class="wrap">' + cards + '</div></section>' + davet + cta_block()
-    body += '<dialog id="lb"><img alt=""><p></p></dialog>'
     out = doc("Tamamlanan Projeler — Sahadan Kurulum Fotoğrafları | Tavuk Çadırı",
               "Türkiye genelinde kurduğumuz tavuk çadırlarından saha fotoğrafları: il il tamamlanan projeler, ölçü ve kurulum detayları. Benzer kurulum için teklif alın.",
-              "projeler", body, pre="../", extra_js=LB_JS)
+              "projeler", body, pre="../", extra_js=DOTS_JS)
     if recs and counts.get(recs[0]["slug"]):
         out = out.replace(SITE + "/assets/photos/og/og-home.jpg", "%s/assets/photos/projeler/%s-og.jpg" % (SITE, recs[0]["slug"]))
     graph = {"@context": "https://schema.org", "@graph": [
