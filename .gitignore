@@ -16,3 +16,6 @@ assets/photos/iller/raw/
 
 # Blog görselleri ham kaynağı
 assets/photos/blog/raw/
+
+# Proje (kurulum) fotoğrafları ham kaynağı (webp üretilip yayınlanır, raw değil)
+_kaynak/projeler/

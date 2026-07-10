@@ -21,7 +21,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 h1,h2,h3{font-family:'Poppins',sans-serif;letter-spacing:-.02em}
 header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.92);backdrop-filter:saturate(180%) blur(10px);-webkit-backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid rgba(231,221,205,.6)}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:11px clamp(16px,5vw,40px);max-width:1200px;margin:0 auto}
-.nav-links{display:none;align-items:center;gap:28px}
+.nav-links{display:none;align-items:center;gap:24px}
 .nav-links a{font-weight:500;font-size:15.5px;color:#3C342B;padding:8px 2px;display:inline-flex;align-items:center}
 .nav-links a:hover{color:#C25E10}
 .wa-btn{display:inline-flex;align-items:center;gap:8px;background:#1FA855;color:#fff;font-weight:600;font-size:15px;padding:11px 17px;border-radius:999px}
@@ -72,7 +72,7 @@ footer ul a{font-size:14.5px;color:#6E6256}footer ul a:hover{color:#C25E10}
 """
 
 def header(pre):
-    L=[("Modeller",pre+"index.html#modeller"),("Fiyatlar",pre+"fiyatlar/"),("Özellikler",pre+"index.html#ozellikler"),("Neden Biz",pre+"index.html#referanslar"),("S.S.S.",pre+"index.html#sss"),("Blog",pre+"blog/"),("İletişim",pre+"iletisim/")]
+    L=[("Modeller",pre+"index.html#modeller"),("Fiyatlar",pre+"fiyatlar/"),("Projeler",pre+"projeler/"),("Özellikler",pre+"index.html#ozellikler"),("Neden Biz",pre+"index.html#referanslar"),("S.S.S.",pre+"index.html#sss"),("Blog",pre+"blog/"),("İletişim",pre+"iletisim/")]
     nav="".join('<a href="%s">%s</a>'%(u,e(t)) for t,u in L)
     mob="".join('<a href="%s">%s</a>'%(u,e(t)) for t,u in L)
     return ('<header><div class="nav"><a href="%sindex.html" aria-label="Tavuk Çadırı ana sayfa"><img src="%sassets/logo.png" alt="Tavuk Çadırı" style="height:52px;width:auto"></a>'
@@ -88,9 +88,9 @@ def footer(pre):
       '<div><img src="%sassets/logo.png" alt="Tavuk Çadırı" style="width:150px"><p class="about">3 ve 4 kat yalıtımlı, TSE damgalı brandalı anahtar teslim tavuk çadırı. Türkiye geneli 81 ile nakliye ve kurulum. Üretim: DEHA Çadır.</p>'
       '<a href="https://wa.me/%s" target="_blank" rel="noopener" class="wa-btn" style="font-size:14.5px;padding:11px 17px">%s<span>Bize ulaşın</span></a></div>'
       '<div><h5>Ürünler</h5><ul>%s</ul></div>'
-      '<div><h5>Kurumsal</h5><ul><li><a href="%shakkimizda/">Hakkımızda</a></li><li><a href="%siletisim/">İletişim</a></li><li><a href="%skurulum-bolgeleri/">Kurulum Bölgeleri</a></li><li><a href="%sindex.html#sss">S.S.S.</a></li><li><a href="%sblog/">Blog</a></li></ul></div>'
+      '<div><h5>Kurumsal</h5><ul><li><a href="%shakkimizda/">Hakkımızda</a></li><li><a href="%siletisim/">İletişim</a></li><li><a href="%sprojeler/">Projeler</a></li><li><a href="%skurulum-bolgeleri/">Kurulum Bölgeleri</a></li><li><a href="%sindex.html#sss">S.S.S.</a></li><li><a href="%sblog/">Blog</a></li></ul></div>'
       '<div><h5>Yasal</h5><ul><li><a href="%skvkk/">KVKK Aydınlatma Metni</a></li><li><a href="%sgizlilik/">Gizlilik &amp; Çerez Politikası</a></li></ul></div>'
-      '</div><div class="foot-bottom"><span>© 2026 Tavuk Çadırı. Tüm hakları saklıdır.</span><span>Üretim &amp; kurulum: DEHA Çadır · 81 il</span><span>Web tasarım: <a href="https://akaremedya.com" target="_blank" rel="noopener" style="font-weight:600">Akare Medya</a></span></div></div></footer>')%(pre,WA,WA_SVG.format(w=17,f="#fff"),m,pre,pre,pre,pre,pre,pre,pre)
+      '</div><div class="foot-bottom"><span>© 2026 Tavuk Çadırı. Tüm hakları saklıdır.</span><span>Üretim &amp; kurulum: DEHA Çadır · 81 il</span><span>Web tasarım: <a href="https://akaremedya.com" target="_blank" rel="noopener" style="font-weight:600">Akare Medya</a></span></div></div></footer>')%(pre,WA,WA_SVG.format(w=17,f="#fff"),m,pre,pre,pre,pre,pre,pre,pre,pre)
 
 COOKIE=''
 

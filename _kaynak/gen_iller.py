@@ -56,7 +56,42 @@ details>summary{list-style:none;cursor:pointer}details>summary::-webkit-details-
 @media(min-width:980px){.hubgrid{grid-template-columns:repeat(4,1fr)}}
 """
 
+CSS = CSS + """
+.pjc{display:grid;grid-template-columns:1fr;gap:0;background:#fff;border:1px solid #EFE7DA;border-radius:20px;overflow:hidden;margin-top:18px}
+.pjc img{width:100%;height:240px;object-fit:cover;display:block}
+.pjc .pjc-b{padding:20px 22px 22px}
+.pjc .pjc-t{font-family:'Poppins';font-weight:700;font-size:18px;color:#221A12;margin:0 0 6px}
+.pjc .pjc-m{font-size:14px;color:#6E6256;margin:0 0 12px;line-height:1.6}
+.pjc .pjc-l{display:inline-flex;align-items:center;gap:7px;font-weight:600;font-size:14.5px;color:#C25E10}
+@media(min-width:760px){.pjc{grid-template-columns:1.1fr 1fr}.pjc img{height:100%;min-height:230px}.pjc .pjc-b{align-self:center}}
+"""
+
 ARROW = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E5751B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>'
+
+# Tamamlanan projeler: il sayfasında o ile ait gerçek kurulum kartı çıkar (gen_projeler.py ile senkron)
+PROJELER = []
+_pj = os.path.join(HERE, "projeler.json")
+if os.path.exists(_pj):
+    PROJELER = json.load(open(_pj, encoding="utf-8"))
+    PROJELER.sort(key=lambda r: r["date"], reverse=True)
+
+def projeler_block(rec):
+    pjs = [p for p in PROJELER if p["ilslug"] == rec["ilslug"]]
+    if not pjs:
+        return ""
+    il_loc = pjs[0].get("il_loc", rec["il"])
+    cards = ""
+    for p in pjs[:2]:
+        cards += ('<div class="pjc"><img src="../assets/photos/projeler/%s-1.webp" alt="%s" loading="lazy" width="1000" height="750">'
+                  '<div class="pjc-b"><p class="pjc-t">%s — %s Tavuk Çadırı</p>'
+                  '<p class="pjc-m">%s · %d m² · %s · nakliye ve kurulum dahil teslim edildi (%s).</p>'
+                  '<a class="pjc-l" href="../projeler/#%s">Proje fotoğraflarını gör %s</a></div></div>') % (
+                  p["slug"], e(p["alt"]), e(p["ilce"]), e(p["model_ad"]),
+                  p["olcu"].replace("x", "×"), p["m2"], e(p["yalitim"]), e(p["date_disp"]), p["slug"], ARROW)
+    return ('<section class="sec" style="background:#FBF8F3"><div class="wrap">'
+            '<h2 style="font-family:Poppins;font-weight:700;font-size:clamp(22px,3vw,30px);margin:0 0 4px">%s tamamlanan projeler</h2>'
+            '<p style="color:#6E6256;margin:0;max-width:720px">Sahadan gerçek kurulum fotoğrafları — tüm kurulumlar için <a href="../projeler/" style="color:#C25E10;font-weight:600">projeler sayfasına</a> bakın.</p>'
+            '%s</div></section>') % (e(il_loc), cards)
 CHEV = '<svg class="faq-chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C25E10" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M6 9l6 6 6-6"></path></svg>'
 
 # Gerçek DEHA fiyatları (3 kat / 4 kat, nakliye+kurulum dahil) — fiyatlar/ sayfasıyla senkron
@@ -181,7 +216,7 @@ def il_page(rec, by_slug):
         if rs in BLOG_TITLES:
             rel_items += '<a href="../blog/%s/">%s %s</a>' % (rs, e(BLOG_TITLES[rs]), ARROW)
     related = ('<section class="sec" style="background:#FBF8F3;padding-top:clamp(24px,3vw,40px)"><div class="wrap"><h2 style="font-family:Poppins;font-weight:700;font-size:clamp(20px,2.6vw,26px);margin:0 0 18px">İşinize yarayacak rehberler</h2><div class="rel">%s</div></div></section>' % rel_items) if rel_items else ''
-    body = hero + body_secs + models_block(rec) + kunye_block(il) + faq + related + cta_il(rec)
+    body = hero + body_secs + projeler_block(rec) + models_block(rec) + kunye_block(il) + faq + related + cta_il(rec)
     out = doc(rec["meta_title"], rec["meta_desc"], slug, body, pre="../")
     out = out.replace(SITE + "/assets/photos/og/og-home.jpg", "%s/assets/photos/iller/%s.jpg" % (SITE, rec["ilslug"]))  # og/twitter image → il görseli
     graph = {"@context": "https://schema.org", "@graph": [
