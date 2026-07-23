@@ -226,7 +226,7 @@ def il_page(rec, by_slug):
          "areaServed": {"@type": "State", "name": il},
          "url": "%s/%s/" % (SITE, slug),
          "description": rec["meta_desc"],
-         "offers": {"@type": "AggregateOffer", "priceCurrency": "TRY", "lowPrice": "99000", "highPrice": "820000",
+         "offers": {"@type": "AggregateOffer", "priceCurrency": "TRY", "lowPrice": "95000", "highPrice": "820000",
                     "url": SITE + "/fiyatlar/"}},
         {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": x["q"], "acceptedAnswer": {"@type": "Answer", "text": x["a"]}} for x in rec["faq"]]},
         {"@type": "BreadcrumbList", "itemListElement": [

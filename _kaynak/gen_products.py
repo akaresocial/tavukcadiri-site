@@ -14,7 +14,7 @@ CHECK='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2E5A
 # (en, boy, m2, tavuk~7/m2, 3kat fiyat veya None, 4kat fiyat)
 # 3 Katlı yalıtım SADECE 7x10 ölçüsünde sunulur; diğer tüm ölçüler 4 Katlıdır (p3=None).
 SIZES=[
- ("7","10",70,500,99000,110000),
+ ("7","10",70,500,95000,110000),
  ("7","15",105,750,None,140000),
  ("7","20",140,980,None,195000),
  ("10","20",200,1400,None,285000),
@@ -223,7 +223,7 @@ def price_table(kat):
 
 def fiyatlar_page():
     title="Tavuk Çadırı Fiyatları 2026 — Ölçü ve Yalıtım Tablosu"
-    desc="Tavuk çadırı fiyatları: 7x10’dan 12x50’ye tüm ölçüler. 70 m² 99.000 TL’den başlayan; nakliye + kurulum dahil, 81 il, 10 gün teslim, 2 yıl garanti."
+    desc="Tavuk çadırı fiyatları: 7x10’dan 12x50’ye tüm ölçüler. 70 m² 95.000 TL’den başlayan; nakliye + kurulum dahil, 81 il, 10 gün teslim, 2 yıl garanti."
     crumb='<a href="../index.html">Ana Sayfa</a> › <b>Fiyatlar</b>'
     body=('<div class="wrap"><div class="crumb">%s</div></div><section class="phead"><div class="wrap"><div class="ey">Şeffaf Fiyat</div><h1>Tavuk Çadırı Fiyatları (2026)</h1><p>Ölçü ve yalıtım seviyesine göre güncel fiyatlarımız. Tüm fiyatlara <strong>nakliye ve kurulum dahildir</strong>; Türkiye geneli 81 ile hizmet, 10 gün içinde kurulu teslim, 2 yıl üretim garantisi.</p></div></section>'%crumb
       +'<section class="sec" style="padding:clamp(24px,3vw,34px) 0 0"><div class="wrap"><p style="font-size:15px;color:#6E6256;margin:0">Öne çıkan ölçüler için detay sayfaları: <a class="lnk-u" style="color:#C25E10;font-weight:600" href="../500-tavukluk-tavuk-cadiri/">500</a> · <a class="lnk-u" style="color:#C25E10;font-weight:600" href="../750-tavukluk-tavuk-cadiri/">750</a> · <a class="lnk-u" style="color:#C25E10;font-weight:600" href="../1000-tavukluk-tavuk-cadiri/">1.000</a> · <a class="lnk-u" style="color:#C25E10;font-weight:600" href="../2000-tavukluk-tavuk-cadiri/">2.000+</a> tavukluk</p></div></section>'
@@ -235,7 +235,7 @@ def fiyatlar_page():
       +'<div class="block"><h2>Kapasite nasıl hesaplanır?</h2><p>Barınak içi standart yoğunluk m²’ye yaklaşık 7 tavuktur; tablodaki kapasiteler buna göredir. Serbest/gezen sistemde hayvan başına daha fazla alan önerildiğinden kapasite düşer — sisteminize göre birlikte planlayalım.</p></div>'
       +'</div></div></section>'
       +cta_band("Ölçünüze ve bölgenize göre net fiyat alın"))
-    faqld=[{"@type":"Question","name":"Tavuk çadırı fiyatları ne kadar?","acceptedAnswer":{"@type":"Answer","text":"70 m² (7x10) 3 kat yalıtımlı 99.000 TL’den başlar; 4 kat 110.000 TL. Ölçü büyüdükçe fiyat artar (12x50 600 m²’ye kadar). Tüm fiyatlara nakliye ve kurulum dahildir."}},
+    faqld=[{"@type":"Question","name":"Tavuk çadırı fiyatları ne kadar?","acceptedAnswer":{"@type":"Answer","text":"70 m² (7x10) 3 kat yalıtımlı 95.000 TL’den başlar; 4 kat 110.000 TL. Ölçü büyüdükçe fiyat artar (12x50 600 m²’ye kadar). Tüm fiyatlara nakliye ve kurulum dahildir."}},
            {"@type":"Question","name":"Fiyata nakliye ve kurulum dahil mi?","acceptedAnswer":{"@type":"Answer","text":"Evet, tüm fiyatlara Türkiye geneli nakliye ve yerinde kurulum dahildir. Zemin, su ve elektrik altyapısı hariçtir."}}]
     graph={"@context":"https://schema.org","@graph":[
      {"@type":"FAQPage","mainEntity":faqld},
